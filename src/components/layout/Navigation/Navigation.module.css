@@ -1,0 +1,14 @@
+.wrapper {
+  display: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: yellow;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

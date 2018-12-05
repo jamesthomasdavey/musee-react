@@ -1,0 +1,14 @@
+.wrapper {
+}
+
+.logo {
+  font-family: Cormorant, serif;
+  user-select: none;
+  font-size: 36px;
+}
+
+@media (min-width: 992px) {
+  .logo {
+    font-size: 48px;
+  }
+}
