@@ -1,0 +1,28 @@
+.wrapper {
+  display: inline-block;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.textWrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}

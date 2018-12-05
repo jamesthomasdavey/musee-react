@@ -1,14 +1,15 @@
 // package
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // css
 import classes from './Logo.module.css';
 
 const Logo = () => {
   return (
-    <div className={classes.wrapper}>
+    <Link to="/" className={classes.wrapper}>
       <h1 className={classes.logo}>Musée Mecaníque</h1>
-    </div>
+    </Link>
   );
 };
 

@@ -1,13 +1,19 @@
 .wrapper {
+  display: block;
+  padding: 14px 0;
 }
 
 .logo {
   font-family: Cormorant, serif;
+  color: #373737;
   user-select: none;
   font-size: 36px;
 }
 
 @media (min-width: 992px) {
+  .wrapper {
+    padding: 24px 0;
+  }
   .logo {
     font-size: 48px;
   }
