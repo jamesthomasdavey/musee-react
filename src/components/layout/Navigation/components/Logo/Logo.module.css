@@ -10,6 +10,10 @@
   font-size: 36px;
 }
 
+.logo.inverted {
+  color: #ffffff;
+}
+
 @media (min-width: 992px) {
   .wrapper {
     padding: 24px 0;

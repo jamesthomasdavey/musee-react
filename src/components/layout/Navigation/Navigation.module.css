@@ -1,8 +1,10 @@
 .wrapper {
-  display: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  transition: 0.6s background ease;
+}
+
+.wrapper.inverted {
+  background: #373737;
 }
 
 .container {

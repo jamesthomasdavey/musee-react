@@ -7,13 +7,21 @@ import classes from './ToggleButton.module.css';
 
 const ToggleButton = props => {
   return (
-    <div className={classes.wrapper}>
-      <button onClick={props.toggleCollapsibleMenuHandler}>Toggler</button>
-    </div>
+    <button
+      className={[classes.wrapper, props.collapsibleMenuIsExpanded ? classes.expanded : ''].join(
+        ' '
+      )}
+      onClick={props.toggleCollapsibleMenuHandler}
+    >
+      <span className={classes.bar} />
+      <span className={classes.bar} />
+      <span className={classes.bar} />
+    </button>
   );
 };
 
 ToggleButton.propTypes = {
+  collapsibleMenuIsExpanded: PropTypes.bool.isRequired,
   toggleCollapsibleMenuHandler: PropTypes.func.isRequired
 };
 
