@@ -42,11 +42,15 @@ class Navigation extends Component {
             <ToggleButton
               collapsibleMenuIsExpanded={this.state.collapsibleMenuIsExpanded}
               toggleCollapsibleMenuHandler={this.toggleCollapsibleMenuHandler}
+              isInverted={this.state.isInverted}
             />
             <Menu isInverted={this.state.isInverted} />
           </div>
         </div>
-        <CollapsibleMenu isExpanded={this.state.collapsibleMenuIsExpanded} />
+        <CollapsibleMenu
+          isInverted={this.state.isInverted}
+          isExpanded={this.state.collapsibleMenuIsExpanded}
+        />
       </div>
     );
   }

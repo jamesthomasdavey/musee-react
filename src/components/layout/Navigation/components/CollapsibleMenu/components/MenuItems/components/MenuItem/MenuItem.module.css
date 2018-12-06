@@ -1,11 +1,29 @@
 .wrapper {
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 14px 0;
+  transition: 0.5s all ease;
 }
 
 .text {
   font-family: Lato, sans-serif;
   font-size: 16px;
+  font-weight: bold;
   color: #373737;
+}
+
+.wrapper:hover {
+  background: #dddddd;
+}
+
+.wrapper:hover > .text {
+  color: #000000;
+}
+
+.wrapper.inverted:hover {
+  background: #68403f;
+}
+
+.wrapper.inverted > .text {
+  color: #ffffff;
 }

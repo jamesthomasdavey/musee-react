@@ -1,10 +1,11 @@
 .wrapper {
   width: 100%;
   transition: 0.6s background ease;
+  /* border-bottom: 4px solid #dddddd; */
 }
 
 .wrapper.inverted {
-  background: #373737;
+  background: #521d1d;
 }
 
 .container {

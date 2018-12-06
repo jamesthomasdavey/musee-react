@@ -15,14 +15,15 @@ const CollapsibleMenu = props => {
   return (
     <div className={classes.wrapper}>
       <SmoothCollapse expanded={props.isExpanded}>
-        <MenuItems />
+        <MenuItems isInverted={props.isInverted} />
       </SmoothCollapse>
     </div>
   );
 };
 
 CollapsibleMenu.propTypes = {
-  isExpanded: PropTypes.bool.isRequired
+  isExpanded: PropTypes.bool.isRequired,
+  isInverted: PropTypes.bool.isRequired
 };
 
 export default CollapsibleMenu;

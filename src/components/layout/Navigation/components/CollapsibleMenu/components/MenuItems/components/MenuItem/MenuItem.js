@@ -1,6 +1,7 @@
 // package
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 // ext component
 import { Link } from 'react-router-dom';
@@ -10,7 +11,10 @@ import classes from './MenuItem.module.css';
 
 const MenuItem = props => {
   return (
-    <Link className={classes.wrapper} to={props.url}>
+    <Link
+      className={[classes.wrapper, props.isInverted ? classes.inverted : ''].join(' ')}
+      to={props.url}
+    >
       <span className={classes.text}>{props.name}</span>
     </Link>
   );
@@ -18,7 +22,8 @@ const MenuItem = props => {
 
 MenuItem.propTypes = {
   name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  isInverted: PropTypes.bool.isRequired
 };
 
-export default MenuItem;
+export default withRouter(MenuItem);

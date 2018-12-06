@@ -12,6 +12,7 @@
 
 .text {
   font-family: Lato, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   color: #373737;
   transition: 0.3s all ease;
@@ -24,6 +25,15 @@
 }
 
 .wrapper:hover > .textWrapper > .text:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.text.active {
+}
+
+.text.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
