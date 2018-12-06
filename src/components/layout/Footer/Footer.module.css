@@ -1,0 +1,21 @@
+.wrapper {
+  flex-shrink: 0;
+  padding: 22px 0;
+  background: #dddddd;
+  transition: 0.6s background ease;
+}
+
+.wrapper.inverted {
+  background: #521d1d;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.innerContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -12,7 +12,11 @@ import classes from './MenuItem.module.css';
 const MenuItem = props => {
   return (
     <Link
-      className={[classes.wrapper, props.isInverted ? classes.inverted : ''].join(' ')}
+      className={[
+        classes.wrapper,
+        props.isInverted ? classes.inverted : '',
+        props.location.pathname === props.url ? classes.active : ''
+      ].join(' ')}
       to={props.url}
     >
       <span className={classes.text}>{props.name}</span>

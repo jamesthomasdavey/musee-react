@@ -30,9 +30,6 @@
   transform: scaleX(1);
 }
 
-.text.active {
-}
-
 .text.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);

@@ -12,7 +12,8 @@
   color: #373737;
 }
 
-.wrapper:hover {
+.wrapper:hover,
+.wrapper.active {
   background: #dddddd;
 }
 

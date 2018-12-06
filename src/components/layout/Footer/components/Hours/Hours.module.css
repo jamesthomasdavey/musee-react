@@ -1,0 +1,16 @@
+.wrapper {
+  transition: 0.3s all ease;
+}
+
+.text {
+  display: block;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  color: #373737;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.wrapper.inverted > .text {
+  color: #ffffff;
+}
