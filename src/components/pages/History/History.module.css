@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  padding: 40px 0 80px;
+}
+
+.header {
+  font-family: Muli, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 12px 0;
+}
+
+.subHeader {
+  font-family: Muli, sans-serif;
+  font-weight: 400;
+  margin: 0 0 32px 0;
+  font-size: 15px;
+}
+
+.text {
+  font-family: Muli, sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 15px;
+}

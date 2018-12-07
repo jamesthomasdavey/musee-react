@@ -1,6 +1,6 @@
 .wrapper {
   display: block;
-  padding: 14px 0;
+  padding: 18px 0 24px;
 }
 
 .logo {
@@ -8,15 +8,27 @@
   color: #373737;
   user-select: none;
   font-size: 36px;
+  margin: 0;
 }
 
-.logo.inverted {
+.slogan {
+  font-family: Muli, sans-serif;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.wrapper.inverted > .logo {
   color: #ffffff;
+}
+
+.wrapper.inverted > .slogan {
+  color: #cccccc;
 }
 
 @media (min-width: 992px) {
   .wrapper {
-    padding: 24px 0;
+    padding: 32px 0 38px;
   }
   .logo {
     font-size: 48px;

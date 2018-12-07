@@ -1,7 +1,7 @@
 .wrapper {
   flex-shrink: 0;
   padding: 22px 0;
-  background: #dddddd;
+  background: #eeeeee;
   transition: 0.6s background ease;
 }
 
