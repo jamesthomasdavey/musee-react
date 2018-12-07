@@ -8,8 +8,8 @@ import MenuItem from './components/MenuItem/MenuItem';
 const MenuItems = props => {
   return (
     <div>
-      <MenuItem isInverted={props.isInverted} name="Welcome" url="/welcome" />
-      <MenuItem isInverted={props.isInverted} name="Our History" url="/history" />
+      <MenuItem isInverted={props.isInverted} name="Visit" url="/visit" />
+      <MenuItem isInverted={props.isInverted} name="Our Story" url="/story" />
       <MenuItem isInverted={props.isInverted} name="Gallery" url="/gallery" />
       <MenuItem isInverted={props.isInverted} name="Shop" url="/shop" />
     </div>

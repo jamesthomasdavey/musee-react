@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 0 24px;
+}
+
+.text {
+  font-family: Muli, sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 15px;
+  color: #373737;
+  padding: 8px 0;
+}
+
+.welcomeLine {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 6px;
+}

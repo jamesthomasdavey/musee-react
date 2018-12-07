@@ -3,6 +3,8 @@
   padding: 22px 0;
   background: #eeeeee;
   transition: 0.6s background ease;
+  cursor: default;
+  user-select: none;
 }
 
 .wrapper.inverted {

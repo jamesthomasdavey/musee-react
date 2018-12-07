@@ -9,7 +9,8 @@
   font-family: Muli, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #373737;
+  color: #8b8b8b;
+  transition: 0.5s all ease;
 }
 
 .wrapper:hover,
@@ -17,14 +18,19 @@
   background: #eeeeee;
 }
 
-.wrapper:hover > .text {
-  color: #000000;
+.wrapper:hover > .text,
+.wrapper.active > .text {
+  color: #373737;
 }
 
 .wrapper.inverted:hover {
   background: #68403f;
 }
 
-.wrapper.inverted > .text {
+.wrapper.inverted:hover > .text {
   color: #ffffff;
+}
+
+.wrapper.inverted > .text {
+  color: #bbbbbb;
 }

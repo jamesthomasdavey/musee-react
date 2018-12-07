@@ -14,14 +14,14 @@
   font-family: Muli, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: #373737;
+  color: #8b8b8b;
   transition: 0.3s all ease;
   text-decoration: none;
   position: relative;
 }
 
 .text.inverted {
-  color: #ffffff;
+  color: #bbbbbb;
 }
 
 .wrapper:hover > .textWrapper > .text:before {
@@ -43,7 +43,7 @@
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: #373737;
+  background-color: #8b8b8b;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -52,7 +52,7 @@
 }
 
 .text.inverted:before {
-  background-color: #ffffff;
+  background-color: #bbbbbb;
 }
 
 @media (min-width: 992px) {

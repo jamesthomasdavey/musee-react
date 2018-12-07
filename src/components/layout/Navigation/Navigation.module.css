@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   transition: 0.6s background ease;
+  user-select: none;
 }
 
 .wrapper.inverted {

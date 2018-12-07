@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  padding: 40px 0 40px;
+}
+
+.innerWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map {
+  width: 100%;
+  min-height: 440px;
+}
+
+.info {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .map {
+    width: 50%;
+  }
+
+  .info {
+    width: 50%;
+  }
+}

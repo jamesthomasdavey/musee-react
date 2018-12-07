@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 
 // css
-import classes from './History.module.css';
+import classes from './Story.module.css';
 
-class History extends Component {
+class Story extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
@@ -99,4 +99,4 @@ class History extends Component {
   }
 }
 
-export default History;
+export default Story;

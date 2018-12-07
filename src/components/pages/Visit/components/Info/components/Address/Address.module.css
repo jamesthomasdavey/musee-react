@@ -1,0 +1,12 @@
+.wrapper {
+  margin-bottom: 32px;
+}
+
+.addressLine {
+  display: block;
+  font-family: Muli, sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 15px;
+  color: #373737;
+}

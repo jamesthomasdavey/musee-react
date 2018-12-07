@@ -5,15 +5,16 @@
 
 .logo {
   font-family: Cormorant, serif;
+  line-height: 36px;
   color: #373737;
   user-select: none;
   font-size: 36px;
-  margin: 0;
+  margin: 0 0 14px 0;
 }
 
 .slogan {
   font-family: Muli, sans-serif;
-  color: #999999;
+  color: #8b8b8b;
   font-size: 16px;
   font-weight: 700;
 }
@@ -23,7 +24,14 @@
 }
 
 .wrapper.inverted > .slogan {
-  color: #cccccc;
+  color: #bbbbbb;
+}
+
+@media (min-width: 332px) {
+  .logo {
+    line-height: 46px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -31,6 +39,7 @@
     padding: 32px 0 38px;
   }
   .logo {
+    line-height: 62px;
     font-size: 48px;
   }
 }

@@ -10,10 +10,10 @@
 }
 
 .innerWrapper {
-  margin-top: 153px;
-  height: calc(100% - (153px + 122px));
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
+  margin-top: 147px;
+  height: calc(100% - (147px + 122px));
+  /* border-top: 2px solid grey; */
+  /* border-bottom: 2px solid grey; */
 }
 
 .overlay {
@@ -31,7 +31,7 @@
 
 @media (min-width: 992px) {
   .innerWrapper {
-    margin-top: 150px;
-    height: calc(100% - (150px + 122px));
+    margin-top: 151px;
+    height: calc(100% - (151px + 122px));
   }
 }

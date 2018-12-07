@@ -8,13 +8,19 @@
   font-weight: 700;
   font-size: 22px;
   margin: 0 0 12px 0;
+  color: #373737;
+  cursor: default;
+  user-select: none;
 }
 
 .subHeader {
   font-family: Muli, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0 0 32px 0;
   font-size: 15px;
+  color: #8b8b8b;
+  cursor: default;
+  user-select: none;
 }
 
 .text {
@@ -22,4 +28,6 @@
   font-weight: 400;
   line-height: 26px;
   font-size: 15px;
+  color: #373737;
+  padding: 8px 0;
 }

@@ -8,7 +8,8 @@ import Footer from './components/layout/Footer/Footer';
 
 // page component
 import Landing from './components/pages/Landing/Landing';
-import History from './components/pages/History/History';
+import Visit from './components/pages/Visit/Visit';
+import Story from './components/pages/Story/Story';
 
 // css
 import classes from './App.module.css';
@@ -22,7 +23,8 @@ class App extends Component {
             <Navigation />
             <Switch>
               <Route exact path="/" component={Landing} />
-              <Route exact path="/history" component={History} />
+              <Route exact path="/visit" component={Visit} />
+              <Route exact path="/story" component={Story} />
             </Switch>
           </div>
           <Footer />
