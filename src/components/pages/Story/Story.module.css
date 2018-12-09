@@ -8,7 +8,7 @@
   font-weight: 700;
   font-size: 22px;
   margin: 0 0 12px 0;
-  color: #373737;
+  color: var(--black);
   cursor: default;
   user-select: none;
 }
@@ -18,7 +18,7 @@
   font-weight: 700;
   margin: 0 0 32px 0;
   font-size: 15px;
-  color: #8b8b8b;
+  color: var(--dark-grey);
   cursor: default;
   user-select: none;
 }
@@ -28,12 +28,30 @@
   font-weight: 400;
   line-height: 26px;
   font-size: 15px;
-  color: #373737;
+  color: var(--black);
   padding: 8px 0;
 }
 
-.steamCycle {
-  width: 440px;
-  padding: 4px 16px;
-  float: right;
+.steamCycle,
+.museeMecaniqueLogo {
+  margin: 0 auto 22px;
+  display: block;
+  width: 90%;
+  border: 2px solid var(--black);
+}
+
+@media (min-width: 768px) {
+  .steamCycle,
+  .museeMecaniqueLogo {
+    display: inline-block;
+    width: 420px;
+  }
+  .steamCycle {
+    float: left;
+    margin: 0 22px 8px 0;
+  }
+  .museeMecaniqueLogo {
+    float: right;
+    margin: 0 0 8px 22px;
+  }
 }

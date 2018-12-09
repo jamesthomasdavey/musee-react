@@ -9,7 +9,7 @@
 .infoHeaderLine {
   font-family: Muli, sans-serif;
   text-align: center;
-  color: #373737;
+  color: var(--black);
   font-size: 20px;
   margin: 0;
 }

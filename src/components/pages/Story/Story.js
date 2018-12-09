@@ -6,6 +6,7 @@ import classes from './Story.module.css';
 
 // img
 import steamCycle from './img/steam_cycle.jpg';
+import museeMecaniqueLogo from './img/musee_mecanique_logo.jpg';
 
 class Story extends Component {
   render() {
@@ -15,6 +16,7 @@ class Story extends Component {
           <h2 className={classes.header}>How It All Began</h2>
           <h4 className={classes.subHeader}>By Edward Galland Zelinsky (1922-2004)</h4>
           <p className={classes.text}>
+            <img src={museeMecaniqueLogo} className={classes.museeMecaniqueLogo} />
             My collection consists of more than 300 items, ranging from orchestrions, coin operated
             pianos, antique slot machines, and animations, down to small bird boxes. Most of the
             items are displayed at the Musée Mécanique at Pier 45 in San Francisco, although I keep

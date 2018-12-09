@@ -23,7 +23,7 @@
 }
 
 .wrapper.inverted.expanded {
-  background: #68403f;
+  background: var(--light-brown);
 }
 
 .bar {
@@ -31,12 +31,12 @@
   width: 24px;
   height: 2px;
   border-radius: 2px;
-  background: #373737;
+  background: var(--black);
   transition: 0.3s all ease;
 }
 
 .wrapper.inverted > .bar {
-  background: #ffffff;
+  background: var(--white);
 }
 
 @media (min-width: 768px) {

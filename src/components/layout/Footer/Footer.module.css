@@ -8,7 +8,7 @@
 }
 
 .wrapper.inverted {
-  background: #521d1d;
+  background: var(--dark-brown);
 }
 
 .content {
