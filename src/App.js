@@ -10,6 +10,8 @@ import Footer from './components/layout/Footer/Footer';
 import Landing from './components/pages/Landing/Landing';
 import Visit from './components/pages/Visit/Visit';
 import Story from './components/pages/Story/Story';
+import Gallery from './components/pages/Gallery/Gallery';
+import Shop from './components/pages/Shop/Shop';
 
 // css
 import classes from './App.module.css';
@@ -25,6 +27,8 @@ class App extends Component {
               <Route exact path="/" component={Landing} />
               <Route exact path="/visit" component={Visit} />
               <Route exact path="/story" component={Story} />
+              <Route exact path="/gallery" component={Gallery} />
+              <Route exact path="/shop" component={Shop} />
             </Switch>
           </div>
           <Footer />

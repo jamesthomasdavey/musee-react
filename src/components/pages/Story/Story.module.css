@@ -31,3 +31,9 @@
   color: #373737;
   padding: 8px 0;
 }
+
+.steamCycle {
+  width: 440px;
+  padding: 4px 16px;
+  float: right;
+}

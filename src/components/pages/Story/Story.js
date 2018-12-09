@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 // css
 import classes from './Story.module.css';
 
+// img
+import steamCycle from './img/steam_cycle.jpg';
+
 class Story extends Component {
   render() {
     return (
@@ -64,16 +67,16 @@ class Story extends Component {
             and it's still playing today.
           </p>
           <p className={classes.text}>
-            I seldom sell, but I love to trade. I did a lot of trading with George Whitney, Sr.; we
-            traded music boxes and pianos back and forth. I made one trade with George Whitney that
-            I will never forget. I had lunch with him every third Thursday and Mr. Whitney sat at
-            the same table that he sat at for 20 years. I remember he had a scotch over ice, shrimp
-            cocktail and a minute steak. I tried to copy him, but I couldn't keep up with him on the
-            drinks. Well, one time I had quite a few drinks, and I was feeling no pain and George
-            said, "Ed, you have a 1904 Franklin, do you want to trade it?" And I said, "George, what
-            will you give me for it?"Well, I don't really remember the conversation, but I do
-            remember shaking hands with him and Mr. Whitney telling me, "Ed, you are the proud owner
-            of a steam motorcycle."
+            <img src={steamCycle} className={classes.steamCycle} />I seldom sell, but I love to
+            trade. I did a lot of trading with George Whitney, Sr.; we traded music boxes and pianos
+            back and forth. I made one trade with George Whitney that I will never forget. I had
+            lunch with him every third Thursday and Mr. Whitney sat at the same table that he sat at
+            for 20 years. I remember he had a scotch over ice, shrimp cocktail and a minute steak. I
+            tried to copy him, but I couldn't keep up with him on the drinks. Well, one time I had
+            quite a few drinks, and I was feeling no pain and George said, "Ed, you have a 1904
+            Franklin, do you want to trade it?" And I said, "George, what will you give me for
+            it?"Well, I don't really remember the conversation, but I do remember shaking hands with
+            him and Mr. Whitney telling me, "Ed, you are the proud owner of a steam motorcycle."
           </p>
           <p className={classes.text}>
             Later, we had dinner again and he asked me who got the best deal in the trade. I said,

@@ -6,12 +6,12 @@
 .innerWrapper {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .map {
   width: 100%;
-  min-height: 440px;
+  min-height: 400px;
 }
 
 .info {
@@ -21,8 +21,8 @@
 @media (min-width: 768px) {
   .map {
     width: 50%;
+    min-height: 480px;
   }
-
   .info {
     width: 50%;
   }

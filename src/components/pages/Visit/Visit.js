@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // component
 import Map from './components/Map/Map';
 import Info from './components/Info/Info';
+import About from './components/About/About';
 
 // css
 import classes from './Visit.module.css';
@@ -21,6 +22,7 @@ class Visit extends Component {
               <Info />
             </div>
           </div>
+          <About />
         </div>
       </div>
     );

@@ -4,11 +4,14 @@ import React, { Component } from 'react';
 // css
 import classes from './Map.module.css';
 
+// img
+import loading from './img/loading.gif';
+
 class Map extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <div className={classes.mapWrapper}>
+        <div style={{ backgroundImage: `url(${loading})` }}  className={classes.mapWrapper}>
           <iframe
             className={classes.map}
             title="Map"
