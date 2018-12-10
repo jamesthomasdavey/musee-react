@@ -3,18 +3,27 @@
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 48px;
   width: 48px;
   background: transparent;
   margin: auto 0;
   padding: 10px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   outline: none;
   border: none;
   border-radius: 50%;
+  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 
@@ -32,6 +41,7 @@
   height: 2px;
   border-radius: 2px;
   background: var(--black);
+  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 

@@ -1,9 +1,14 @@
 .wrapper {
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   padding: 22px 0;
   background: #eeeeee;
+  -webkit-transition: 0.6s background ease;
   transition: 0.6s background ease;
   cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -12,12 +17,20 @@
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
 .innerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }

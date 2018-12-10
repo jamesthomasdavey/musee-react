@@ -2,6 +2,7 @@
   display: block;
   text-align: center;
   padding: 14px 0;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -10,6 +11,7 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--dark-grey);
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
