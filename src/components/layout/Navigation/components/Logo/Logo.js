@@ -9,7 +9,7 @@ import classes from './Logo.module.css';
 const Logo = props => {
   return (
     <Link to="/" className={[classes.wrapper, props.isInverted ? classes.inverted : ''].join(' ')}>
-      <h1 className={classes.logo}>Musée Mecaníque</h1>
+      <h1 className={classes.logo}>Musée Mécanique</h1>
       <span className={classes.slogan}>Fun for all ages!</span>
     </Link>
   );

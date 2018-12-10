@@ -16,7 +16,7 @@ class Story extends Component {
           <h2 className={classes.header}>How It All Began</h2>
           <h4 className={classes.subHeader}>By Edward Galland Zelinsky (1922-2004)</h4>
           <p className={classes.text}>
-            <img src={museeMecaniqueLogo} className={classes.museeMecaniqueLogo} />
+            <img alt="musee-mecanique-logo" src={museeMecaniqueLogo} className={classes.museeMecaniqueLogo} />
             My collection consists of more than 300 items, ranging from orchestrions, coin operated
             pianos, antique slot machines, and animations, down to small bird boxes. Most of the
             items are displayed at the Musée Mécanique at Pier 45 in San Francisco, although I keep
@@ -69,7 +69,7 @@ class Story extends Component {
             and it's still playing today.
           </p>
           <p className={classes.text}>
-            <img src={steamCycle} className={classes.steamCycle} />I seldom sell, but I love to
+            <img alt="steam-cycle" src={steamCycle} className={classes.steamCycle} />I seldom sell, but I love to
             trade. I did a lot of trading with George Whitney, Sr.; we traded music boxes and pianos
             back and forth. I made one trade with George Whitney that I will never forget. I had
             lunch with him every third Thursday and Mr. Whitney sat at the same table that he sat at

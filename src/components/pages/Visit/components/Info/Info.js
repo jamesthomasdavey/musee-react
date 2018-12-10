@@ -12,8 +12,10 @@ const Info = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.infoHeader}>
-        <h2 className={classes.infoHeaderLine}>We're open 365 days a year</h2>
-        <h2 className={classes.infoHeaderLine}>Admission is Free</h2>
+        <div className={classes.innerInfoHeader}>
+          <h2 className={classes.infoHeaderLine}>Open 365 Days a Year</h2>
+          <h2 className={classes.infoHeaderTagline}>Admission is Free</h2>
+        </div>
       </div>
       <Address />
       <Hours />

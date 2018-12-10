@@ -5,6 +5,7 @@
 :root {
   --dark-brown: #521d1d;
   --light-brown: #68403f;
+  --extra-light-brown: #ecded3;
   --black: #373737;
   --dark-grey: #8b8b8b;
   --light-grey: #bbbbbb;
@@ -38,4 +39,25 @@ html {
   -webkit-box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+/*****************************
+******************* technical
+*****************************/
+
+.addToCartButton {
+  outline: none;
+  background: var(--light-brown);
+  color: var(--white);
+  padding: 8px 16px;
+  font-family: Muli, sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  transition: 0.3s all ease;
+}
+
+.addToCartButton:hover {
+  background: var(--dark-brown);
+  cursor: pointer;
 }

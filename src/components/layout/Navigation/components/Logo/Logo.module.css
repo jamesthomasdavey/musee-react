@@ -5,6 +5,10 @@
 
 .logo {
   font-family: Cormorant, serif;
+  /* font-weight: 700; */
+  /* text-transform: uppercase; */
+  /* -webkit-text-stroke: 1px var(--black); */
+  /* text-shadow: 2px 2px 0 #C2424E; */
   line-height: 36px;
   color: var(--black);
   user-select: none;
