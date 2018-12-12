@@ -1,2 +1,4 @@
 .wrapper {
+  position: relative;
+  padding: 40px 0 40px;
 }

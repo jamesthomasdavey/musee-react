@@ -6,14 +6,12 @@
   width: 100%;
   height: calc(100vh - 122px);
   min-height: 500px;
-  background: blue;
 }
 
 .innerWrapper {
   margin-top: 147px;
   height: calc(100% - 147px);
   width: 100%;
-  background: yellow;
 }
 
 @media (min-width: 332px) {

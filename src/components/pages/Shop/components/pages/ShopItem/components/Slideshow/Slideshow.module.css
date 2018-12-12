@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin: 0 auto;
+}
+
+.innerWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.innerWrapper > div,
+.innerWrapper > div > div,
+.innerWrapper > div > div > div,
+.innerWrapper > div > div > div > div,
+.innerWrapper > div > div > div > div > div {
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper {
+  background: var(--black);
+  height: 100%;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  background-size: 86% !important;
+}

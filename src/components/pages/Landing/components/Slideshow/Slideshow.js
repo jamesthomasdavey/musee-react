@@ -36,7 +36,7 @@ const fadeProperties = {
 const Slideshow = () => {
   const images = fadeImages.map((fadeImage, index) => {
     return (
-      <div className={['each-fade', classes.eachFade].join(' ')}>
+      <div key={index} className={['each-fade', classes.eachFade].join(' ')}>
         <div
           style={{ backgroundImage: `url(${fadeImage})` }}
           className={['image-container', classes.imageContainer].join(' ')}

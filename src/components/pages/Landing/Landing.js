@@ -1,5 +1,5 @@
 // package
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 // component
 import Slideshow from './components/Slideshow/Slideshow';
@@ -11,7 +11,9 @@ class Landing extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <div className={classes.innerWrapper}><Slideshow /></div>
+        <div className={classes.innerWrapper}>
+          <Slideshow />
+        </div>
       </div>
     );
   }

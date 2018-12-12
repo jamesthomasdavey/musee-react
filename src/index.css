@@ -62,3 +62,24 @@ html {
   background: var(--dark-brown);
   cursor: pointer;
 }
+
+.indicators {
+  height: 12px !important;
+}
+
+.react-slideshow-container > .nav {
+  height: 100% !important;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  font-size: 32px !important;
+  color: var(--light-grey) !important;
+  transition: 0.3s all ease;
+  user-select: none;
+}
+.react-slideshow-container > .nav:hover {
+  color: var(--white) !important;
+  font-weight: bold !important;
+}

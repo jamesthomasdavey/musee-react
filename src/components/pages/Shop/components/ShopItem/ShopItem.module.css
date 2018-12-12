@@ -5,3 +5,16 @@
   font-family: Muli, sans-serif !important;
   color: var(--black) !important;
 }
+
+.price {
+  font-family: Muli, sans-serif;
+  color: var(--dark-grey);
+}
+
+.description > p {
+  font-family: Muli, sans-serif;
+  color: var(--black);
+  line-height: 26px;
+  font-size: 15px;
+  padding: 8px 0;
+}

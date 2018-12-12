@@ -22,9 +22,9 @@ const ShopItem = props => {
           {props.shopItem.title}
         </Link>
         <div className="meta">
-          <span>{props.shopItem.price}</span>
+          <span className={classes.price}>{props.shopItem.price}</span>
         </div>
-        <div className="description">{renderHTML(props.shopItem.description)}</div>
+        <div className={["description", classes.description].join(" ")}>{renderHTML(props.shopItem.description)}</div>
         <div className="extra">{renderHTML(props.shopItem.form)}</div>
       </div>
     </div>

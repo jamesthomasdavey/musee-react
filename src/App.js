@@ -12,6 +12,7 @@ import Visit from './components/pages/Visit/Visit';
 import Story from './components/pages/Story/Story';
 import Gallery from './components/pages/Gallery/Gallery';
 import Shop from './components/pages/Shop/Shop';
+import ShopItem from './components/pages/Shop/components/pages/ShopItem/ShopItem';
 
 // css
 import classes from './App.module.css';
@@ -29,6 +30,7 @@ class App extends Component {
               <Route exact path="/story" component={Story} />
               <Route exact path="/gallery" component={Gallery} />
               <Route exact path="/shop" component={Shop} />
+              <Route exact path="/shop/:shopItem" component={ShopItem} />
             </Switch>
           </div>
           <Footer />

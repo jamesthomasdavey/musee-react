@@ -23,7 +23,6 @@ const shopItems = [
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="YTGKQJD2SJ7X6">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
     `,
     price: '$10.00',
@@ -33,6 +32,11 @@ const shopItems = [
     name: 'the-zelinsky-collection-dvd',
     title: 'The Zelinsky Collection on DVD',
     description: `
+      <p>
+        A 68 minute dvd video tour featuring highlights of the Musée Mécanique. Produced and Directed by Garry Newkirk and Dan Zelinsky
+      </p>
+    `,
+    longDescription: `
       <p>
         A 68 minute dvd video tour featuring highlights of the Musée Mécanique. Produced and Directed by Garry Newkirk and Dan Zelinsky
       </p>
@@ -52,7 +56,6 @@ const shopItems = [
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden style="display: none !important;">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="coad01@yahoo.com">
@@ -82,7 +85,6 @@ const shopItems = [
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden style="display: none !important;">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="coad01@yahoo.com">
@@ -112,7 +114,6 @@ const shopItems = [
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden style="display: none !important;">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="coad01@yahoo.com">
@@ -142,7 +143,6 @@ const shopItems = [
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden style="display: none !important;">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="coad01@yahoo.com">
@@ -172,7 +172,6 @@ const shopItems = [
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden style="display: none !important;">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="coad01@yahoo.com">
@@ -208,7 +207,6 @@ const shopItems = [
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         ${addToCartButton}
-        <img alt border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden style="display: none !important;">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="coad01@yahoo.com">
