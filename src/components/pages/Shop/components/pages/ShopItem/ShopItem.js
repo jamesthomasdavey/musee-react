@@ -51,8 +51,9 @@ class ShopItem extends Component {
               </div>
               <div className={classes.info}>
                 <h2 className={classes.title}>{this.state.shopItem.title}</h2>
-                <h3>{this.state.shopItem.price}</h3>
+                <h3 className={classes.price}>{this.state.shopItem.price}</h3>
                 {renderHTML(this.state.shopItem.form)}
+                <div className={classes.sideDescription}>{description}</div>
               </div>
             </div>
             <div className={classes.lowerWrapper}>{description}</div>

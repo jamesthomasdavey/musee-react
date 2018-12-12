@@ -14,9 +14,7 @@ const ShopItem = props => {
   }
   return (
     <div className={['item', classes.wrapper].join(' ')}>
-      {/* <Link style={{display: 'inline-block'}} to={`/shop/${shopItem.name}`}> */}
       <div className="image">{image}</div>
-      {/* </Link> */}
       <div className="content">
         <Link to={`/shop/${props.shopItem.name}`} className={['header', classes.header].join(' ')}>
           {props.shopItem.title}
@@ -24,7 +22,9 @@ const ShopItem = props => {
         <div className="meta">
           <span className={classes.price}>{props.shopItem.price}</span>
         </div>
-        <div className={["description", classes.description].join(" ")}>{renderHTML(props.shopItem.description)}</div>
+        <div className={['description', classes.description].join(' ')}>
+          {renderHTML(props.shopItem.description)}
+        </div>
         <div className="extra">{renderHTML(props.shopItem.form)}</div>
       </div>
     </div>

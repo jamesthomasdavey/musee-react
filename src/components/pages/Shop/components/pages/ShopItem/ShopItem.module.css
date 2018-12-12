@@ -4,8 +4,13 @@
 }
 
 .upperWrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
 
@@ -13,7 +18,7 @@
   position: relative;
   width: 80%;
   padding-top: 80%;
-  margin: 0 auto;
+  margin: 32px auto 0;
 }
 
 .slideshowWrapper {
@@ -28,20 +33,42 @@
   width: 100%;
 }
 
-.title {
+.title,
+.price {
   font-family: Muli, sans-serif;
+}
+
+.lowerWrapper,
+.sideDescription {
+  font-family: Muli, sans-serif;
+  color: var(--black);
+  line-height: 26px;
+  font-size: 15px;
+  padding: 8px 0;
 }
 
 .lowerWrapper {
   margin-top: 64px;
+  display: block;
+}
+
+.sideDescription {
+  display: none;
 }
 
 @media (min-width: 640px) {
   .image {
     width: 40%;
     padding-top: 40%;
+    margin: 0 auto;
   }
   .info {
     width: 50%;
+  }
+  .sideDescription {
+    display: block;
+  }
+  .lowerWrapper {
+    display: none;
   }
 }
