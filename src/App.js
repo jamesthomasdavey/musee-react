@@ -12,7 +12,7 @@ import Visit from './components/pages/Visit/Visit';
 import Story from './components/pages/Story/Story';
 import Gallery from './components/pages/Gallery/Gallery';
 import Shop from './components/pages/Shop/Shop';
-import ShopItem from './components/pages/Shop/components/pages/ShopItem/ShopItem';
+import ShopItem from './components/pages/ShopItem/ShopItem';
 
 // css
 import classes from './App.module.css';

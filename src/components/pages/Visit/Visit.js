@@ -11,6 +11,7 @@ import classes from './Visit.module.css';
 
 class Visit extends Component {
   render() {
+    document.title = 'Visit | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
         <div className="ui container">

@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react';
 import renderHTML from 'react-render-html';
 
 // data
-import shopItems from './../../../shopItems';
+import shopItems from './../../../data/shopItems';
 
 // component
 import Slideshow from './components/Slideshow/Slideshow';

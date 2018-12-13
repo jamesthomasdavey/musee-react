@@ -9,6 +9,7 @@ import classes from './Landing.module.css';
 
 class Landing extends Component {
   render() {
+    document.title = 'Welcome to the Musée Mécanique';
     return (
       <div className={classes.wrapper}>
         <div className={classes.innerWrapper}>
