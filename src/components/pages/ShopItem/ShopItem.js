@@ -32,6 +32,8 @@ class ShopItem extends Component {
   render() {
     let content;
     if (this.state.shopItem.name) {
+      document.title = this.state.shopItem.title;
+
       let description;
 
       if (this.state.shopItem.longDescription) {

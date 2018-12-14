@@ -1,5 +1,6 @@
 // image
 import lostAndFound from './img/lostAndFound.jpg';
+import zelinskyCollectionDvd from './img/zelinskyCollectionDvd.jpg';
 import wurlitzerCd from './img/wurlitzerCd.jpg';
 import wurlitzerCdBack from './img/wurlitzerCdBack.jpg';
 import cdVol1 from './img/cdVol1.jpg';
@@ -14,10 +15,15 @@ const shopItems = [
     name: 'lost-and-found-at-musee-mecanique-photobook',
     title: 'Photos: Lost and Found at the Musée Mécanique',
     description: `
-        <p>
-          Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth (OK, there's a few of our friends in there too!), we've compiled them in a unique format, the likes of which you've never seen before. There are about 160 sets of photos (640 pictures) in each book.
-        </p>
-      `,
+      <p>
+        Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth.
+      </p>
+    `,
+    longDescription: `
+      <p>
+        Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth (OK, there's a few of our friends in there too!), we've compiled them in a unique format, the likes of which you've never seen before. There are about 160 sets of photos (640 pictures) in each book.
+      </p>
+    `,
     form: `
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -33,12 +39,12 @@ const shopItems = [
     title: 'The Zelinsky Collection on DVD',
     description: `
       <p>
-        A 68 minute dvd video tour featuring highlights of the Musée Mécanique. Produced and Directed by Garry Newkirk and Dan Zelinsky
+        A 68 minute dvd video tour featuring highlights of the Musée Mécanique, produced and Directed by Garry Newkirk and Dan Zelinsky.
       </p>
     `,
     longDescription: `
       <p>
-        A 68 minute dvd video tour featuring highlights of the Musée Mécanique. Produced and Directed by Garry Newkirk and Dan Zelinsky
+        A 68 minute dvd video tour featuring highlights of the Musée Mécanique, produced and Directed by Garry Newkirk and Dan Zelinsky.
       </p>
 
       <p>
@@ -46,7 +52,7 @@ const shopItems = [
       </p>
       
       <p>
-        Edwards son, Daniel Galland Zelinsky... a fifth generation San Franciscan and a second generation collector... oversees the exhibit, and is a primary force in its expansion. Peep shows (early San Francisco scenes/bawdy comedy), fortune tellers, photo booth, and several games of chance and skill are among the many arcade attractions with several nickelodeons, music boxes and the original mechanical farm. A hand crafted carnival is fully automated... dozens of fascinating attractions and distractions including a sensational 1914 San Francisco exposition gypsy fortune teller. And of course, Laughing Sal. Any worn or broken parts are manufactured on the premises in our machine shop and most repairs are done in house by the Musée Mécanique staff.
+        Edward's son, Daniel Galland Zelinsky... a fifth generation San Franciscan and a second generation collector... oversees the exhibit, and is a primary force in its expansion. Peep shows (early San Francisco scenes/bawdy comedy), fortune tellers, photo booth, and several games of chance and skill are among the many arcade attractions with several nickelodeons, music boxes and the original mechanical farm. A hand crafted carnival is fully automated... dozens of fascinating attractions and distractions including a sensational 1914 San Francisco exposition gypsy fortune teller. And of course, Laughing Sal. Any worn or broken parts are manufactured on the premises in our machine shop and most repairs are done in house by the Musée Mécanique staff.
       </p>
       
       <p>
@@ -69,7 +75,7 @@ const shopItems = [
       </form>
   `,
     price: '$19.95',
-    image: []
+    image: [zelinskyCollectionDvd]
   },
   {
     name: 'wurlitzer-band-organ-cd',
@@ -193,6 +199,11 @@ const shopItems = [
     description: `
       <p>
         The musical instruments featured in this recording were from the Musical Museum in the collection of George Whitney, owner of Sutro's at the Beach in San Francisco, "a museum that has devoted itself to the color and background of 'the good old days'".
+      </p>
+    `,
+    longDescription: `
+      <p>
+      The musical instruments featured in this recording were from the Musical Museum in the collection of George Whitney, owner of Sutro's at the Beach in San Francisco, "a museum that has devoted itself to the color and background of 'the good old days'".
       </p>
       <p>
         The recordings from the Musical Museum were made in 1954 by an all night staff announcer for a Bay Area radio station named Al Leavitt who desired to preserve the sound of these rare old machines. "the juke boxes of their day", to delight and charm further generations.
