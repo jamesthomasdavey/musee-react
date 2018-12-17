@@ -19,6 +19,8 @@
 .wrapper.scrolled {
   background: var(--white);
   position: fixed;
+  border-bottom: 1px solid #bbb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .pseudoWrapper {
