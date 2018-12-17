@@ -5,7 +5,7 @@
 
 .wrapper.scrolled {
   padding: 12px 0 12px;
-  transition: 0.3s all ease;
+  /* transition: 0.3s all ease; */
 }
 
 .logo {

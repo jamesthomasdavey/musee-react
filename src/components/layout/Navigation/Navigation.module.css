@@ -6,8 +6,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: var(--white);
-  transition: 0.3s all ease;
+  transition: 0.5s all ease;
+  background: transparent;
   z-index: 50;
   /* border-bottom: 4px solid #E2C147; */
 }
@@ -17,6 +17,7 @@
 }
 
 .wrapper.scrolled {
+  background: var(--white);
   position: fixed;
 }
 
