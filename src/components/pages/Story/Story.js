@@ -10,7 +10,7 @@ import museeMecaniqueLogo from './img/musee_mecanique_logo.jpg';
 
 class Story extends Component {
   render() {
-    document.title = 'Story | Musée Mécanique';
+    document.title = 'Our Story | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
         <div className="ui container">

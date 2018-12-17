@@ -8,7 +8,14 @@ import classes from './Logo.module.css';
 
 const Logo = props => {
   return (
-    <Link to="/" className={[classes.wrapper, props.isInverted ? classes.inverted : ''].join(' ')}>
+    <Link
+      to="/"
+      className={[
+        classes.wrapper,
+        props.isInverted ? classes.inverted : '',
+        props.isScrolled ? classes.scrolled : ''
+      ].join(' ')}
+    >
       <h1 className={classes.logo}>Musée Mécanique</h1>
       <span className={classes.slogan}>Fun for all ages!</span>
     </Link>
@@ -16,7 +23,8 @@ const Logo = props => {
 };
 
 Logo.propTypes = {
-  isInverted: PropTypes.bool.isRequired
+  isInverted: PropTypes.bool.isRequired,
+  isScrolled: PropTypes.bool.isRequired
 };
 
 export default Logo;

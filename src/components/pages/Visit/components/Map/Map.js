@@ -11,16 +11,16 @@ class Map extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <div style={{ backgroundImage: `url(${loading})` }}  className={classes.mapWrapper}>
+        <div style={{ backgroundImage: `url(${loading})` }} className={classes.mapWrapper}>
           <iframe
             className={classes.map}
             title="Map"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=Mus%C3%A9e%20M%C3%A9canique&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            marginheight="0"
-            marginwidth="0"
+            marginHeight="0"
+            marginWidth="0"
           />
         </div>
       </div>

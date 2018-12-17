@@ -3,6 +3,11 @@
   padding: 18px 0 24px;
 }
 
+.wrapper.scrolled {
+  padding: 12px 0 12px;
+  transition: 0.3s all ease;
+}
+
 .logo {
   font-family: Cormorant, serif;
   line-height: 36px;
@@ -15,6 +20,14 @@
   margin: 0 0 14px 0;
 }
 
+.wrapper.inverted > .logo {
+  color: var(--white);
+}
+
+.wrapper.scrolled > .logo {
+  font-size: 32px;
+}
+
 .slogan {
   font-family: Muli, sans-serif;
   color: var(--dark-grey);
@@ -22,12 +35,12 @@
   font-weight: 700;
 }
 
-.wrapper.inverted > .logo {
-  color: var(--white);
-}
-
 .wrapper.inverted > .slogan {
   color: var(--light-grey);
+}
+
+.wrapper.scrolled > .slogan {
+  display: none;
 }
 
 @media (min-width: 332px) {
@@ -44,5 +57,8 @@
   .logo {
     line-height: 62px;
     font-size: 48px;
+  }
+  .wrapper.scrolled > .logo {
+    font-size: 36px;
   }
 }
