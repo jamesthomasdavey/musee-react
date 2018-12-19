@@ -5,11 +5,15 @@
 :root {
   --dark-brown: #521d1d;
   --light-brown: #68403f;
-  --extra-light-brown: #ecded3;
+  --dark-black: #000000;
   --black: #373737;
   --dark-grey: #8b8b8b;
   --light-grey: #bbbbbb;
   --white: #ffffff;
+  --yellow: #e2c147;
+  --light-yellow: #fcf7e6;
+  --red: #bb4430;
+  --light-red: #d67261;
 }
 
 /*****************************

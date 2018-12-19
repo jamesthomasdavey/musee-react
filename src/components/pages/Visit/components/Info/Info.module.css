@@ -7,15 +7,15 @@
   width: 100%;
   margin-bottom: 36px;
   padding: 3px 0;
-  border-top: 4px solid #e2c147;
-  border-bottom: 4px solid #e2c147;
+  border-top: 4px solid var(--yellow);
+  border-bottom: 4px solid var(--yellow);
 }
 
 .innerInfoHeader {
   width: 100%;
   padding: 6px 0;
-  border-top: 2px solid #e2c147;
-  border-bottom: 2px solid #e2c147;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
 }
 
 .infoHeaderLine {
@@ -26,7 +26,7 @@
   font-size: 36px;
   font-weight: 700;
   -webkit-text-stroke: 1px var(--white);
-  text-shadow: 2px 2px 0 #e2c147;
+  text-shadow: 2px 2px 0 var(--yellow);
   margin: 0;
   user-select: none;
   cursor: default;

@@ -12,6 +12,7 @@ const ShopItem = props => {
     <div className={['item', classes.wrapper].join(' ')}>
       <div className="image">
         <img alt={props.shopItem.title} src={props.shopItem.images[0]} />
+        <Link className={classes.imageLink} to={`/shop/${props.shopItem.name}`} />
       </div>
       <div className="content">
         <Link to={`/shop/${props.shopItem.name}`} className={['header', classes.header].join(' ')}>

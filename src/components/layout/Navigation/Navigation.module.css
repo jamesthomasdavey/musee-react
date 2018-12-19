@@ -7,9 +7,9 @@
   -ms-user-select: none;
   user-select: none;
   transition: 0.5s all ease;
-  background: transparent;
+  background: var(--light-yellow);
   z-index: 50;
-  /* border-bottom: 4px solid #E2C147; */
+  border-bottom: 4px solid #f7e8b8;
 }
 
 .wrapper.inverted {
@@ -17,7 +17,7 @@
 }
 
 .wrapper.scrolled {
-  background: var(--white);
+  background: var(--light-yellow);
   position: fixed;
   border-bottom: 1px solid #bbb;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
