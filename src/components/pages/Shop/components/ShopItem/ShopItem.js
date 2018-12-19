@@ -9,8 +9,8 @@ import classes from './ShopItem.module.css';
 
 const ShopItem = props => {
   let image;
-  if (props.shopItem.image.length > 0) {
-    image = <img alt={props.shopItem.title} src={props.shopItem.image[0]} />;
+  if (props.shopItem.images.length > 0) {
+    image = <img alt={props.shopItem.title} src={props.shopItem.images[0]} />;
   }
   return (
     <div className={['item', classes.wrapper].join(' ')}>
