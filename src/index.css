@@ -12,7 +12,7 @@
   --light-grey: #bbbbbb;
   --white: #ffffff;
   --dark-cream: #e2c147;
-  --cream: #f7e8b8;
+  --cream: #f4e1a1;
   --light-cream: #fcf7e6;
   --red: #bb4430;
   --light-red: #d67261;
@@ -35,7 +35,7 @@ body {
 html {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 *,

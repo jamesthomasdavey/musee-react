@@ -39,7 +39,12 @@ class Navigation extends Component {
     this.setState({ collapsibleMenuIsExpanded: !this.state.collapsibleMenuIsExpanded });
   };
   scrollHandler = e => {
-    if (e.srcElement.scrollTop > 68) {
+    const scrollTop = Math.max(
+      window.pageYOffset,
+      document.documentElement.scrollTop,
+      document.body.scrollTop
+    );
+    if (scrollTop > 68) {
       this.setState({ isScrolled: true });
     } else {
       this.setState({ isScrolled: false });

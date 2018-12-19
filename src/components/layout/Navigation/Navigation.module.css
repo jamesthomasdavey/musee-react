@@ -13,15 +13,26 @@
 
 .wrapper.inverted {
   background: var(--dark-brown);
-  border-bottom: 4px solid var(--dark-cream);
 }
 
 .wrapper.scrolled {
   background: var(--light-cream);
   position: fixed;
+  opacity: 1;
   border-bottom: 1px solid #bbb;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  -webkit-animation: fadein 0.33s linear;
   animation: fadein 0.33s linear;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
