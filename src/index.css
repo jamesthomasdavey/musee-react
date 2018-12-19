@@ -4,14 +4,16 @@
 
 :root {
   --dark-brown: #521d1d;
-  --light-brown: #68403f;
+  --brown: #68403f;
+  --light-brown: #a48c8a;
   --dark-black: #000000;
   --black: #373737;
   --dark-grey: #8b8b8b;
   --light-grey: #bbbbbb;
   --white: #ffffff;
-  --yellow: #e2c147;
-  --light-yellow: #fcf7e6;
+  --dark-cream: #e2c147;
+  --cream: #f7e8b8;
+  --light-cream: #fcf7e6;
   --red: #bb4430;
   --light-red: #d67261;
 }
@@ -51,7 +53,7 @@ html {
 
 .addToCartButton {
   outline: none;
-  background: var(--light-brown);
+  background: var(--brown);
   color: var(--white);
   padding: 8px 16px;
   font-family: Muli, sans-serif;

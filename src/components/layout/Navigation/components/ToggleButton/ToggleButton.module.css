@@ -28,11 +28,11 @@
 }
 
 .wrapper.expanded {
-  background: #eeeeee;
+  background: var(--cream);
 }
 
 .wrapper.inverted.expanded {
-  background: var(--light-brown);
+  background: var(--brown);
 }
 
 .bar {
@@ -40,7 +40,7 @@
   width: 24px;
   height: 2px;
   border-radius: 2px;
-  background: var(--black);
+  background: var(--dark-brown);
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }

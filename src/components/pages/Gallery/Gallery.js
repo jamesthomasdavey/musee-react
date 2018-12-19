@@ -12,6 +12,7 @@ class Gallery extends Component {
     document.title = 'Gallery | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
+        <div className={classes.mainImage} />
         <GridGallery />
       </div>
     );

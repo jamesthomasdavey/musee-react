@@ -10,23 +10,23 @@
   font-family: Muli, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: var(--dark-grey);
+  color: var(--light-brown);
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .wrapper:hover,
 .wrapper.active {
-  background: #eeeeee;
+  background: var(--cream);
 }
 
 .wrapper:hover > .text,
 .wrapper.active > .text {
-  color: var(--black);
+  color: var(--dark-brown);
 }
 
 .wrapper.inverted:hover {
-  background: var(--light-brown);
+  background: var(--brown);
 }
 
 .wrapper.inverted:hover > .text {

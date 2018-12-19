@@ -6,21 +6,31 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transition: 0.5s all ease;
-  background: var(--light-yellow);
+  background: var(--light-cream);
   z-index: 50;
-  border-bottom: 4px solid #f7e8b8;
+  border-bottom: 4px solid var(--cream);
 }
 
 .wrapper.inverted {
   background: var(--dark-brown);
+  border-bottom: 4px solid var(--dark-cream);
 }
 
 .wrapper.scrolled {
-  background: var(--light-yellow);
+  background: var(--light-cream);
   position: fixed;
   border-bottom: 1px solid #bbb;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  animation: fadein 0.33s linear;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .pseudoWrapper {

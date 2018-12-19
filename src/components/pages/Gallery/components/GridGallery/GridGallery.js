@@ -8,7 +8,9 @@ import imageArray from './imageArray';
 class GridGallery extends Component {
   render() {
     return (
-      <ReactGridGallery images={imageArray} enableImageSelection={false} backdropClosesModal />
+      <div style={{ paddingTop: '2px' }}>
+        <ReactGridGallery images={imageArray} enableImageSelection={false} backdropClosesModal />
+      </div>
     );
   }
 }
