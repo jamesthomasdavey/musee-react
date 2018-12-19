@@ -36,7 +36,7 @@
 }
 
 .wrapper.inverted > .slogan {
-  color: var(--light-grey);
+  color: var(--grey);
 }
 
 .wrapper.scrolled > .slogan {

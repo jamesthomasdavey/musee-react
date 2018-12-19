@@ -14,16 +14,25 @@ class Visit extends Component {
     document.title = 'Visit | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
-        <div className="ui container">
-          <div className={classes.innerWrapper}>
-            <div className={classes.map}>
-              <Map />
-            </div>
-            <div className={classes.info}>
-              <Info />
+        <div className={classes.containerOuterWrapper}>
+          <div className="ui container">
+            <div className={classes.containerInnerWrapper}>
+              <div className={classes.map}>
+                <Map />
+              </div>
+              <div className={classes.info}>
+                <Info />
+              </div>
             </div>
           </div>
-          <About />
+        </div>
+        <div className={classes.spacer} />
+        <div className={classes.containerOuterWrapper}>
+          <div className="ui container">
+            <div className={classes.bottomContainerInnerWrapper}>
+              <About />
+            </div>
+          </div>
         </div>
       </div>
     );

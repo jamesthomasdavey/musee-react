@@ -4,12 +4,13 @@
 
 :root {
   --dark-brown: #521d1d;
-  --brown: #68403f;
-  --light-brown: #a48c8a;
+  --brown: #775350;
+  --light-brown: #937e7c;
   --dark-black: #000000;
   --black: #373737;
   --dark-grey: #8b8b8b;
-  --light-grey: #bbbbbb;
+  --grey: #bbbbbb;
+  --light-grey: #efefef;
   --white: #ffffff;
   --dark-cream: #e2c147;
   --cream: #f4e1a1;
@@ -87,7 +88,7 @@ html {
   justify-content: center;
   background: transparent !important;
   font-size: 32px !important;
-  color: var(--light-grey) !important;
+  color: var(--grey) !important;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   -webkit-user-select: none;

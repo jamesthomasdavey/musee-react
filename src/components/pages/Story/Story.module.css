@@ -38,6 +38,11 @@
   padding: 8px 0;
 }
 
+.museeMecaniqueLogo {
+  position: relative;
+  margin-top: 32px;
+}
+
 .steamCycle,
 .museeMecaniqueLogo {
   margin: 0 auto 22px;

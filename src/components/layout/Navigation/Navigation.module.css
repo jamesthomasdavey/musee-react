@@ -13,6 +13,7 @@
 
 .wrapper.inverted {
   background: var(--dark-brown);
+  border-bottom: 4px solid var(--cream);
 }
 
 .wrapper.scrolled {

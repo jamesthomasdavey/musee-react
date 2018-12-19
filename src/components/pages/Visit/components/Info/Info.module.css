@@ -1,6 +1,7 @@
 .wrapper {
   padding-left: 0;
   padding-bottom: 36px;
+  background: var(--white);
 }
 
 .infoHeader {
@@ -22,7 +23,7 @@
   font-family: Muli, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  color: var(--black);
+  color: var(--dark-brown);
   font-size: 36px;
   font-weight: 700;
   -webkit-text-stroke: 1px var(--white);
@@ -35,7 +36,7 @@
 .infoHeaderTagline {
   font-family: Muli, sans-serif;
   text-align: center;
-  color: var(--black);
+  color: var(--dark-brown);
   font-size: 18px;
   margin: 0;
   user-select: none;
@@ -44,7 +45,7 @@
 
 @media (min-width: 768px) {
   .wrapper {
-    padding-left: 20px;
+    margin-left: 20px;
     padding-bottom: 0;
     /* border-left: 3px solid var(--extra-light-brown); */
     min-height: 480px;

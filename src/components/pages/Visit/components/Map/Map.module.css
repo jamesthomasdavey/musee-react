@@ -7,7 +7,6 @@
 .mapWrapper {
   overflow: hidden;
   background-color: var(--light-grey);
-  border: 2px solid var(--black);
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;

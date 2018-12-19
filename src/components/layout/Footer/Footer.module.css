@@ -2,7 +2,7 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
   padding: 22px 0;
-  background: #eeeeee;
+  background: var(--light-cream);
   -webkit-transition: 0.6s background ease;
   transition: 0.6s background ease;
   cursor: default;
@@ -10,10 +10,12 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-top: 4px solid var(--cream);
 }
 
 .wrapper.inverted {
   background: var(--dark-brown);
+  border-top: 4px solid var(--cream);
 }
 
 .content {

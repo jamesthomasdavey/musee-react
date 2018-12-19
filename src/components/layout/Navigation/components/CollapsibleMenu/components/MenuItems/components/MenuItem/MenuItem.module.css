@@ -34,5 +34,5 @@
 }
 
 .wrapper.inverted > .text {
-  color: var(--light-grey);
+  color: var(--grey);
 }
