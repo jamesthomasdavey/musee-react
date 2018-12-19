@@ -1,6 +1,7 @@
 // package
 import React, { Component, Fragment } from 'react';
 import renderHTML from 'react-render-html';
+import { Link } from 'react-router-dom';
 
 // data
 import shopItems from './../../../data/shopItems';
@@ -53,6 +54,11 @@ class ShopItem extends Component {
               </div>
             </div>
             <div className={classes.lowerWrapper}>{description}</div>
+            <div className={classes.backLinkWrapper}>
+              <Link className={classes.backLink} to="/shop">
+                <i className="angle double left icon" /> Back
+              </Link>
+            </div>
           </div>
         </div>
       );

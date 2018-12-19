@@ -56,6 +56,14 @@
   display: none;
 }
 
+.backLinkWrapper {
+  margin: 32px auto 0;
+}
+
+.backLink {
+  font-size: 16px;
+}
+
 @media (min-width: 640px) {
   .image {
     width: 40%;
@@ -70,5 +78,8 @@
   }
   .lowerWrapper {
     display: none;
+  }
+  .backLinkWrapper {
+    width: 90%;
   }
 }
