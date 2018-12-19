@@ -8,13 +8,11 @@ import { Link } from 'react-router-dom';
 import classes from './ShopItem.module.css';
 
 const ShopItem = props => {
-  let image;
-  if (props.shopItem.images.length > 0) {
-    image = <img alt={props.shopItem.title} src={props.shopItem.images[0]} />;
-  }
   return (
     <div className={['item', classes.wrapper].join(' ')}>
-      <div className="image">{image}</div>
+      <div className="image">
+        <img alt={props.shopItem.title} src={props.shopItem.images[0]} />
+      </div>
       <div className="content">
         <Link to={`/shop/${props.shopItem.name}`} className={['header', classes.header].join(' ')}>
           {props.shopItem.title}
@@ -23,7 +21,7 @@ const ShopItem = props => {
           <span className={classes.price}>{props.shopItem.price}</span>
         </div>
         <div className={['description', classes.description].join(' ')}>
-          {renderHTML(props.shopItem.description)}
+          {renderHTML(props.shopItem.shortDescription)}
         </div>
         <div className="extra">{renderHTML(props.shopItem.form)}</div>
       </div>

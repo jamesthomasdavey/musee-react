@@ -1,6 +1,7 @@
 // package
 import React, { Component } from 'react';
 
+// data
 import shopItems from './../../../data/shopItems';
 
 // component

@@ -34,13 +34,7 @@ class ShopItem extends Component {
     if (this.state.shopItem.name) {
       document.title = this.state.shopItem.title;
 
-      let description;
-
-      if (this.state.shopItem.longDescription) {
-        description = renderHTML(this.state.shopItem.longDescription);
-      } else {
-        description = renderHTML(this.state.shopItem.description);
-      }
+      const description = renderHTML(this.state.shopItem.longDescription);
 
       content = (
         <div className={classes.wrapper}>
@@ -48,7 +42,7 @@ class ShopItem extends Component {
             <div className={classes.upperWrapper}>
               <div className={classes.image}>
                 <div className={classes.slideshowWrapper}>
-                  <Slideshow images={this.state.shopItem.image} />
+                  <Slideshow images={this.state.shopItem.images} />
                 </div>
               </div>
               <div className={classes.info}>

@@ -4,7 +4,15 @@ import wurlitzerCd02 from './img/wurlitzerCd02.jpg';
 export default {
   name: 'wurlitzer-band-organ-cd',
   title: 'Musée Mécanique presents The Mighty Wurlitzer Military Band Organ',
-  description: `
+  shortDescription: `
+    <p>
+      Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique.
+    </p>
+    <p>
+      20 tracks.
+    </p>
+  `,
+  longDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique.
     </p>
