@@ -11,17 +11,17 @@
 }
 
 .header {
-  font-family: Muli, sans-serif !important;
+  font-family: var(--body-font-stack) !important;
   color: var(--black) !important;
 }
 
 .price {
-  font-family: Muli, sans-serif;
+  font-family: var(--body-font-stack);
   color: var(--dark-grey);
 }
 
 .description > p {
-  font-family: Muli, sans-serif;
+  font-family: var(--body-font-stack);
   color: var(--black);
   line-height: 26px;
   font-size: 15px;

@@ -3,13 +3,20 @@
   height: 100%;
   overflow: auto;
   background: black;
+  border-bottom: 4px solid black;
 }
 
 .mainImage {
-  height: calc(100vh - 111px);
+  height: calc(100vh - 112px);
   background: url('./img/galleryBackground.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  .mainImage {
+    height: calc(100vh - 155px);
+  }
 }

@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant:700|Muli:400,600');
+
 /*****************************
 ******************* variables
 *****************************/
 
 :root {
-  --dark-brown: #521d1d;
-  --brown: #775350;
-  --light-brown: #937e7c;
+  /* --dark-brown: #521d1d; */
+  --dark-brown: #511921;
+  /* --brown: #775350; */
+  --brown: #75363f;
+  /* --light-brown: #937e7c; */
+  --light-brown: #9f6f76;
   --dark-black: #000000;
   --black: #373737;
   --dark-grey: #8b8b8b;
   --grey: #bbbbbb;
   --light-grey: #efefef;
   --white: #ffffff;
-  --dark-cream: #e2c147;
-  --cream: #f4e1a1;
-  --light-cream: #fcf7e6;
-  --red: #bb4430;
-  --light-red: #d67261;
+  /* --dark-cream: #ead6a1; */
+  --dark-cream: #e3bd66;
+  /* --cream: #f4e1a1; */
+  --cream: #ebd091;
+  /* --light-cream: #fcf7e6; */
+  --light-cream: #f7ecd2;
+  --blue: #617f7f;
+  --light-blue: #7a9999;
+  --header-font-stack: Cormorant, serif;
+  --body-font-stack: Muli, sans-serif;
 }
 
 /*****************************
@@ -57,8 +67,8 @@ html {
   background: var(--brown);
   color: var(--white);
   padding: 8px 16px;
-  font-family: Muli, sans-serif;
-  font-weight: 700;
+  font-family: var(--body-font-stack);
+  font-weight: 600;
   border: none;
   border-radius: 16px;
   -webkit-transition: 0.3s all ease;

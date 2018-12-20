@@ -35,12 +35,12 @@
 
 .title,
 .price {
-  font-family: Muli, sans-serif;
+  font-family: var(--body-font-stack);
 }
 
 .lowerWrapper,
 .sideDescription {
-  font-family: Muli, sans-serif;
+  font-family: var(--body-font-stack);
   color: var(--black);
   line-height: 26px;
   font-size: 15px;
