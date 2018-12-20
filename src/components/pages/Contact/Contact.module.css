@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 40px 0;
+}
+
+.header {
+  font-family: var(--header-font-stack);
+  font-size: 32px;
+  color: var(--black);
+  cursor: default;
+  user-select: none;
+}
+
+.message {
+  font-family: var(--body-font-stack);
+  font-size: 14px;
+}
+
+label.label {
+  font-size: 14px !important;
+  user-select: none;
+}
+
+.validationLabel {
+  font-size: 12px !important;
+  user-select: none;
+}
+
+.input,
+.validationLabel,
+label.label {
+  font-family: var(--body-font-stack) !important;
+  color: var(--black) !important;
+}
+
+.charactersRemaining {
+  margin-top: 6px;
+  display: block;
+  font-family: var(--body-font-stack);
+  color: var(--grey);
+  font-size: 12px;
+}

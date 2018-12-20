@@ -12,6 +12,7 @@ import Visit from './components/pages/Visit/Visit';
 import Story from './components/pages/Story/Story';
 import Gallery from './components/pages/Gallery/Gallery';
 import Shop from './components/pages/Shop/Shop';
+import Contact from './components/pages/Contact/Contact';
 import ShopItem from './components/pages/ShopItem/ShopItem';
 
 // css
@@ -31,6 +32,7 @@ class App extends Component {
               <Route exact path="/gallery" component={Gallery} />
               <Route exact path="/shop" component={Shop} />
               <Route exact path="/shop/:shopItem" component={ShopItem} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </div>
           <Footer />

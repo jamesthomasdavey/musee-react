@@ -1,5 +1,6 @@
 // package
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // css
 import classes from './About.module.css';
@@ -26,6 +27,19 @@ const About = () => {
         Playland at the Beach, Sutro Baths, and the Cliff House. There is our own "Laffing Sal",
         "Susie the Can-Can Dancer", and the fascinating "Carnival". Other things have been brought
         in from around the world for your amusement.
+      </p>
+      <p className={classes.text}>
+        <span className={classes.icons}>
+          <Link to="/contact">
+            <i className="envelope outline icon" />
+          </Link>
+          <a
+            href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
+            target="_blank"
+          >
+            <i className="yelp icon" />
+          </a>
+        </span>
       </p>
     </div>
   );
