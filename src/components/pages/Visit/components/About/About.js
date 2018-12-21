@@ -36,6 +36,7 @@ const About = () => {
           <a
             href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="yelp icon" />
           </a>

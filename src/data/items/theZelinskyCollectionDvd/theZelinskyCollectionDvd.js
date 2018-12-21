@@ -1,4 +1,8 @@
 import zelinskyCollectionDvd01 from './img/zelinskyCollectionDvd01.jpg';
+import zelinskyCollectionDvd02 from './img/zelinskyCollectionDvd02.jpg';
+import zelinskyCollectionDvd03 from './img/zelinskyCollectionDvd03.jpg';
+import zelinskyCollectionDvd04 from './img/zelinskyCollectionDvd04.jpg';
+import zelinskyCollectionDvd05 from './img/zelinskyCollectionDvd05.jpg';
 
 export default {
   name: 'the-zelinsky-collection-dvd',
@@ -41,5 +45,11 @@ export default {
       </form>
   `,
   price: '$19.95',
-  images: [zelinskyCollectionDvd01]
+  images: [
+    zelinskyCollectionDvd01,
+    zelinskyCollectionDvd02,
+    zelinskyCollectionDvd03,
+    zelinskyCollectionDvd04,
+    zelinskyCollectionDvd05
+  ]
 };
