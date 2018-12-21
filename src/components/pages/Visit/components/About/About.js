@@ -1,6 +1,6 @@
 // package
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 // css
 import classes from './About.module.css';
@@ -30,9 +30,9 @@ const About = () => {
       </p>
       <p className={classes.text}>
         <span className={classes.icons}>
-          <Link to="/contact">
+          <HashLink to="/contact#send-a-message">
             <i className="envelope outline icon" />
-          </Link>
+          </HashLink>
           <a
             href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
             target="_blank"

@@ -7,7 +7,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 export default function Contact() {
   document.title = 'Contact Us | Musée Mécanique';
   return (
-    <div>
+    <div className="ui container">
       <ContactForm />
     </div>
   );

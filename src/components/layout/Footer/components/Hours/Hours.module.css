@@ -6,12 +6,51 @@
 .text {
   display: block;
   font-family: var(--body-font-stack);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--light-brown);
   font-size: 14px;
   line-height: 26px;
 }
 
 .wrapper.inverted > .text {
-  color: var(--white);
+  color: var(--light-cream);
+}
+
+.contactLink {
+  font-family: var(--body-font-stack);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-brown);
+  transition: 0.3s all ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.wrapper.inverted > .contactLinkWrapper > .contactLinkWrapperInner > .contactLink {
+  color: var(--light-cream);
+}
+
+.contactLinkWrapper:hover > .contactLinkWrapperInner > .contactLink:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.contactLink:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--light-brown);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.wrapper.inverted > .contactLinkWrapper > .contactLinkWrapperInner > .contactLink:before {
+  background-color: var(--light-cream);
 }

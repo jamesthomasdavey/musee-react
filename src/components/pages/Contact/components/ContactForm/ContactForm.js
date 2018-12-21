@@ -145,13 +145,15 @@ class ContactForm extends Component {
     }
     return (
       <div className={classes.wrapper}>
-        <div className="ui text container">
-          <form
-            className={['ui form', this.state.isSubmitting ? 'loading' : ''].join(' ')}
-            noValidate
-            onSubmit={this.formSubmitHandler}
-          >
-            <h2 className={classes.header}>Send a Message</h2>
+        <form
+          className={['ui form', this.state.isSubmitting ? 'loading' : ''].join(' ')}
+          noValidate
+          onSubmit={this.formSubmitHandler}
+        >
+          <h2 id="send-a-message" className={classes.header}>
+            Send a Message
+          </h2>
+          <div className="two fields">
             <div className={['field', this.state.errors.name ? 'error' : ''].join(' ')}>
               <label className={classes.label} htmlFor="name">
                 Name
@@ -195,32 +197,32 @@ class ContactForm extends Component {
                 </div>
               )}
             </div>
-            <div className={['field', this.state.errors.message ? 'error' : ''].join(' ')}>
-              <label className={classes.label} htmlFor="message">
-                Message
-              </label>
-              <textarea
-                ref={textarea => {
-                  this.messageTextarea = textarea;
-                }}
-                id="message"
-                name="message"
-                onChange={this.changeInputHandler}
-                className={classes.input}
-                maxlength="1000"
-              />
-              {this.state.errors.message && (
-                <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
-                  {this.state.errors.message}
-                </div>
-              )}
-              {charactersRemaining}
-            </div>
-            <input type="submit" className="addToCartButton" value="Send" />
-          </form>
-          {serverErrorMessage}
-          {successMessage}
-        </div>
+          </div>
+          <div className={['field', this.state.errors.message ? 'error' : ''].join(' ')}>
+            <label className={classes.label} htmlFor="message">
+              Message
+            </label>
+            <textarea
+              ref={textarea => {
+                this.messageTextarea = textarea;
+              }}
+              id="message"
+              name="message"
+              onChange={this.changeInputHandler}
+              className={classes.input}
+              maxlength="1000"
+            />
+            {this.state.errors.message && (
+              <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
+                {this.state.errors.message}
+              </div>
+            )}
+            {charactersRemaining}
+          </div>
+          <input type="submit" className="addToCartButton" value="Send" />
+        </form>
+        {serverErrorMessage}
+        {successMessage}
       </div>
     );
   }

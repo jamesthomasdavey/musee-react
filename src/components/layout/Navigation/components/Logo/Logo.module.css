@@ -32,11 +32,11 @@
   font-family: var(--body-font-stack);
   color: var(--light-brown);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .wrapper.inverted > .slogan {
-  color: var(--grey);
+  color: var(--light-cream);
 }
 
 .wrapper.scrolled > .slogan {

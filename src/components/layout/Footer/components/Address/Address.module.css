@@ -6,12 +6,12 @@
 .text {
   display: block;
   font-family: var(--body-font-stack);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--light-brown);
   font-size: 14px;
   line-height: 26px;
 }
 
 .wrapper.inverted > .text {
-  color: var(--white);
+  color: var(--light-cream);
 }

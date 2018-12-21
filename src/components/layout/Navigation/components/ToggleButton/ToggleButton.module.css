@@ -46,6 +46,10 @@
 }
 
 .wrapper.inverted > .bar {
+  background: var(--light-cream);
+}
+
+.wrapper.inverted.expanded > .bar {
   background: var(--white);
 }
 
