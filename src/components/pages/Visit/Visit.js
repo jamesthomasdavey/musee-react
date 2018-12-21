@@ -26,30 +26,32 @@ class Visit extends Component {
             </div>
           </div>
           <div className={classes.mapAddressHoursWrapper}>
-            <div className={classes.map}>
-              <Map />
-            </div>
-            <div className={classes.addressHoursWrapper}>
-              <div className={classes.addressHoursWrapperInner}>
-                <div className={classes.addressWrapper}>
-                  <div className={classes.addressHeaderWrapper}>
-                    <h3 className={classes.addressHeader}>Visit</h3>
+            <div className={classes.mapAddressHoursWrapperInner}>
+              <div className={classes.map}>
+                <Map />
+              </div>
+              <div className={classes.addressHoursWrapper}>
+                <div className={classes.addressHoursWrapperInner}>
+                  <div className={classes.addressWrapper}>
+                    <div className={classes.addressHeaderWrapper}>
+                      <h3 className={classes.addressHeader}>Visit</h3>
+                    </div>
+                    <div className={classes.addressContentWrapper}>
+                      <span>Pier 45 at the end of Taylor Street</span>
+                      <span>Fisherman's Wharf</span>
+                      <span>San Francisco, CA 94133</span>
+                      <span>Tel: (415) 346-2000</span>
+                    </div>
                   </div>
-                  <div className={classes.addressContentWrapper}>
-                    <span>Pier 45 at the end of Taylor Street</span>
-                    <span>Fisherman's Wharf</span>
-                    <span>San Francisco, CA 94133</span>
-                    <span>Tel: (415) 346-2000</span>
-                  </div>
-                </div>
-                <div className={classes.hoursWrapper}>
-                  <div className={classes.hoursHeaderWrapper}>
-                    <h3 className={classes.hoursHeader}>Hours</h3>
-                  </div>
-                  <div className={classes.hoursContentWrapper}>
-                    <span>Mon-Fri: 10:00am - 8:00pm</span>
-                    <span>Sat-Sun: 10:00am - 8:00pm</span>
-                    <span>Holidays: 10:00am - 8:00pm</span>
+                  <div className={classes.hoursWrapper}>
+                    <div className={classes.hoursHeaderWrapper}>
+                      <h3 className={classes.hoursHeader}>Hours</h3>
+                    </div>
+                    <div className={classes.hoursContentWrapper}>
+                      <span>Mon-Fri: 10:00am - 8:00pm</span>
+                      <span>Sat-Sun: 10:00am - 8:00pm</span>
+                      <span>Holidays: 10:00am - 8:00pm</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -80,6 +80,10 @@
 
 .mapAddressHoursWrapper {
   width: 100%;
+}
+
+.mapAddressHoursWrapperInner {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,17 +205,28 @@
 @media (min-width: 1200px) {
   .mapAddressHoursWrapper {
     border-top: 4px solid var(--cream);
+    background-color: #c0d4db;
+    background-image: url('./img/visitBackground.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+  .mapAddressHoursWrapperInner {
+    background-color: rgba(0, 0, 0, 0.6);
   }
   .map {
     border-top: none;
     width: 50%;
+    padding: 58px;
   }
   .addressHoursWrapper {
     width: 50%;
     height: calc(100vh - 379px);
+    min-height: 420px;
     border: none;
+    background: transparent;
   }
   .addressHoursWrapperInner {
+    background: transparent;
     padding: 0;
   }
   .addressWrapper,
