@@ -167,7 +167,7 @@ class ContactForm extends Component {
                 name="name"
                 id="name"
                 className={classes.input}
-                maxlength="100"
+                maxLength="100"
               />
               {this.state.errors.name && (
                 <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
@@ -189,7 +189,7 @@ class ContactForm extends Component {
                 name="email"
                 onChange={this.changeInputHandler}
                 className={classes.input}
-                maxlength="100"
+                maxLength="100"
               />
               {this.state.errors.email && (
                 <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
@@ -210,7 +210,7 @@ class ContactForm extends Component {
               name="message"
               onChange={this.changeInputHandler}
               className={classes.input}
-              maxlength="1000"
+              maxLength="1000"
             />
             {this.state.errors.message && (
               <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
