@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // component
-import Map from './components/Map/Map';
+import Map from './../../layout/Map/Map';
 import About from './components/About/About';
 
 // css
