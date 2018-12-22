@@ -38,7 +38,14 @@ class ShopItem extends Component {
       document.title = this.state.shopItem.title;
 
       if (this.state.shopItem.audio) {
-        sampler = <AudioSampler audio={this.state.shopItem.audio} />;
+        sampler = (
+          <div className={classes.samplerWrapper}>
+            <div className={classes.samplerLabel}>Preview: </div>
+            <div className={classes.sampler}>
+              <AudioSampler audio={this.state.shopItem.audio} />
+            </div>
+          </div>
+        );
       }
 
       content = (
@@ -56,10 +63,7 @@ class ShopItem extends Component {
                 <div className={classes.addToCartButton}>
                   {renderHTML(this.state.shopItem.form)}
                 </div>
-                <div className={classes.samplerWrapper}>
-                  <div className={classes.samplerLabel}>Preview: </div>
-                  <div className={classes.sampler}>{sampler}</div>
-                </div>
+                {sampler}
                 <div className={classes.description}>
                   {renderHTML(this.state.shopItem.longDescription)}
                 </div>
