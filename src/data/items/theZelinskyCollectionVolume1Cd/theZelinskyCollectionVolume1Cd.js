@@ -5,7 +5,7 @@ import volumeOne04 from './img/volumeOne04.jpg';
 
 export default {
   name: 'the-zelinsky-collection-volume-1-cd',
-  title: 'Musée Mécanique presents The Zelinsky Collection Volume 1',
+  title: 'The Zelinsky Collection: Vol. 1',
   shortDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique at the historic Cliff House in San Francisco.

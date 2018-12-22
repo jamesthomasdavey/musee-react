@@ -2,7 +2,7 @@ import sutros1954Cd01 from './img/sutros1954Cd01.jpg';
 
 export default {
   name: 'sutros-1954-cd',
-  title: `Sutro's San Francisco 1954`,
+  title: `Sutro's: San Francisco, 1954`,
   shortDescription: `
     <p>
       The musical instruments featured in this recording were from the Musical Museum in the collection of George Whitney, owner of Sutro's at the Beach in San Francisco, "a museum that has devoted itself to the color and background of 'the good old days'".

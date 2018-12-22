@@ -37,17 +37,14 @@ class ShopItem extends Component {
     if (this.state.shopItem.name) {
       document.title = this.state.shopItem.title;
 
-      const description = renderHTML(this.state.shopItem.longDescription);
-
       if (this.state.shopItem.audio) {
-        console.log('hello');
         sampler = <AudioSampler audio={this.state.shopItem.audio} />;
       }
 
       content = (
         <div className={classes.wrapper}>
           <div className="ui container">
-            <div className={classes.upperWrapper}>
+            <div className={classes.innerWrapper}>
               <div className={classes.image}>
                 <div className={classes.slideshowWrapper}>
                   <Slideshow images={this.state.shopItem.images} />
@@ -56,12 +53,18 @@ class ShopItem extends Component {
               <div className={classes.info}>
                 <h2 className={classes.title}>{this.state.shopItem.title}</h2>
                 <h3 className={classes.price}>{this.state.shopItem.price}</h3>
-                {renderHTML(this.state.shopItem.form)}
-                {sampler}
-                <div className={classes.sideDescription}>{description}</div>
+                <div className={classes.addToCartButton}>
+                  {renderHTML(this.state.shopItem.form)}
+                </div>
+                <div className={classes.samplerWrapper}>
+                  <div className={classes.samplerLabel}>Preview: </div>
+                  <div className={classes.sampler}>{sampler}</div>
+                </div>
+                <div className={classes.description}>
+                  {renderHTML(this.state.shopItem.longDescription)}
+                </div>
               </div>
             </div>
-            <div className={classes.lowerWrapper}>{description}</div>
             <div className={classes.backLinkWrapper}>
               <Link className={classes.backLink} to="/shop">
                 <i className="angle double left icon" /> Back

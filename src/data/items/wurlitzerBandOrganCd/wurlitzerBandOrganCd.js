@@ -7,7 +7,7 @@ import surfinSafari from './audio/surfinSafari.m4a';
 
 export default {
   name: 'wurlitzer-band-organ-cd',
-  title: 'Musée Mécanique presents The Mighty Wurlitzer Military Band Organ',
+  title: 'The Mighty Wurlitzer: Military Band Organ',
   audio: surfinSafari,
   shortDescription: `
     <p>

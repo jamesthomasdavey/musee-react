@@ -3,22 +3,22 @@
   padding: 40px 0 80px;
 }
 
-.upperWrapper {
+.innerWrapper {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap-reverse;
-  flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .image {
   position: relative;
   width: 80%;
   padding-top: 80%;
-  margin: 32px auto 0;
+  margin: 0 auto 48px;
 }
 
 .slideshowWrapper {
@@ -33,27 +33,49 @@
   width: 100%;
 }
 
-.title,
-.price {
+.title {
   font-family: var(--body-font-stack);
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.lowerWrapper,
-.sideDescription {
+.price {
+  font-family: var(--body-font-stack);
+  color: var(--dark-grey);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.addToCartButton {
+  margin-bottom: 6px;
+}
+
+.samplerWrapper {
+  margin: 16px 0;
+  width: 100%;
+}
+
+.samplerLabel {
+  font-family: var(--body-font-stack);
+  color: var(--dark-grey);
+  font-size: 16px;
+  user-select: none;
+  cursor: default;
+}
+
+.sampler {
+  width: 100%;
+}
+
+.description {
   font-family: var(--body-font-stack);
   color: var(--black);
   line-height: 26px;
   font-size: 15px;
   padding: 8px 0;
-}
-
-.lowerWrapper {
-  margin-top: 64px;
-  display: block;
-}
-
-.sideDescription {
-  display: none;
 }
 
 .backLinkWrapper {
@@ -68,18 +90,12 @@
   .image {
     width: 40%;
     padding-top: 40%;
-    margin: 0 auto;
   }
   .info {
     width: 50%;
   }
-  .sideDescription {
-    display: block;
-  }
-  .lowerWrapper {
-    display: none;
-  }
   .backLinkWrapper {
     width: 90%;
+    margin: 0 auto;
   }
 }

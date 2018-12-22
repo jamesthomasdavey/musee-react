@@ -5,7 +5,7 @@ import volumeThree04 from './img/volumeThree04.jpg';
 
 export default {
   name: 'the-zelinsky-collection-volume-3-cd',
-  title: 'Musée Mécanique presents The Zelinsky Collection Volume 3',
+  title: 'The Zelinsky Collection: Vol. 3',
   shortDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique at the historic Cliff House in San Francisco.

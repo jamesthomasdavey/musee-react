@@ -9,7 +9,7 @@ import tennesseeWaltz from './audio/tennesseeWaltz.m4a';
 
 export default {
   name: 'the-zelinsky-collection-volume-2-cd',
-  title: 'Musée Mécanique presents The Zelinsky Collection Volume 2',
+  title: 'The Zelinsky Collection: Vol. 2',
   audio: tennesseeWaltz,
   shortDescription: `
     <p>
