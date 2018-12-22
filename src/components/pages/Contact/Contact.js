@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="ui container">
-        <div class={['ui clearing divider', classes.divider].join(' ')} />
+        <div className={['ui clearing divider', classes.divider].join(' ')} />
         <ContactForm />
       </div>
     </div>

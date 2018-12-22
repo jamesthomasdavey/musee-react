@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import isEmail from 'is-email';
 import isEmpty from '../../../../../validation/is-empty';
+import { withRouter } from 'react-router-dom';
 
 // css
 import classes from './ContactForm.module.css';
@@ -168,6 +169,7 @@ class ContactForm extends Component {
                 id="name"
                 className={classes.input}
                 maxLength="100"
+                autoFocus={this.props.history.location.hash === '#send-a-message'}
               />
               {this.state.errors.name && (
                 <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
@@ -228,4 +230,4 @@ class ContactForm extends Component {
   }
 }
 
-export default ContactForm;
+export default withRouter(ContactForm);

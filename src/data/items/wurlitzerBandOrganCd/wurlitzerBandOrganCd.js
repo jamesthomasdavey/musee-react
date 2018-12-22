@@ -1,9 +1,14 @@
+// img
 import wurlitzerCd01 from './img/wurlitzerCd01.jpg';
 import wurlitzerCd02 from './img/wurlitzerCd02.jpg';
+
+// audio
+import surfinSafari from './audio/surfinSafari.m4a';
 
 export default {
   name: 'wurlitzer-band-organ-cd',
   title: 'Musée Mécanique presents The Mighty Wurlitzer Military Band Organ',
+  audio: surfinSafari,
   shortDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique.

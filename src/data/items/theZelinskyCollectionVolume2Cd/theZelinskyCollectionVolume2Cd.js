@@ -1,11 +1,16 @@
+// img
 import volumeTwo01 from './img/volumeTwo01.jpg';
 import volumeTwo02 from './img/volumeTwo02.jpg';
 import volumeTwo03 from './img/volumeTwo03.jpg';
 import volumeTwo04 from './img/volumeTwo04.jpg';
 
+// audio
+import tennesseeWaltz from './audio/tennesseeWaltz.m4a';
+
 export default {
   name: 'the-zelinsky-collection-volume-2-cd',
   title: 'Musée Mécanique presents The Zelinsky Collection Volume 2',
+  audio: tennesseeWaltz,
   shortDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique at the historic Cliff House in San Francisco.

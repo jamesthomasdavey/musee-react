@@ -8,6 +8,7 @@ import shopItems from './../../../data/shopItems';
 
 // component
 import Slideshow from './components/Slideshow/Slideshow';
+import AudioSampler from './components/AudioSampler/AudioSampler';
 
 // css
 import classes from './ShopItem.module.css';
@@ -32,10 +33,16 @@ class ShopItem extends Component {
   };
   render() {
     let content;
+    let sampler;
     if (this.state.shopItem.name) {
       document.title = this.state.shopItem.title;
 
       const description = renderHTML(this.state.shopItem.longDescription);
+
+      if (this.state.shopItem.audio) {
+        console.log('hello');
+        sampler = <AudioSampler audio={this.state.shopItem.audio} />;
+      }
 
       content = (
         <div className={classes.wrapper}>
@@ -50,6 +57,7 @@ class ShopItem extends Component {
                 <h2 className={classes.title}>{this.state.shopItem.title}</h2>
                 <h3 className={classes.price}>{this.state.shopItem.price}</h3>
                 {renderHTML(this.state.shopItem.form)}
+                {sampler}
                 <div className={classes.sideDescription}>{description}</div>
               </div>
             </div>
