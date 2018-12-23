@@ -4,7 +4,7 @@ import AudioPlayer from 'react-h5-audio-player';
 
 class AudioSampler extends Component {
   render() {
-    return <AudioPlayer src={this.props.audio} />;
+    return <AudioPlayer src={this.props.audio} volume={0.6} />;
   }
 }
 

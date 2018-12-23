@@ -1,3 +1,7 @@
+// audio
+import theCrazyRag from './audio/theCrazyRag.m4a';
+
+// img
 import volumeOne01 from './img/volumeOne01.jpg';
 import volumeOne02 from './img/volumeOne02.jpg';
 import volumeOne03 from './img/volumeOne03.jpg';
@@ -6,6 +10,7 @@ import volumeOne04 from './img/volumeOne04.jpg';
 export default {
   name: 'the-zelinsky-collection-volume-1-cd',
   title: 'The Zelinsky Collection: Vol. 1',
+  audio: theCrazyRag,
   shortDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique at the historic Cliff House in San Francisco.

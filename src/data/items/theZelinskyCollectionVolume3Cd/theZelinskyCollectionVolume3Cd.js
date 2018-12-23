@@ -1,3 +1,7 @@
+// audio
+import skatersWaltz from './audio/skatersWaltz.m4a';
+
+// img
 import volumeThree01 from './img/volumeThree01.jpg';
 import volumeThree02 from './img/volumeThree02.jpg';
 import volumeThree03 from './img/volumeThree03.jpg';
@@ -6,6 +10,7 @@ import volumeThree04 from './img/volumeThree04.jpg';
 export default {
   name: 'the-zelinsky-collection-volume-3-cd',
   title: 'The Zelinsky Collection: Vol. 3',
+  audio: skatersWaltz,
   shortDescription: `
     <p>
       Antique, coin-operated, automatic mechanical musical instruments. Recorded live inside the Musée Mécanique at the historic Cliff House in San Francisco.

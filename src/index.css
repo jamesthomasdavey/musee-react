@@ -133,6 +133,7 @@ html {
 .toggle-play-button {
   background: var(--brown) !important;
   border-radius: none !important;
+  transition: 0.3s all ease;
 }
 
 .toggle-play-button:hover {
@@ -143,6 +144,7 @@ html {
 .pause-icon {
   -webkit-box-shadow: var(--brown) 7px 0px 0px 0px inset !important;
   box-shadow: var(--brown) 7px 0px 0px 0px inset !important;
+  transition: 0.3s box-shadow ease;
 }
 
 .toggle-play-button:hover > .pause-icon {
