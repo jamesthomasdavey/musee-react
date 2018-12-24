@@ -2,6 +2,9 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
+// component
+import Yelp from './components/Yelp/Yelp';
+
 // css
 import classes from './About.module.css';
 
@@ -34,14 +37,29 @@ const About = () => {
             <i className="envelope outline icon" />
           </HashLink>
           <a
-            href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
+            href="https://www.facebook.com/museemecaniquesf/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="yelp icon" />
+            <i className="facebook icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/explore/locations/117557/musee-mecanique/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="instagram icon" />
+          </a>
+          <a
+            href="https://www.google.com/search?rlz=1C5CHFA_enUS725US725&ei=1hggXJqACMz0rAGnsY_QBQ&q=Mus%C3%A9e+M%C3%A9canique&oq=Mus%C3%A9e+M%C3%A9canique&gs_l=psy-ab.3..35i39l2j0j0i67j0l2j0i22i30l4.36489.43079..44589...4.0..0.319.3455.1j14j5j1....2..0....1..gws-wiz.......38j0i71j0i131i67j0i131j0i22i10i30.s3CJM2eXixM#lrd=0x808580e254330009:0xed9aa8b90062eab8,1,,,"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="google icon" />
           </a>
         </span>
       </p>
+      <Yelp />
     </div>
   );
 };

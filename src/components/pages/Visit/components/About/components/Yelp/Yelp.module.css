@@ -1,0 +1,33 @@
+.wrapper {
+}
+
+.yelpStarsWrapper {
+  /* height: 28px; */
+}
+
+.reviewCountWrapper {
+  margin-top: 8px;
+  text-align: center;
+  font-family: var(--body-font-stack);
+  color: var(--dark-grey);
+  font-size: 14px;
+  height: 20px;
+}
+
+.reviewCount {
+  /* animation: yelpFade 1s; */
+  user-select: none;
+  cursor: default;
+}
+
+/* @keyframes yelpFade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

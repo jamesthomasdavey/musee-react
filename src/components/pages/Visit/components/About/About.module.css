@@ -30,5 +30,10 @@
 .icons > a > i {
   color: var(--black);
   font-size: 32px;
-  margin: 0 16px;
+  margin: 0 12px;
+  transition: 0.3s all ease;
+}
+
+.icons > a:hover > i {
+  transform: scale(1.1);
 }

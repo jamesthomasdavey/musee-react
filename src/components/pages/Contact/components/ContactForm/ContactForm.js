@@ -1,9 +1,11 @@
 // package
 import React, { Component } from 'react';
-import axios from 'axios';
 import isEmail from 'is-email';
 import isEmpty from '../../../../../validation/is-empty';
 import { withRouter } from 'react-router-dom';
+
+// function
+import submitForm from './submitForm';
 
 // css
 import classes from './ContactForm.module.css';
@@ -40,33 +42,34 @@ class ContactForm extends Component {
     e.preventDefault();
     this.setState({ isSubmitting: true }, () => {
       this.checkForErrors(() => {
-        axios
-          .post('https://formsubmit.io/send/260f68a9-cf91-4c74-a1fa-ed6b50243914', {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-          })
-          .then(() => {
-            this.setState({
-              name: '',
-              email: '',
-              message: '',
-              errors: {},
-              focus: '',
-              hasFailed: false,
-              isSubmitting: false,
-              hasSubmitted: true
-            });
-          })
-          .catch(() => {
-            this.setState({
-              isSubmitting: false,
-              hasFailed: false,
-              errors: {
-                server: "We're sorry, we were unable to send your message. Please try again later."
-              }
-            });
-          });
+        submitForm(this.state.name, this.state.email, this.state.message);
+        // axios
+        //   .post('https://formsubmit.io/send/260f68a9-cf91-4c74-a1fa-ed6b50243914', {
+        //     name: this.state.name,
+        //     email: this.state.email,
+        //     message: this.state.message
+        //   })
+        //   .then(() => {
+        this.setState({
+          name: '',
+          email: '',
+          message: '',
+          errors: {},
+          focus: '',
+          hasFailed: false,
+          isSubmitting: false,
+          hasSubmitted: true
+        });
+        // })
+        // .catch(() => {
+        //   this.setState({
+        //     isSubmitting: false,
+        //     hasFailed: false,
+        //     errors: {
+        //       server: "We're sorry, we were unable to send your message. Please try again later."
+        //     }
+        //   });
+        // });
       });
     });
   };
@@ -133,7 +136,7 @@ class ContactForm extends Component {
     if (this.state.hasSubmitted) {
       successMessage = (
         <div className="ui success message">
-          <p className={classes.message}>Your message has been sent.</p>
+          <p className={classes.message}>Redirecting...</p>
         </div>
       );
     }
@@ -169,6 +172,7 @@ class ContactForm extends Component {
                 id="name"
                 className={classes.input}
                 maxLength="100"
+                value={this.state.name}
                 autoFocus={this.props.history.location.hash === '#send-a-message'}
               />
               {this.state.errors.name && (
@@ -192,6 +196,7 @@ class ContactForm extends Component {
                 onChange={this.changeInputHandler}
                 className={classes.input}
                 maxLength="100"
+                value={this.state.email}
               />
               {this.state.errors.email && (
                 <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
@@ -213,6 +218,7 @@ class ContactForm extends Component {
               onChange={this.changeInputHandler}
               className={classes.input}
               maxLength="1000"
+              value={this.state.message}
             />
             {this.state.errors.message && (
               <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
