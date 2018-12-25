@@ -42,34 +42,17 @@ class ContactForm extends Component {
     e.preventDefault();
     this.setState({ isSubmitting: true }, () => {
       this.checkForErrors(() => {
-        submitForm(this.state.name, this.state.email, this.state.message);
-        // axios
-        //   .post('https://formsubmit.io/send/260f68a9-cf91-4c74-a1fa-ed6b50243914', {
-        //     name: this.state.name,
-        //     email: this.state.email,
-        //     message: this.state.message
-        //   })
-        //   .then(() => {
-        this.setState({
-          name: '',
-          email: '',
-          message: '',
-          errors: {},
-          focus: '',
-          hasFailed: false,
-          isSubmitting: false,
-          hasSubmitted: true
-        });
-        // })
-        // .catch(() => {
-        //   this.setState({
-        //     isSubmitting: false,
-        //     hasFailed: false,
-        //     errors: {
-        //       server: "We're sorry, we were unable to send your message. Please try again later."
-        //     }
-        //   });
-        // });
+        this.setState(
+          {
+            errors: {},
+            focus: '',
+            hasFailed: false,
+            hasSubmitted: true
+          },
+          () => {
+            submitForm(this.state.name, this.state.email, this.state.message);
+          }
+        );
       });
     });
   };
