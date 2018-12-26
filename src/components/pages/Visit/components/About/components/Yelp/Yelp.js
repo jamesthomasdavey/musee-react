@@ -2,9 +2,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-// keys
-import keys from './../../../../../../../data/keys';
-
 // component
 import YelpStars from './components/YelpStars/YelpStars';
 
@@ -13,6 +10,9 @@ import yelpLogo from './img/yelpLogo.png';
 
 // css
 import classes from './Yelp.module.css';
+
+// keys
+const keys = require('./../../../../../../../config/keys');
 
 class Yelp extends Component {
   state = {
@@ -23,7 +23,7 @@ class Yelp extends Component {
   componentDidMount = () => {
     axios
       .get('https://api.yelp.com/v3/businesses/UNQJh-kREbt0MRIF5d830A', {
-        headers: { Authorization: `Bearer ${keys.yelpApiKey}` }
+        headers: { Authorization: `Bearer ${keys.default.yelpApiKey}` }
       })
       .then(res => {
         this.setState({
