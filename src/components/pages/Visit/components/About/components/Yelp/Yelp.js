@@ -8,6 +8,9 @@ import keys from './../../../../../../../data/keys';
 // component
 import YelpStars from './components/YelpStars/YelpStars';
 
+// img
+import yelpLogo from './img/yelpLogo.png';
+
 // css
 import classes from './Yelp.module.css';
 
@@ -31,18 +34,31 @@ class Yelp extends Component {
       });
   };
   render() {
-    let yelpStars;
-    let reviewCount;
     if (!this.state.isLoading) {
-      yelpStars = <YelpStars rating={this.state.rating} />;
-      reviewCount = <span className={classes.reviewCount}>{this.state.reviewCount} Reviews</span>;
+      return (
+        <a
+          href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.yelpLink}
+        >
+          <div className={classes.wrapper}>
+            <div className={classes.yelpStarsWrapper}>
+              <YelpStars rating={this.state.rating} />
+            </div>
+            <div className={classes.reviewCountWrapper}>
+              {' '}
+              <span className={classes.reviewCount}>
+                {this.state.reviewCount} Reviews on{' '}
+                <img src={yelpLogo} alt="yelp-logo" className={classes.yelpLogo} />
+              </span>
+            </div>
+          </div>{' '}
+        </a>
+      );
+    } else {
+      return null;
     }
-    return (
-      <div className={classes.wrapper}>
-        <div className={classes.yelpStarsWrapper}>{yelpStars}</div>
-        <div className={classes.reviewCountWrapper}>{reviewCount}</div>
-      </div>
-    );
   }
 }
 

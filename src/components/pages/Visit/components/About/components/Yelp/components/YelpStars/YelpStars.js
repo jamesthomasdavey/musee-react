@@ -42,13 +42,7 @@ const YelpStars = props => {
   }
   return (
     <div className={classes.wrapper}>
-      <a
-        href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img class={classes.starsImage} alt={`${props.rating} Stars`} src={starsImageSrc} />
-      </a>
+      <img className={classes.starsImage} alt={`${props.rating} Stars`} src={starsImageSrc} />
     </div>
   );
 };
