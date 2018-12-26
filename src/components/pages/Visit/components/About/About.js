@@ -3,7 +3,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 // component
-import Yelp from './components/Yelp/Yelp';
+// import Yelp from './components/Yelp/Yelp';
 
 // css
 import classes from './About.module.css';
@@ -57,9 +57,16 @@ const About = () => {
           >
             <i className="google icon" />
           </a>
+          <a
+            href="https://www.yelp.com/biz/mus%C3%A9e-m%C3%A9canique-san-francisco-4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="yelp icon" />
+          </a>
         </span>
       </p>
-      <Yelp />
+      {/* <Yelp /> */}
     </div>
   );
 };
