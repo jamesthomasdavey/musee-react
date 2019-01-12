@@ -1,8 +1,15 @@
+// audio
+import frenchOrgan from './audio/frenchOrgan.m4a';
+
+// img
 import sutros1954Cd01 from './img/sutros1954Cd01.jpg';
+import sutros1954Cd02 from './img/sutros1954Cd02.jpg';
+import sutros1954Cd03 from './img/sutros1954Cd03.jpg';
 
 export default {
   name: 'sutros-1954-cd',
   title: `Sutro's: San Francisco, 1954`,
+  audio: frenchOrgan,
   shortDescription: `
     <p>
       The musical instruments featured in this recording were from the Musical Museum in the collection of George Whitney, owner of Sutro's at the Beach in San Francisco, "a museum that has devoted itself to the color and background of 'the good old days'".
@@ -38,5 +45,5 @@ export default {
     </form>
   `,
   price: '$15.00',
-  images: [sutros1954Cd01]
+  images: [sutros1954Cd01, sutros1954Cd02, sutros1954Cd03]
 };
