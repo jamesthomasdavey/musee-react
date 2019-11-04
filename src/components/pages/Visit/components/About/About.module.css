@@ -4,7 +4,7 @@
 .welcomeLine {
   font-weight: 600;
   font-family: var(--header-font-stack);
-  font-size: 25px;
+  font-size: 26px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -15,13 +15,14 @@
 .text {
   font-family: var(--body-font-stack);
   font-weight: 400;
-  line-height: 26px;
+  line-height: 32px;
   font-size: 16px;
   color: var(--black);
   padding: 8px 0;
 }
 
 .icons {
+  padding-top: 56px;
   display: inline-block;
   width: 100%;
   text-align: center;
