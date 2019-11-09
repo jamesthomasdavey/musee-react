@@ -12,9 +12,7 @@ class Landing extends Component {
     document.title = 'Welcome to the Musée Mécanique';
     return (
       <div className={classes.wrapper}>
-        <div className={classes.innerWrapper}>
-          <Slideshow />
-        </div>
+        <Slideshow />
       </div>
     );
   }

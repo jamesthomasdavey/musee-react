@@ -10,9 +10,9 @@ import classes from './Menu.module.css';
 
 const Menu = props => {
   return (
-    <div className={classes.wrapper}>
+    <nav aria-label="Main" className={classes.wrapper}>
       <MenuItems isInverted={props.isInverted} />
-    </div>
+    </nav>
   );
 };
 

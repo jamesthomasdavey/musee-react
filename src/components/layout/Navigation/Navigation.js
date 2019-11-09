@@ -36,7 +36,9 @@ class Navigation extends Component {
     }
   };
   toggleCollapsibleMenuHandler = () => {
-    this.setState({ collapsibleMenuIsExpanded: !this.state.collapsibleMenuIsExpanded });
+    this.setState({
+      collapsibleMenuIsExpanded: !this.state.collapsibleMenuIsExpanded
+    });
   };
   scrollHandler = e => {
     const scrollTop = Math.max(
@@ -62,7 +64,10 @@ class Navigation extends Component {
         >
           <div className="ui container">
             <div className={classes.container}>
-              <Logo isInverted={this.state.isInverted} isScrolled={this.state.isScrolled} />
+              <Logo
+                isInverted={this.state.isInverted}
+                isScrolled={this.state.isScrolled}
+              />
               <ToggleButton
                 collapsibleMenuIsExpanded={this.state.collapsibleMenuIsExpanded}
                 toggleCollapsibleMenuHandler={this.toggleCollapsibleMenuHandler}

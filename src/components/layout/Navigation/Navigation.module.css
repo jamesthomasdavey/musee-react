@@ -27,6 +27,11 @@
   animation: fadein 0.33s linear;
 }
 
+.wrapper.scrolled.inverted {
+  background: var(--dark-brown);
+  border-bottom: 4px solid var(--cream);
+}
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
