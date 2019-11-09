@@ -29,16 +29,23 @@ class Footer extends Component {
   };
   render() {
     return (
-      <div className={[classes.wrapper, this.state.isInverted ? classes.inverted : ''].join(' ')}>
-        <div className="ui text container">
-          <div className={classes.content}>
-            <div className={classes.innerContent}>
-              <Address isInverted={this.state.isInverted} />
-              <Hours isInverted={this.state.isInverted} />
+      <React.Fragment>
+        <div
+          className={[
+            classes.wrapper,
+            this.state.isInverted ? classes.inverted : ''
+          ].join(' ')}
+        >
+          <div className="ui text container">
+            <div className={classes.content}>
+              <div className={classes.innerContent}>
+                <Address isInverted={this.state.isInverted} />
+                <Hours isInverted={this.state.isInverted} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -48,6 +48,7 @@ const Slideshow = () => {
   return (
     <div className={classes.wrapper}>
       <Fade {...fadeProperties}>{images}</Fade>
+      <div className={classes.spacer}></div>
     </div>
   );
 };
