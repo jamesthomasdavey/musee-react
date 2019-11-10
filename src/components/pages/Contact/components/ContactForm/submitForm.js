@@ -1,5 +1,5 @@
 function submitForm(name, email, message) {
-  var destinationEmail = 'james.t.davey@gmail.com';
+  var destinationEmail = 'dan@museemecaniquesf.com';
   var form = document.createElement('form');
   form.setAttribute('action', 'https://formspree.io/' + destinationEmail);
   form.setAttribute('method', 'POST');
