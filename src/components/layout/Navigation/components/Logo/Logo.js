@@ -17,7 +17,9 @@ const Logo = props => {
       ].join(' ')}
     >
       <h1 className={classes.logo}>Musée Mécanique</h1>
-      <span className={classes.slogan}>Fun for all ages!</span>
+      <span className={classes.slogan}>
+        <em>Family owned and operated since 1933</em>
+      </span>
     </Link>
   );
 };
