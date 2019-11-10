@@ -15,7 +15,7 @@ const CollapsibleMenu = props => {
   return (
     <nav aria-label="Mobile" className={classes.wrapper}>
       <SmoothCollapse expanded={props.isExpanded}>
-        <MenuItems isInverted={props.isInverted} />
+        <MenuItems closeNav={props.closeNav} isInverted={props.isInverted} />
       </SmoothCollapse>
     </nav>
   );
@@ -23,7 +23,8 @@ const CollapsibleMenu = props => {
 
 CollapsibleMenu.propTypes = {
   isExpanded: PropTypes.bool.isRequired,
-  isInverted: PropTypes.bool.isRequired
+  isInverted: PropTypes.bool.isRequired,
+  closeNav: PropTypes.func.isRequired
 };
 
 export default CollapsibleMenu;

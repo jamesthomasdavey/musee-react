@@ -40,6 +40,9 @@ class Navigation extends Component {
       collapsibleMenuIsExpanded: !this.state.collapsibleMenuIsExpanded
     });
   };
+  closeCollapsibleMenuHandler = () => {
+    this.setState({ collapsibleMenuIsExpanded: false });
+  };
   scrollHandler = e => {
     const scrollTop = Math.max(
       window.pageYOffset,
@@ -79,6 +82,7 @@ class Navigation extends Component {
           <CollapsibleMenu
             isInverted={this.state.isInverted}
             isExpanded={this.state.collapsibleMenuIsExpanded}
+            closeNav={this.closeCollapsibleMenuHandler}
           />
         </div>
         <div

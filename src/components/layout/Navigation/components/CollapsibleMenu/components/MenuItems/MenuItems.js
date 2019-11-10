@@ -8,16 +8,17 @@ import MenuItem from './components/MenuItem/MenuItem';
 const MenuItems = props => {
   return (
     <div>
-      <MenuItem isInverted={props.isInverted} name="Visit" url="/visit" />
-      <MenuItem isInverted={props.isInverted} name="Our Story" url="/story" />
-      <MenuItem isInverted={props.isInverted} name="Gallery" url="/gallery" />
-      <MenuItem isInverted={props.isInverted} name="Shop" url="/shop" />
+      <MenuItem isInverted={props.isInverted} closeNav={props.closeNav} name="Visit" url="/visit" />
+      <MenuItem isInverted={props.isInverted} closeNav={props.closeNav} name="Our Story" url="/story" />
+      <MenuItem isInverted={props.isInverted} closeNav={props.closeNav} name="Gallery" url="/gallery" />
+      <MenuItem isInverted={props.isInverted} closeNav={props.closeNav} name="Shop" url="/shop" />
     </div>
   );
 };
 
 MenuItems.propTypes = {
-  isInverted: PropTypes.bool.isRequired
+  isInverted: PropTypes.bool.isRequired,
+  closeNav: PropTypes.func.isRequired
 };
 
 export default MenuItems;

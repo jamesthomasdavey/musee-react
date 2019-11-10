@@ -18,6 +18,7 @@ const MenuItem = props => {
         props.location.pathname === props.url ? classes.active : ''
       ].join(' ')}
       to={props.url}
+      onClick={props.closeNav}
     >
       <span className={classes.text}>{props.name}</span>
     </Link>
@@ -27,7 +28,8 @@ const MenuItem = props => {
 MenuItem.propTypes = {
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  isInverted: PropTypes.bool.isRequired
+  isInverted: PropTypes.bool.isRequired,
+  closeNav: PropTypes.func.isRequired
 };
 
 export default withRouter(MenuItem);
