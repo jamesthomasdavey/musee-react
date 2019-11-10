@@ -37,13 +37,7 @@ export default function Contact() {
             <div className={classes.contactInfoBlock}>
               <div className={classes.contactInfoHeader}>Hours:</div>
               <div className={classes.contactInfoLine}>
-                Mon-Fri: 10:00am - 8:00pm
-              </div>
-              <div className={classes.contactInfoLine}>
-                Sat-Sun: 10:00am - 8:00pm
-              </div>
-              <div className={classes.contactInfoLine}>
-                Holidays: 10:00am - 8:00pm
+                Everyday, including holidays: 10:00am - 8:00pm
               </div>
               <div
                 className={classes.contactInfoLine}
