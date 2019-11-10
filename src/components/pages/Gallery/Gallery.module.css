@@ -1,22 +1,24 @@
 .wrapper {
   position: relative;
   height: 100%;
-  overflow: auto;
+  overflow: none;
   background: black;
   border-bottom: 4px solid black;
 }
 
 .mainImage {
   height: calc(100vh - 112px);
+  width: 100%;
   background: url('./img/galleryBackground.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 @media (min-width: 992px) {
   .mainImage {
     height: calc(100vh - 155px);
+    /* width: 100%; */
   }
 }

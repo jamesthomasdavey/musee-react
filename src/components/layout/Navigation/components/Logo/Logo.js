@@ -15,6 +15,7 @@ const Logo = props => {
         props.isInverted ? classes.inverted : '',
         props.isScrolled ? classes.scrolled : ''
       ].join(' ')}
+      onClick={props.closeNav}
     >
       <h1 className={classes.logo}>Musée Mécanique</h1>
       <span className={classes.slogan}>
@@ -26,7 +27,8 @@ const Logo = props => {
 
 Logo.propTypes = {
   isInverted: PropTypes.bool.isRequired,
-  isScrolled: PropTypes.bool.isRequired
+  isScrolled: PropTypes.bool.isRequired,
+  closeNav: PropTypes.func.isRequired
 };
 
 export default Logo;

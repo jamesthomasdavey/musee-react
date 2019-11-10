@@ -70,6 +70,7 @@ class Navigation extends Component {
               <Logo
                 isInverted={this.state.isInverted}
                 isScrolled={this.state.isScrolled}
+                closeNav={this.closeCollapsibleMenuHandler}
               />
               <ToggleButton
                 collapsibleMenuIsExpanded={this.state.collapsibleMenuIsExpanded}
