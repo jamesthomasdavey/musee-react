@@ -7,7 +7,7 @@
   -ms-user-select: none;
   user-select: none;
   background: var(--light-cream);
-  z-index: 50;
+  z-index: 999;
   border-bottom: 4px solid var(--cream);
 }
 

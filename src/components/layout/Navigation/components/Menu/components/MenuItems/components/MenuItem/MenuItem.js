@@ -7,6 +7,10 @@ import { Link, withRouter } from 'react-router-dom';
 import classes from './MenuItem.module.css';
 
 const MenuItem = props => {
+  let isActive;
+  if (props.location.pathname.substring(0, props.url.length) === props.url) {
+    isActive = true;
+  }
   return (
     <Link className={classes.wrapper} to={props.url}>
       <div className={classes.textWrapper}>
@@ -14,7 +18,7 @@ const MenuItem = props => {
           className={[
             classes.text,
             props.isInverted ? classes.inverted : '',
-            props.location.pathname === props.url ? classes.active : ''
+            isActive ? classes.active : ''
           ].join(' ')}
         >
           {props.name}

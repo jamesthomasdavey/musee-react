@@ -2,8 +2,8 @@
   position: relative;
   height: 100%;
   overflow: none;
-  background: black;
-  border-bottom: 4px solid black;
+  /* background: black; */
+  /* border-bottom: 4px solid white; */
 }
 
 .mainImage {
