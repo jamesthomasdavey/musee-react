@@ -25,9 +25,10 @@ const ToggleButton = props => {
       onClick={props.toggleCollapsibleMenuHandler}
       onKeyDown={spacebarHandler}
       aria-expanded={props.collapsibleMenuIsExpanded ? 'true' : 'false'}
-      aria-label="Navigation"
+      aria-label="Mobile Navigation"
       href="#"
       role="button"
+      id="mobileNavigationButton"
     >
       <span aria-hidden="true" className={classes.bar} />
       <span aria-hidden="true" className={classes.bar} />
