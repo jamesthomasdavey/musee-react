@@ -20,7 +20,7 @@
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  outline: none;
+  /* outline: none; */
   border: none;
   border-radius: 50%;
   -webkit-transition: 0.3s all ease;

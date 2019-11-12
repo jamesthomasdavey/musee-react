@@ -6,19 +6,33 @@ import PropTypes from 'prop-types';
 import classes from './ToggleButton.module.css';
 
 const ToggleButton = props => {
+  const spacebarHandler = e => {
+    if (e.key !== 'Tab') {
+      e.preventDefault();
+    }
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.target.click();
+    }
+  };
   return (
-    <button
+    // eslint-disable-next-line
+    <a
       className={[
         classes.wrapper,
         props.collapsibleMenuIsExpanded ? classes.expanded : '',
         props.isInverted ? classes.inverted : ''
       ].join(' ')}
       onClick={props.toggleCollapsibleMenuHandler}
+      onKeyDown={spacebarHandler}
+      aria-expanded={props.collapsibleMenuIsExpanded ? 'true' : 'false'}
+      aria-label="Navigation"
+      href="#"
+      role="button"
     >
-      <span className={classes.bar} />
-      <span className={classes.bar} />
-      <span className={classes.bar} />
-    </button>
+      <span aria-hidden="true" className={classes.bar} />
+      <span aria-hidden="true" className={classes.bar} />
+      <span aria-hidden="true" className={classes.bar} />
+    </a>
   );
 };
 

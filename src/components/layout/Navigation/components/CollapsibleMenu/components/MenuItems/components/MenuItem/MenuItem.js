@@ -10,12 +10,16 @@ import { Link } from 'react-router-dom';
 import classes from './MenuItem.module.css';
 
 const MenuItem = props => {
+  let isActive;
+  if (props.location.pathname.substring(0, props.url.length) === props.url) {
+    isActive = true;
+  }
   return (
     <Link
       className={[
         classes.wrapper,
         props.isInverted ? classes.inverted : '',
-        props.location.pathname === props.url ? classes.active : ''
+        isActive ? classes.active : ''
       ].join(' ')}
       to={props.url}
       onClick={props.closeNav}

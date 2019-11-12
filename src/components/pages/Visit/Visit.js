@@ -19,13 +19,9 @@ class Visit extends Component {
         <div className={classes.infoWrapper}>
           <div className="ui container">
             <div className={classes.infoHeaderWrapper}>
+              <img alt="" src={openCorner} className={classes.openLeftCorner} />
               <img
-                alt="leftCorner"
-                src={openCorner}
-                className={classes.openLeftCorner}
-              />
-              <img
-                alt="rightCorner"
+                alt=""
                 src={openCorner}
                 className={classes.openRightCorner}
               />
