@@ -1,16 +1,16 @@
 // package
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 // css
-import classes from './ToggleButton.module.css';
+import classes from "./ToggleButton.module.css";
 
 const ToggleButton = props => {
   const spacebarHandler = e => {
-    if (e.key !== 'Tab') {
+    if (e.key !== "Tab") {
       e.preventDefault();
     }
-    if (e.key === ' ' || e.key === 'Enter') {
+    if (e.key === " " || e.key === "Enter") {
       e.target.click();
     }
   };
@@ -19,12 +19,12 @@ const ToggleButton = props => {
     <a
       className={[
         classes.wrapper,
-        props.collapsibleMenuIsExpanded ? classes.expanded : '',
-        props.isInverted ? classes.inverted : ''
-      ].join(' ')}
+        props.collapsibleMenuIsExpanded ? classes.expanded : "",
+        props.isInverted ? classes.inverted : ""
+      ].join(" ")}
       onClick={props.toggleCollapsibleMenuHandler}
       onKeyDown={spacebarHandler}
-      aria-expanded={props.collapsibleMenuIsExpanded ? 'true' : 'false'}
+      aria-expanded={props.collapsibleMenuIsExpanded ? "true" : "false"}
       aria-label="Mobile Navigation"
       href="#"
       role="button"

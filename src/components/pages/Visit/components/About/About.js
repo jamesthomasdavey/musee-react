@@ -1,12 +1,12 @@
 // package
-import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 // component
 // import Yelp from './components/Yelp/Yelp';
 
 // css
-import classes from './About.module.css';
+import classes from "./About.module.css";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
       <p className={classes.text}>
         <span className={classes.welcomeLine}>
           Welcome to the Musée Mécanique,
-        </span>{' '}
+        </span>{" "}
         one of the world's largest privately owned collections of coin-operated
         mechanical musical instruments and antique arcade artifacts. You can
         play with any of our 300-plus machines in their original working
@@ -36,6 +36,13 @@ const About = () => {
         House. There is our own "Laffing Sal", "Susie the Can-Can Dancer", and
         the fascinating "Carnival". Other things have been brought in from
         around the world for your amusement.
+      </p>
+      <p className={classes.text}>
+        <strong>
+          Due to the delicate nature of the machines, we do not allow private
+          events or parties. At all times, food and drink are not allowed within
+          the Musée.
+        </strong>
       </p>
       <p className={classes.text}>
         <span className={classes.icons}>
