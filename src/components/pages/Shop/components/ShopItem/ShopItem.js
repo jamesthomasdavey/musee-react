@@ -9,12 +9,13 @@ import classes from './ShopItem.module.css';
 
 const ShopItem = props => {
   return (
-    <div className={['item', classes.wrapper].join(' ')}>
+    <article className={['item', classes.wrapper].join(' ')}>
       <div className="image">
-        <img alt={props.shopItem.title} src={props.shopItem.images[0]} />
+        <img alt="" src={props.shopItem.images[0]} />
         <Link
           className={classes.imageLink}
           to={`/shop/${props.shopItem.name}`}
+          tabindex="-1"
         />
       </div>
       <div className="content">
@@ -32,7 +33,7 @@ const ShopItem = props => {
         </div>
         <div className="extra">{renderHTML(props.shopItem.form)}</div>
       </div>
-    </div>
+    </article>
   );
 };
 
