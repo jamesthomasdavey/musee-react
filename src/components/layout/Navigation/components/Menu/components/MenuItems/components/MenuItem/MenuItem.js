@@ -22,6 +22,7 @@ const MenuItem = props => {
           ].join(' ')}
         >
           {props.name}
+          {isActive && <span className="sr-only">- current</span>}
         </span>
       </div>
     </Link>

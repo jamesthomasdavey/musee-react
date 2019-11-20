@@ -59,19 +59,19 @@ class ContactForm extends Component {
   checkForErrors = callback => {
     const errors = {};
     if (!this.state.name) {
-      errors.name = 'Please enter your name.';
+      errors.name = 'Error: Please enter your name.';
     }
     if (!isEmail(this.state.email)) {
-      errors.email = 'Please enter a valid email address.';
+      errors.email = 'Error: Please enter a valid email address.';
     }
     if (!this.state.email) {
-      errors.email = 'Please enter your email address.';
+      errors.email = 'Error: Please enter your email address.';
     }
     if (this.state.message.length < 10) {
-      errors.message = 'Message must be at least 10 characters.';
+      errors.message = 'Error: Message must be at least 10 characters.';
     }
     if (!this.state.message) {
-      errors.message = 'Please enter a message.';
+      errors.message = 'Error: Please enter a message.';
     }
     let hasFailed = !isEmpty(errors);
     if (this.state.hasFailed) {
@@ -125,7 +125,11 @@ class ContactForm extends Component {
     }
     if (this.state.message) {
       charactersRemaining = (
-        <span className={classes.charactersRemaining}>
+        <span
+          className={classes.charactersRemaining}
+          aria-live="polite"
+          aria-atomic="true"
+        >
           Characters remaining: {1000 - this.state.message.length}
         </span>
       );
@@ -133,7 +137,9 @@ class ContactForm extends Component {
     return (
       <div className={classes.wrapper}>
         <form
-          className={['ui form', this.state.isSubmitting ? 'loading' : ''].join(' ')}
+          className={['ui form', this.state.isSubmitting ? 'loading' : ''].join(
+            ' '
+          )}
           noValidate
           onSubmit={this.formSubmitHandler}
         >
@@ -141,7 +147,11 @@ class ContactForm extends Component {
             Send a Message
           </h2>
           <div className="two fields">
-            <div className={['field', this.state.errors.name ? 'error' : ''].join(' ')}>
+            <div
+              className={['field', this.state.errors.name ? 'error' : ''].join(
+                ' '
+              )}
+            >
               <label className={classes.label} htmlFor="name">
                 Name
               </label>
@@ -153,18 +163,30 @@ class ContactForm extends Component {
                 type="text"
                 name="name"
                 id="name"
+                aria-describedby="nameError"
                 className={classes.input}
                 maxLength="100"
                 value={this.state.name}
-                autoFocus={this.props.history.location.hash === '#send-a-message'}
+                autoFocus={
+                  this.props.history.location.hash === '#send-a-message'
+                }
               />
-              {this.state.errors.name && (
-                <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
-                  {this.state.errors.name}
-                </div>
-              )}
+              <div
+                id="nameError"
+                className={[
+                  'ui pointing basic label',
+                  classes.validationLabel,
+                  !this.state.errors.name && 'sr-only'
+                ].join(' ')}
+              >
+                {this.state.errors.name && this.state.errors.name}
+              </div>
             </div>
-            <div className={['field', this.state.errors.email ? 'error' : ''].join(' ')}>
+            <div
+              className={['field', this.state.errors.email ? 'error' : ''].join(
+                ' '
+              )}
+            >
               <label className={classes.label} htmlFor="email">
                 Email
               </label>
@@ -175,20 +197,30 @@ class ContactForm extends Component {
                 htmlFor="email"
                 type="email"
                 id="email"
+                aria-describedby="emailError"
                 name="email"
                 onChange={this.changeInputHandler}
                 className={classes.input}
                 maxLength="100"
                 value={this.state.email}
               />
-              {this.state.errors.email && (
-                <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
-                  {this.state.errors.email}
-                </div>
-              )}
+              <div
+                id="emailError"
+                className={[
+                  'ui pointing basic label',
+                  classes.validationLabel,
+                  !this.state.errors.email && 'sr-only'
+                ].join(' ')}
+              >
+                {this.state.errors.email && this.state.errors.email}
+              </div>
             </div>
           </div>
-          <div className={['field', this.state.errors.message ? 'error' : ''].join(' ')}>
+          <div
+            className={['field', this.state.errors.message ? 'error' : ''].join(
+              ' '
+            )}
+          >
             <label className={classes.label} htmlFor="message">
               Message
             </label>
@@ -197,17 +229,23 @@ class ContactForm extends Component {
                 this.messageTextarea = textarea;
               }}
               id="message"
+              aria-describedby="messageError"
               name="message"
               onChange={this.changeInputHandler}
               className={classes.input}
               maxLength="1000"
               value={this.state.message}
             />
-            {this.state.errors.message && (
-              <div className={['ui pointing basic label', classes.validationLabel].join(' ')}>
-                {this.state.errors.message}
-              </div>
-            )}
+            <div
+              id="messageError"
+              className={[
+                'ui pointing basic label',
+                classes.validationLabel,
+                !this.state.errors.message && 'sr-only'
+              ].join(' ')}
+            >
+              {this.state.errors.message && this.state.errors.message}
+            </div>
             {charactersRemaining}
           </div>
           <input type="submit" className="addToCartButton" value="Send" />

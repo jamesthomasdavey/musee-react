@@ -25,6 +25,7 @@ const MenuItem = props => {
       onClick={props.closeNav}
     >
       <span className={classes.text}>{props.name}</span>
+      {isActive && <span className="sr-only">- current</span>}
     </Link>
   );
 };
