@@ -64,7 +64,6 @@ html {
 *****************************/
 
 .addToCartButton {
-  outline: none;
   background: var(--brown);
   color: var(--white);
   padding: 8px 16px;
