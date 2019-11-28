@@ -8,9 +8,21 @@ import { Link } from 'react-router-dom';
 import classes from './ShopItem.module.css';
 
 const ShopItem = props => {
+  let shopButton;
+
+  if (props.shopItem.isSoldOut) {
+    shopButton = (
+      <button className="addToCartButton" disabled>
+        Sold Out!
+      </button>
+    );
+  } else {
+    shopButton = renderHTML(props.shopItem.form);
+  }
+
   return (
     <article className={['item', classes.wrapper].join(' ')}>
-      <div className="image">
+      <div className="image" aria-hidden="true">
         <img alt="" src={props.shopItem.images[0]} />
         <Link
           className={classes.imageLink}
@@ -31,7 +43,7 @@ const ShopItem = props => {
         <div className={['description', classes.description].join(' ')}>
           {renderHTML(props.shopItem.shortDescription)}
         </div>
-        <div className="extra">{renderHTML(props.shopItem.form)}</div>
+        <div className="extra">{shopButton}</div>
       </div>
     </article>
   );

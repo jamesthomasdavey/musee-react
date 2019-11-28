@@ -8,11 +8,11 @@ import theZelinskyCollectionVolume3Cd from './items/theZelinskyCollectionVolume3
 import sutros1954Cd from './items/sutros1954Cd/sutros1954Cd';
 
 export default [
-  lostAndFoundAtMuseeMecaniquePhotobook,
   theZelinskyCollectionDvd,
   wurlitzerBandOrganCd,
   theZelinskyCollectionVolume1Cd,
   theZelinskyCollectionVolume2Cd,
   theZelinskyCollectionVolume3Cd,
-  sutros1954Cd
+  sutros1954Cd,
+  lostAndFoundAtMuseeMecaniquePhotobook
 ];

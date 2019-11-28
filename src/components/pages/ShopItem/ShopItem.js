@@ -34,6 +34,14 @@ class ShopItem extends Component {
   render() {
     let content;
     let sampler;
+    let soldOutButton;
+    if (this.state.shopItem.isSoldOut) {
+      soldOutButton = (
+        <button className="addToCartButton" disabled>
+          Sold Out!
+        </button>
+      );
+    }
     if (this.state.shopItem.name) {
       document.title = this.state.shopItem.title;
 
@@ -61,7 +69,8 @@ class ShopItem extends Component {
                 <h2 className={classes.title}>{this.state.shopItem.title}</h2>
                 <h3 className={classes.price}>{this.state.shopItem.price}</h3>
                 <div className={classes.addToCartButton}>
-                  {renderHTML(this.state.shopItem.form)}
+                  {!soldOutButton && renderHTML(this.state.shopItem.form)}
+                  {soldOutButton && soldOutButton}
                 </div>
                 {sampler}
                 <div className={classes.description}>

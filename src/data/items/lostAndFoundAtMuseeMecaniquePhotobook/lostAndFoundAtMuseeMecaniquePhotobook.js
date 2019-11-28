@@ -21,5 +21,6 @@ export default {
     </form>
   `,
   price: '$10.00',
+  isSoldOut: true,
   images: [lostAndFound01]
 };

@@ -89,6 +89,12 @@ html {
   cursor: pointer;
 }
 
+.addToCartButton:disabled,
+.addToCartButton:disabled:hover {
+  cursor: default;
+  background: var(--light-brown);
+}
+
 .indicators {
   height: 12px !important;
 }
