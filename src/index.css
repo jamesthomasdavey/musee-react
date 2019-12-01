@@ -63,7 +63,8 @@ html {
 ******************* technical
 *****************************/
 
-.addToCartButton {
+.addToCartButton,
+.addToCartButton:disabled {
   background: var(--brown);
   color: var(--white);
   padding: 8px 16px;
@@ -74,12 +75,13 @@ html {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 @media (min-width: 768px) {
-  .addToCartButton {
-    margin: 0;
+  .addToCartButton,
+  .addToCartButton:disabled {
+    margin: 0 !important;
   }
 }
 
@@ -92,6 +94,7 @@ html {
 .addToCartButton:disabled:hover {
   cursor: default;
   background: var(--light-brown);
+  pointer-events: none;
 }
 
 .indicators {
@@ -146,6 +149,7 @@ html {
 .toggle-play-button {
   background: var(--brown) !important;
   border-radius: none !important;
+  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 
@@ -157,7 +161,10 @@ html {
 .pause-icon {
   -webkit-box-shadow: var(--brown) 7px 0px 0px 0px inset !important;
   box-shadow: var(--brown) 7px 0px 0px 0px inset !important;
+  -webkit-transition: 0.3s -webkit-box-shadow ease;
+  transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s box-shadow ease;
+  transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
 }
 
 .toggle-play-button:hover > .pause-icon {
