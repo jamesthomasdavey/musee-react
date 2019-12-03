@@ -49,7 +49,7 @@ class Navigation extends Component {
       document.documentElement.scrollTop,
       document.body.scrollTop
     );
-    if (scrollTop > 68) {
+    if (scrollTop > 70) {
       this.setState({ isScrolled: true });
     } else {
       this.setState({ isScrolled: false });
