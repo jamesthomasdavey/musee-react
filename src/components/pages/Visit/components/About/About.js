@@ -1,20 +1,21 @@
 // package
-import React from "react";
-import { HashLink } from "react-router-hash-link";
+import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 // component
 // import Yelp from './components/Yelp/Yelp';
 
 // css
-import classes from "./About.module.css";
+import classes from './About.module.css';
 
 const About = () => {
   return (
     <div className={classes.wrapper}>
+      <h3 className="sr-only">Welcome</h3>
       <p className={classes.text}>
         <span className={classes.welcomeLine}>
           Welcome to the Musée Mécanique,
-        </span>{" "}
+        </span>{' '}
         one of the world's largest privately owned collections of coin-operated
         mechanical musical instruments and antique arcade artifacts. You can
         play with any of our 300-plus machines in their original working

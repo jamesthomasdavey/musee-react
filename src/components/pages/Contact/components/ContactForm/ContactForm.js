@@ -59,19 +59,19 @@ class ContactForm extends Component {
   checkForErrors = callback => {
     const errors = {};
     if (!this.state.name) {
-      errors.name = 'Error: Please enter your name.';
+      errors.name = 'Please enter your name.';
     }
     if (!isEmail(this.state.email)) {
-      errors.email = 'Error: Please enter a valid email address.';
+      errors.email = 'Please enter a valid email address.';
     }
     if (!this.state.email) {
-      errors.email = 'Error: Please enter your email address.';
+      errors.email = 'Please enter your email address.';
     }
     if (this.state.message.length < 10) {
-      errors.message = 'Error: Message must be at least 10 characters.';
+      errors.message = 'Message must be at least 10 characters.';
     }
     if (!this.state.message) {
-      errors.message = 'Error: Please enter a message.';
+      errors.message = 'Please enter a message.';
     }
     let hasFailed = !isEmpty(errors);
     if (this.state.hasFailed) {
@@ -142,10 +142,12 @@ class ContactForm extends Component {
           )}
           noValidate
           onSubmit={this.formSubmitHandler}
+          role="group"
+          aria-labelledby="send-a-message"
         >
-          <h2 id="send-a-message" className={classes.header}>
+          <h3 id="send-a-message" className={classes.header}>
             Send a Message
-          </h2>
+          </h3>
           <div className="two fields">
             <div
               className={['field', this.state.errors.name ? 'error' : ''].join(
@@ -179,6 +181,7 @@ class ContactForm extends Component {
                   !this.state.errors.name && 'sr-only'
                 ].join(' ')}
               >
+                {this.state.errors.name && <span class="sr-only">Error: </span>}
                 {this.state.errors.name && this.state.errors.name}
               </div>
             </div>
@@ -212,6 +215,9 @@ class ContactForm extends Component {
                   !this.state.errors.email && 'sr-only'
                 ].join(' ')}
               >
+                {this.state.errors.email && (
+                  <span class="sr-only">Error: </span>
+                )}
                 {this.state.errors.email && this.state.errors.email}
               </div>
             </div>
@@ -244,6 +250,9 @@ class ContactForm extends Component {
                 !this.state.errors.message && 'sr-only'
               ].join(' ')}
             >
+              {this.state.errors.message && (
+                <span class="sr-only">Error: </span>
+              )}
               {this.state.errors.message && this.state.errors.message}
             </div>
             {charactersRemaining}

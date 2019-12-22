@@ -16,6 +16,7 @@ class Visit extends Component {
     document.title = 'Visit | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
+        <h2 className="sr-only">Visit</h2>
         <div className={classes.infoWrapper}>
           <div className="ui container">
             <div className={classes.infoHeaderWrapper}>
@@ -25,13 +26,14 @@ class Visit extends Component {
                 src={openCorner}
                 className={classes.openRightCorner}
               />
-              <h2 className={classes.infoOpenDays}>Open 365 Days a Year</h2>
-              <h3 className={classes.infoCost}>Admission is Free!</h3>
+              <h3 className={classes.infoOpenDays}>Open 365 Days a Year</h3>
+              <p className={classes.infoCost}>Admission is Free!</p>
             </div>
           </div>
           <div className={classes.mapAddressHoursWrapper}>
             <div className={classes.mapAddressHoursWrapperInner}>
               <div className={classes.map}>
+                <h3 className="sr-only">Map</h3>
                 <Map />
               </div>
               <div className={classes.addressHoursWrapper}>
@@ -40,12 +42,12 @@ class Visit extends Component {
                     <div className={classes.addressHeaderWrapper}>
                       <h3 className={classes.addressHeader}>Visit</h3>
                     </div>
-                    <div className={classes.addressContentWrapper}>
+                    <address className={classes.addressContentWrapper}>
                       <span>Pier 45 at the end of Taylor Street</span>
                       <span>Fisherman's Wharf</span>
                       <span>San Francisco, CA 94133</span>
                       <span>Tel: (415) 346-2000</span>
-                    </div>
+                    </address>
                   </div>
                   <div className={classes.hoursWrapper}>
                     <div className={classes.hoursHeaderWrapper}>

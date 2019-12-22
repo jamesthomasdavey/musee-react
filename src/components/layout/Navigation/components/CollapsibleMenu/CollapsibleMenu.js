@@ -13,7 +13,7 @@ import classes from './CollapsibleMenu.module.css';
 
 const CollapsibleMenu = props => {
   return (
-    <nav aria-labelledby="mobileNavigationButton" className={classes.wrapper}>
+    <nav aria-label="Main" id="mobileNavigation" className={classes.wrapper}>
       <SmoothCollapse expanded={props.isExpanded}>
         <MenuItems closeNav={props.closeNav} isInverted={props.isInverted} />
       </SmoothCollapse>

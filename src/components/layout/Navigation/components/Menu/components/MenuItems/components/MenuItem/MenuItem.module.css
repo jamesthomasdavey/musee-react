@@ -29,6 +29,7 @@
   color: var(--light-cream);
 }
 
+.wrapper:focus > .textWrapper > .text:before,
 .wrapper:hover > .textWrapper > .text:before {
   visibility: visible;
   -webkit-transform: scaleX(1);

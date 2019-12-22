@@ -14,6 +14,14 @@ const MenuItem = props => {
   if (props.location.pathname.substring(0, props.url.length) === props.url) {
     isActive = true;
   }
+  const tabHandler = e => {
+    if (props.name === 'Shop') {
+      if (e.key === 'Tab' && !e.shiftKey) {
+        e.preventDefault();
+        document.querySelector('[aria-label="Navigation"]').focus();
+      }
+    }
+  };
   return (
     <Link
       className={[
@@ -23,6 +31,7 @@ const MenuItem = props => {
       ].join(' ')}
       to={props.url}
       onClick={props.closeNav}
+      onKeyDown={tabHandler}
     >
       <span className={classes.text}>{props.name}</span>
       {isActive && <span className="sr-only">- current</span>}

@@ -85,7 +85,8 @@ html {
   }
 }
 
-.addToCartButton:hover {
+.addToCartButton:hover,
+.addToCartButton:focus {
   background: var(--dark-brown);
   cursor: pointer;
 }

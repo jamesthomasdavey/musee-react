@@ -27,7 +27,7 @@ const ShopItem = props => {
         <Link
           className={classes.imageLink}
           to={`/shop/${props.shopItem.name}`}
-          tabindex="-1"
+          tabIndex="-1"
         />
       </div>
       <div className="content">

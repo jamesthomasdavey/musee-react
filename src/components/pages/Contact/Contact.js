@@ -24,18 +24,21 @@ export default function Contact() {
             <h2 className={classes.topHeader}>Contact Us</h2>
             <div className={classes.contactDetailWrapper}>
               <i aria-hidden="true" className="phone icon" />
+              <h3 className="sr-only">Phone Number:</h3>
               <span className={classes.contactDetail}>(415) 346-2000</span>
             </div>
             <div className={classes.contactInfoBlock}>
-              <div className={classes.contactInfoHeader}>Address:</div>
-              <div className={classes.contactInfoLine}>Pier 45</div>
-              <div className={classes.contactInfoLine}>Fisherman's Wharf</div>
-              <div className={classes.contactInfoLine}>
-                San Francisco, CA 94133
-              </div>
+              <h3 className={classes.contactInfoHeader}>Address:</h3>
+              <address className={classes.addressWrapper}>
+                <div className={classes.contactInfoLine}>Pier 45</div>
+                <div className={classes.contactInfoLine}>Fisherman's Wharf</div>
+                <div className={classes.contactInfoLine}>
+                  San Francisco, CA 94133
+                </div>
+              </address>
             </div>
             <div className={classes.contactInfoBlock}>
-              <div className={classes.contactInfoHeader}>Hours:</div>
+              <h3 className={classes.contactInfoHeader}>Hours:</h3>
               <div className={classes.contactInfoLine}>
                 Every day, including holidays: 10:00am - 8:00pm
               </div>
@@ -50,7 +53,7 @@ export default function Contact() {
               </div>
             </div>
             <div className={classes.contactInfoBlock}>
-              <div className={classes.contactInfoHeader}>Private Parties:</div>
+              <h3 className={classes.contactInfoHeader}>Private Parties:</h3>
               <div className={classes.contactInfoLine}>
                 <p>
                   We welcome groups of any size, but due to our wide appeal, we

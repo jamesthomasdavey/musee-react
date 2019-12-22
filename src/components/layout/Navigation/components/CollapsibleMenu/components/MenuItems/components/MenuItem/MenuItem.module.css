@@ -16,11 +16,13 @@
 }
 
 .wrapper:hover,
+.wrapper:focus,
 .wrapper.active {
   background: var(--cream);
 }
 
 .wrapper:hover > .text,
+.wrapper:focus > .text,
 .wrapper.active > .text {
   color: var(--dark-brown);
 }

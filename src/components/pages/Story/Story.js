@@ -13,11 +13,12 @@ class Story extends Component {
     document.title = 'Our Story | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
+        <h2 className="sr-only">Our Story</h2>
         <div className="ui container">
-          <h2 className={classes.header}>How It All Began</h2>
-          <h4 className={classes.subHeader}>
+          <h3 className={classes.header}>How It All Began</h3>
+          <p className={classes.subHeader}>
             By Edward Galland Zelinsky (1922-2004)
-          </h4>
+          </p>
           <p className={classes.text}>
             <img
               alt=""

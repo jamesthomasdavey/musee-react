@@ -10,10 +10,18 @@ const ToggleButton = props => {
     e.preventDefault();
     props.toggleCollapsibleMenuHandler();
   };
-  const spacebarHandler = e => {
+  const keyHandler = e => {
     if (e.key === ' ' || e.key === 'Enter') {
       e.preventDefault();
       e.target.click();
+    }
+    if (props.collapsibleMenuIsExpanded) {
+      if (e.key === 'Tab' && e.shiftKey) {
+        e.preventDefault();
+        setTimeout(() => {
+          document.querySelectorAll('a[href="/shop"]')[1].focus();
+        }, 5);
+      }
     }
   };
   return (
@@ -25,9 +33,10 @@ const ToggleButton = props => {
         props.isInverted ? classes.inverted : ''
       ].join(' ')}
       onClick={clickHandler}
-      onKeyDown={spacebarHandler}
+      onKeyDown={keyHandler}
       aria-expanded={props.collapsibleMenuIsExpanded ? 'true' : 'false'}
-      aria-label="Mobile Navigation"
+      aria-controls="mobileNavigation"
+      aria-label="Navigation"
       href="#"
       role="button"
       id="mobileNavigationButton"

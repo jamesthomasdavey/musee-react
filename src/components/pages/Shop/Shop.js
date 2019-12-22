@@ -18,6 +18,7 @@ class Shop extends Component {
     ));
     return (
       <div className={classes.wrapper}>
+        <h2 className="sr-only">Shop</h2>
         <div className="ui container">
           <div className="ui divided items">{shopItemsList}</div>
         </div>

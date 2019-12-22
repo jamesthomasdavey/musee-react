@@ -80,6 +80,10 @@
   margin: 40px 0 !important;
 }
 
+.addressWrapper {
+  font-style: normal;
+}
+
 @media (min-width: 768px) {
   .topHeader {
     text-align: left;

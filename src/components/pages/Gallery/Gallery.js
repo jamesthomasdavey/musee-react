@@ -13,8 +13,8 @@ class Gallery extends Component {
     document.title = 'Gallery | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
-        <div className={classes.mainImage}>
-        </div>
+        <h2 className="sr-only">Gallery</h2>
+        <div className={classes.mainImage}></div>
         <GridGallery />
       </div>
     );
