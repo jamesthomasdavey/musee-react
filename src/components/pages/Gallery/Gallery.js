@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 // component
 import GridGallery from './components/GridGallery/GridGallery';
-// import galleryBackground from './img/galleryBackground.jpg';
 
 // css
 import classes from './Gallery.module.css';
