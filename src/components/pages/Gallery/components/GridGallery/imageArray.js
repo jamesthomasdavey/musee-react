@@ -74,7 +74,6 @@ import detail_0050_f from './img/fullRes/detail_0050_f.jpg';
 import detail_0051_f from './img/fullRes/detail_0051_f.jpg';
 import detail_0052_f from './img/fullRes/detail_0052_f.jpg';
 import detail_0053_f from './img/fullRes/detail_0053_f.jpg';
-import detail_0054_f from './img/fullRes/detail_0054_f.jpg';
 import detail_0055_f from './img/fullRes/detail_0055_f.jpg';
 import detail_0056_f from './img/fullRes/detail_0056_f.jpg';
 import detail_0057_f from './img/fullRes/detail_0057_f.jpg';
@@ -134,7 +133,6 @@ import detail_0050_t from './img/thumb/detail_0050_t.jpg';
 import detail_0051_t from './img/thumb/detail_0051_t.jpg';
 import detail_0052_t from './img/thumb/detail_0052_t.jpg';
 import detail_0053_t from './img/thumb/detail_0053_t.jpg';
-import detail_0054_t from './img/thumb/detail_0054_t.jpg';
 import detail_0055_t from './img/thumb/detail_0055_t.jpg';
 import detail_0056_t from './img/thumb/detail_0056_t.jpg';
 import detail_0057_t from './img/thumb/detail_0057_t.jpg';
@@ -500,12 +498,6 @@ const imageArray = [
     thumbnail: detail_0053_t,
     thumbnailWidth: 320,
     thumbnailHeight: 276
-  },
-  {
-    src: detail_0054_f,
-    thumbnail: detail_0054_t,
-    thumbnailWidth: 320,
-    thumbnailHeight: 125
   },
   {
     src: est_0004_f,

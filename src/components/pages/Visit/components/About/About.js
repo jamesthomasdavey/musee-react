@@ -45,8 +45,12 @@ const About = () => {
           the Musée.
         </strong>
       </p>
-      <p className={classes.text}>
-        <span className={classes.icons}>
+      <p role="presentation" className={classes.text}>
+        <div
+          role="region"
+          aria-label="Information Links"
+          className={classes.icons}
+        >
           <HashLink to="/contact#send-a-message">
             <i aria-hidden="true" className="envelope outline icon" />
             <span className="sr-only">Send a message</span>
@@ -83,7 +87,7 @@ const About = () => {
             <i aria-hidden="true" className="yelp icon" />
             <span className="sr-only">Yelp</span>
           </a>
-        </span>
+        </div>
       </p>
       {/* <Yelp /> */}
     </div>

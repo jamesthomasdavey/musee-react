@@ -1,6 +1,7 @@
 .wrapper {
   transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
+  font-style: normal;
 }
 
 .text {

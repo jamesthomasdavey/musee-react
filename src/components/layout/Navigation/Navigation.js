@@ -1,5 +1,5 @@
 // package
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 // component
@@ -57,7 +57,7 @@ class Navigation extends Component {
   };
   render() {
     return (
-      <Fragment>
+      <header>
         <div
           className={[
             classes.wrapper,
@@ -92,7 +92,7 @@ class Navigation extends Component {
             this.state.collapsibleMenuIsExpanded ? classes.expanded : ''
           ].join(' ')}
         />
-      </Fragment>
+      </header>
     );
   }
 }

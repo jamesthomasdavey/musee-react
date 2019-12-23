@@ -31,12 +31,11 @@ const ShopItem = props => {
         />
       </div>
       <div className="content">
-        <Link
-          to={`/shop/${props.shopItem.name}`}
-          className={['header', classes.header].join(' ')}
-        >
-          {props.shopItem.title}
-        </Link>
+        <h3 className={['header', classes.header].join(' ')}>
+          <Link to={`/shop/${props.shopItem.name}`} className={classes.headerLink}>
+            {props.shopItem.title}
+          </Link>
+        </h3>
         <div className="meta">
           <span className={classes.price}>{props.shopItem.price}</span>
         </div>

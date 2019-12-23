@@ -43,7 +43,7 @@ class ShopItem extends Component {
       );
     }
     if (this.state.shopItem.name) {
-      document.title = this.state.shopItem.title;
+      document.title = `${this.state.shopItem.title} | Musée Mécanique`;
 
       if (this.state.shopItem.audio) {
         sampler = (
@@ -67,7 +67,7 @@ class ShopItem extends Component {
               </div>
               <div className={classes.info}>
                 <h2 className={classes.title}>{this.state.shopItem.title}</h2>
-                <h3 className={classes.price}>{this.state.shopItem.price}</h3>
+                <p className={classes.price}>{this.state.shopItem.price}</p>
                 <div className={classes.addToCartButton}>
                   {!soldOutButton && renderHTML(this.state.shopItem.form)}
                   {soldOutButton && soldOutButton}

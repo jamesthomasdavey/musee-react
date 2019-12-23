@@ -13,6 +13,9 @@
 
 .header {
   font-family: var(--body-font-stack) !important;
+}
+
+.headerLink {
   color: var(--black) !important;
 }
 

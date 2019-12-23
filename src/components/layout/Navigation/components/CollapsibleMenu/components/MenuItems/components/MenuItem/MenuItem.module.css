@@ -27,11 +27,13 @@
   color: var(--dark-brown);
 }
 
-.wrapper.inverted:hover {
+.wrapper.inverted:hover,
+.wrapper.inverted:focus {
   background: var(--brown);
 }
 
-.wrapper.inverted:hover > .text {
+.wrapper.inverted:hover > .text,
+.wrapper.inverted:focus > .text {
   color: var(--white);
 }
 

@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.icons > a {
+  display: inline-block;
+}
+
 .icons > a > i {
   color: var(--black);
   font-size: 32px;
