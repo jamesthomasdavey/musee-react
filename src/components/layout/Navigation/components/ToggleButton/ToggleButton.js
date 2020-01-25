@@ -19,7 +19,11 @@ const ToggleButton = props => {
       if (e.key === 'Tab' && e.shiftKey) {
         e.preventDefault();
         setTimeout(() => {
-          document.querySelectorAll('a[href="/shop"]')[1].focus();
+          document
+            .querySelectorAll(
+              'a[href="https://www.facebook.com/museemecaniquesf/"]'
+            )[1]
+            .focus();
         }, 5);
       }
     }

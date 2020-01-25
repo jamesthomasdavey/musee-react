@@ -11,6 +11,28 @@ const MenuItem = props => {
   if (props.location.pathname.substring(0, props.url.length) === props.url) {
     isActive = true;
   }
+  if (props.name === 'Facebook') {
+    return (
+      <a
+        className={classes.wrapper}
+        href={'https://www.facebook.com/museemecaniquesf/'}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className={classes.textWrapper}>
+          <span
+            className={[
+              classes.text,
+              props.isInverted ? classes.inverted : '',
+              isActive ? classes.active : ''
+            ].join(' ')}
+          >
+            Facebook
+          </span>
+        </div>
+      </a>
+    );
+  }
   return (
     <Link className={classes.wrapper} to={props.url}>
       <div className={classes.textWrapper}>

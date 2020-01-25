@@ -48,6 +48,9 @@
     line-height: 46px;
     margin: 0;
   }
+  .slogan {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -60,5 +63,8 @@
   }
   .wrapper.scrolled > .logo {
     font-size: 36px;
+  }
+  .slogan {
+    font-size: 16px;
   }
 }

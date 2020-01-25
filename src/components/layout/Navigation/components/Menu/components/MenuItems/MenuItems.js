@@ -15,6 +15,7 @@ const MenuItems = props => {
       <MenuItem isInverted={props.isInverted} name="Our Story" url="/story" />
       <MenuItem isInverted={props.isInverted} name="Gallery" url="/gallery" />
       <MenuItem isInverted={props.isInverted} name="Shop" url="/shop" />
+      <MenuItem isInverted={props.isInverted} name="Facebook" url="http://www.facebook.com" />
     </div>
   );
 };

@@ -15,13 +15,31 @@ const MenuItem = props => {
     isActive = true;
   }
   const tabHandler = e => {
-    if (props.name === 'Shop') {
+    if (props.name === 'Facebook') {
       if (e.key === 'Tab' && !e.shiftKey) {
         e.preventDefault();
         document.querySelector('[aria-label="Navigation"]').focus();
       }
     }
   };
+  if (props.name === 'Facebook') {
+    return (
+      <a
+        className={[
+          classes.wrapper,
+          props.isInverted ? classes.inverted : '',
+          isActive ? classes.active : ''
+        ].join(' ')}
+        href="https://www.facebook.com/museemecaniquesf/"
+        onKeyDown={tabHandler}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className={classes.text}>{props.name}</span>
+        {isActive && <span className="sr-only">- current</span>}
+      </a>
+    );
+  }
   return (
     <Link
       className={[
