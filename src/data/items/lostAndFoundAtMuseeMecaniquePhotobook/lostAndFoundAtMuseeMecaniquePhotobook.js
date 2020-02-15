@@ -2,15 +2,15 @@ import lostAndFound01 from './img/lostAndFound01.jpg';
 
 export default {
   name: 'lost-and-found-at-musee-mecanique-photobook',
-  title: 'Photos: Lost and Found at the Musée Mécanique',
+  title: 'Lost and Found Photos Vol. 1',
   shortDescription: `
     <p>
-      Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth.
+      Volume 1 of Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth.
     </p>
   `,
   longDescription: `
     <p>
-      Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth (OK, there's a few of our friends in there too!), we've compiled them in a unique format, the likes of which you've never seen before. There are about 160 sets of photos (640 pictures) in each book.
+      Volume 1 of Lost and Found at the Musée Mécanique! This amazing collection of photobooth strips from the Musée Mécanique was 35 years in the making. Made entirely of abandoned photostrips found in and around the Musée Mécanique's coin operated photobooth (OK, there's a few of our friends in there too!), we've compiled them in a unique format, the likes of which you've never seen before. There are about 160 sets of photos (640 pictures) in each book.
     </p>
   `,
   form: `
@@ -21,6 +21,6 @@ export default {
     </form>
   `,
   price: '$10.00',
-  isSoldOut: true,
+  isSoldOut: false,
   images: [lostAndFound01]
 };
