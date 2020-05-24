@@ -16,24 +16,24 @@ class Visit extends Component {
     document.title = 'Visit | Musée Mécanique';
     return (
       <div className={classes.wrapper}>
-        <h2 className="sr-only">Visit</h2>
+        <h2 className='sr-only'>Visit</h2>
         <div className={classes.infoWrapper}>
-          <div className="ui container">
+          <div className='ui container'>
             <div className={classes.infoHeaderWrapper}>
-              <img alt="" src={openCorner} className={classes.openLeftCorner} />
+              <img alt='' src={openCorner} className={classes.openLeftCorner} />
               <img
-                alt=""
+                alt=''
                 src={openCorner}
                 className={classes.openRightCorner}
               />
-              <h3 className={classes.infoOpenDays}>Open 365 Days a Year</h3>
-              <p className={classes.infoCost}>Admission is Free!</p>
+              <h3 className={classes.infoOpenDays}>Temporarily Closed</h3>
+              <p className={classes.infoCost}>During the COVID-19 Crisis</p>
             </div>
           </div>
           <div className={classes.mapAddressHoursWrapper}>
             <div className={classes.mapAddressHoursWrapperInner}>
               <div className={classes.map}>
-                <h3 className="sr-only">Map</h3>
+                <h3 className='sr-only'>Map</h3>
                 <Map />
               </div>
               <div className={classes.addressHoursWrapper}>
@@ -67,7 +67,7 @@ class Visit extends Component {
         <div className={classes.bottomWrapper}>
           <div className={classes.spacer} />
           <div className={classes.bottomWrapperInner}>
-            <div className="ui text container">
+            <div className='ui text container'>
               <div className={classes.aboutWrapper}>
                 <About />
               </div>
