@@ -19,8 +19,10 @@ class Modal extends Component {
               role='dialog'
               aria-labelledby='dialogHeading'
             >
-              <h3 id='dialogHeading'>We are asking for your help!</h3>
-              <p>
+              <h2 className={classes.heading} id='dialogHeading'>
+                We are asking for your help!
+              </h2>
+              <p className={classes.text}>
                 Due to the current global pandemic, the Musée Mécanique, along
                 with so many other businesses, was forced to close. Please
                 consider supporting us by donating on GoFundMe or by spreading
