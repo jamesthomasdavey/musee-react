@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/layout/Navigation/Navigation';
 import Footer from './components/layout/Footer/Footer';
 import ScrollToTop from './components/layout/ScrollToTop/ScrollToTop';
+import Modal from './components/layout/Modal/Modal';
 
 // page component
 import Landing from './components/pages/Landing/Landing';
@@ -24,17 +25,18 @@ class App extends Component {
     return (
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <ScrollToTop>
+          <Modal />
           <div className={classes.wrapper}>
             <div className={classes.content}>
               <Navigation />
               <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route exact path="/visit" component={Visit} />
-                <Route exact path="/story" component={Story} />
-                <Route exact path="/gallery" component={Gallery} />
-                <Route exact path="/shop" component={Shop} />
-                <Route exact path="/shop/:shopItem" component={ShopItem} />
-                <Route exact path="/contact" component={Contact} />
+                <Route exact path='/' component={Landing} />
+                <Route exact path='/visit' component={Visit} />
+                <Route exact path='/story' component={Story} />
+                <Route exact path='/gallery' component={Gallery} />
+                <Route exact path='/shop' component={Shop} />
+                <Route exact path='/shop/:shopItem' component={ShopItem} />
+                <Route exact path='/contact' component={Contact} />
               </Switch>
             </div>
             <Footer />
