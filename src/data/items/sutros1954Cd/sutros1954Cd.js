@@ -31,19 +31,13 @@ export default {
   `,
   form: `
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="A4EU8JS7ENRXU">
       <input type="submit" name="submit" class="addToCartButton" value="Add to Cart">
-      <input type="hidden" name="add" value="1">
-      <input type="hidden" name="cmd" value="_cart">
-      <input type="hidden" name="business" value="coad01@yahoo.com">
       <input type="hidden" name="item_name" value="Sutro's 1954 CD">
-      <input type="hidden" name="amount" value="15.00">
-      <input type="hidden" name="no_shipping" value="2">
-      <input type="hidden" name="no_note" value="0">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="ls" value="US">
-      <input type="hidden" name="bn" value="PP-ShopCartBF">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
   `,
   price: '$15.00',
-  images: [sutros1954Cd01, sutros1954Cd02, sutros1954Cd03]
+  images: [sutros1954Cd01, sutros1954Cd02, sutros1954Cd03],
 };

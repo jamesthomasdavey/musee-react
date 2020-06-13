@@ -29,19 +29,13 @@ export default {
   `,
   form: `
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="P5XCN9E3T34WJ">
       <input type="submit" name="submit" class="addToCartButton" value="Add to Cart">
-      <input type="hidden" name="add" value="1">
-      <input type="hidden" name="cmd" value="_cart">
-      <input type="hidden" name="business" value="coad01@yahoo.com">
       <input type="hidden" name="item_name" value="The Zelinsky Collection Volume 3 CD">
-      <input type="hidden" name="amount" value="10.00">
-      <input type="hidden" name="no_shipping" value="2">
-      <input type="hidden" name="no_note" value="0">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="ls" value="US">
-      <input type="hidden" name="bn" value="PP-ShopCartBF">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
   `,
   price: '$10.00',
-  images: [volumeThree01, volumeThree02, volumeThree03, volumeThree04]
+  images: [volumeThree01, volumeThree02, volumeThree03, volumeThree04],
 };
