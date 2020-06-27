@@ -13,14 +13,14 @@ import classes from './Shop.module.css';
 class Shop extends Component {
   render() {
     document.title = 'Shop | Musée Mécanique';
-    const shopItemsList = shopItems.map(shopItem => (
+    const shopItemsList = shopItems.map((shopItem) => (
       <ShopItem key={shopItem.name} shopItem={shopItem} />
     ));
     return (
       <div className={classes.wrapper}>
-        <h2 className="sr-only">Shop</h2>
-        <div className="ui container">
-          <div className="ui divided items">{shopItemsList}</div>
+        <h2 className='sr-only'>Shop</h2>
+        <div className='ui container'>
+          <div className='ui divided items'>{shopItemsList}</div>
         </div>
       </div>
     );

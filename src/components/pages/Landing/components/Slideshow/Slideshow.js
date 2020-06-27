@@ -22,18 +22,21 @@ const fadeImages = [
   landing_0005_f,
   landing_0006_f,
   landing_0007_f,
-  landing_0008_f
+  landing_0008_f,
 ];
 
 const fadeProperties = {
   duration: 5000,
   transitionDuration: 500,
   infinite: true,
-  indicators: false,
-  arrows: false
+  indicators: true,
+  arrows: false,
 };
 
 const Slideshow = () => {
+  document.addEventListener('click', (e) => {
+    console.log(e.target);
+  });
   const images = fadeImages.map((fadeImage, index) => {
     return (
       <div key={index} className={['each-fade', classes.eachFade].join(' ')}>
@@ -41,7 +44,6 @@ const Slideshow = () => {
           style={{ backgroundImage: `url(${fadeImage})` }}
           className={['image-container', classes.imageContainer].join(' ')}
         />
-        <h2>{`Slide ${index}`}</h2>
       </div>
     );
   });

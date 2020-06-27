@@ -11,10 +11,17 @@
   height: 100%;
   width: 100%;
   overflow: hidden !important;
+  pointer-events: none;
 }
 
 .imageContainer {
   background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;
+}
+
+.pauseButton {
+  position: absolute;
+  bottom: 0px;
+  z-index: 99999;
 }

@@ -15,21 +15,24 @@ import classes from './ShopItem.module.css';
 
 class ShopItem extends Component {
   state = {
-    shopItem: {}
+    shopItem: {},
   };
   componentDidMount = () => {
     if (this.props.match.params.shopItem) {
       this.getShopItem(this.props.match.params.shopItem);
     }
   };
-  getShopItem = shopItemName => {
+  getShopItem = (shopItemName) => {
     let shopItem;
-    shopItems.forEach(item => {
+    shopItems.forEach((item) => {
       if (item.name === shopItemName) {
         shopItem = item;
       }
     });
     this.setState({ shopItem });
+  };
+  blur = () => {
+    document.body.focus();
   };
   render() {
     let content;
@@ -37,7 +40,7 @@ class ShopItem extends Component {
     let soldOutButton;
     if (this.state.shopItem.isSoldOut) {
       soldOutButton = (
-        <button className="addToCartButton" disabled>
+        <button className='addToCartButton' disabled>
           Sold Out!
         </button>
       );
@@ -58,7 +61,7 @@ class ShopItem extends Component {
 
       content = (
         <div className={classes.wrapper}>
-          <div className="ui container">
+          <div className='ui container'>
             <div className={classes.innerWrapper}>
               <div className={classes.image}>
                 <div className={classes.slideshowWrapper}>
@@ -79,8 +82,8 @@ class ShopItem extends Component {
               </div>
             </div>
             <div className={classes.backLinkWrapper}>
-              <Link className={classes.backLink} to="/shop">
-                <i className="angle double left icon" /> Back
+              <Link className={classes.backLink} to='/shop' onClick={this.blur}>
+                <i aria-hidden='true' className='angle double left icon' /> Back
               </Link>
             </div>
           </div>
