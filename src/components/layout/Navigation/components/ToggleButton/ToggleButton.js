@@ -17,14 +17,7 @@ const ToggleButton = props => {
     }
     if (props.collapsibleMenuIsExpanded) {
       if (e.key === 'Tab' && e.shiftKey) {
-        e.preventDefault();
-        setTimeout(() => {
-          document
-            .querySelectorAll(
-              'a[href="https://www.facebook.com/museemecaniquesf/"]'
-            )[1]
-            .focus();
-        }, 5);
+        props.toggleCollapsibleMenuHandler();
       }
     }
   };

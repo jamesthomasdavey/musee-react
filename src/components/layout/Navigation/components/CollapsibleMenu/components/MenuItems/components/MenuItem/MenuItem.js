@@ -9,16 +9,19 @@ import { Link } from 'react-router-dom';
 // css
 import classes from './MenuItem.module.css';
 
-const MenuItem = props => {
+const MenuItem = (props) => {
+  const navLinkHandler = () => {
+    document.activeElement.blur();
+    props.closeNav();
+  };
   let isActive;
   if (props.location.pathname.substring(0, props.url.length) === props.url) {
     isActive = true;
   }
-  const tabHandler = e => {
+  const tabHandler = (e) => {
     if (props.name === 'Facebook') {
       if (e.key === 'Tab' && !e.shiftKey) {
-        e.preventDefault();
-        document.querySelector('[aria-label="Navigation"]').focus();
+        props.closeNav();
       }
     }
   };
@@ -28,15 +31,15 @@ const MenuItem = props => {
         className={[
           classes.wrapper,
           props.isInverted ? classes.inverted : '',
-          isActive ? classes.active : ''
+          isActive ? classes.active : '',
         ].join(' ')}
-        href="https://www.facebook.com/museemecaniquesf/"
+        href='https://www.facebook.com/museemecaniquesf/'
         onKeyDown={tabHandler}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
         <span className={classes.text}>{props.name}</span>
-        {isActive && <span className="sr-only">- current</span>}
+        {isActive && <span className='sr-only'>- current</span>}
       </a>
     );
   }
@@ -45,14 +48,14 @@ const MenuItem = props => {
       className={[
         classes.wrapper,
         props.isInverted ? classes.inverted : '',
-        isActive ? classes.active : ''
+        isActive ? classes.active : '',
       ].join(' ')}
       to={props.url}
-      onClick={props.closeNav}
+      onClick={navLinkHandler}
       onKeyDown={tabHandler}
     >
       <span className={classes.text}>{props.name}</span>
-      {isActive && <span className="sr-only">- current</span>}
+      {isActive && <span className='sr-only'>- current</span>}
     </Link>
   );
 };
@@ -61,7 +64,7 @@ MenuItem.propTypes = {
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   isInverted: PropTypes.bool.isRequired,
-  closeNav: PropTypes.func.isRequired
+  closeNav: PropTypes.func.isRequired,
 };
 
 export default withRouter(MenuItem);
