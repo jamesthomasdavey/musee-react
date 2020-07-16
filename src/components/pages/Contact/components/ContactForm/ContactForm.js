@@ -19,7 +19,7 @@ class ContactForm extends Component {
     focus: '',
     isSubmitting: false,
     hasFailed: false,
-    hasSubmitted: false
+    hasSubmitted: false,
   };
   refocus = () => {
     if (this.state.focus === 'name') {
@@ -30,7 +30,7 @@ class ContactForm extends Component {
       this.messageTextarea.focus();
     }
   };
-  changeInputHandler = e => {
+  changeInputHandler = (e) => {
     const eventTargetName = e.target.name;
     this.setState({ [eventTargetName]: e.target.value }, () => {
       if (this.state.hasFailed) {
@@ -38,7 +38,7 @@ class ContactForm extends Component {
       }
     });
   };
-  formSubmitHandler = e => {
+  formSubmitHandler = (e) => {
     e.preventDefault();
     this.setState({ isSubmitting: true }, () => {
       this.checkForErrors(() => {
@@ -47,7 +47,7 @@ class ContactForm extends Component {
             errors: {},
             focus: '',
             hasFailed: false,
-            hasSubmitted: true
+            hasSubmitted: true,
           },
           () => {
             submitForm(this.state.name, this.state.email, this.state.message);
@@ -56,7 +56,7 @@ class ContactForm extends Component {
       });
     });
   };
-  checkForErrors = callback => {
+  checkForErrors = (callback) => {
     const errors = {};
     if (!this.state.name) {
       errors.name = 'Please enter your name.';
@@ -111,14 +111,14 @@ class ContactForm extends Component {
     let charactersRemaining;
     if (this.state.errors.server) {
       serverErrorMessage = (
-        <div className="ui negative message">
+        <div className='ui negative message'>
           <p className={classes.message}>{this.state.errors.server}</p>
         </div>
       );
     }
     if (this.state.hasSubmitted) {
       successMessage = (
-        <div className="ui success message">
+        <div className='ui success message'>
           <p className={classes.message}>Redirecting...</p>
         </div>
       );
@@ -127,8 +127,8 @@ class ContactForm extends Component {
       charactersRemaining = (
         <span
           className={classes.charactersRemaining}
-          aria-live="polite"
-          aria-atomic="true"
+          aria-live='polite'
+          aria-atomic='true'
         >
           Characters remaining: {1000 - this.state.message.length}
         </span>
@@ -142,46 +142,46 @@ class ContactForm extends Component {
           )}
           noValidate
           onSubmit={this.formSubmitHandler}
-          role="group"
-          aria-labelledby="send-a-message"
+          role='group'
+          aria-labelledby='send-a-message'
         >
-          <h3 id="send-a-message" className={classes.header}>
+          <h3 id='send-a-message' className={classes.header}>
             Send a Message
           </h3>
-          <div className="two fields">
+          <div className='two fields'>
             <div
               className={['field', this.state.errors.name ? 'error' : ''].join(
                 ' '
               )}
             >
-              <label className={classes.label} htmlFor="name">
+              <label className={classes.label} htmlFor='name'>
                 Name
               </label>
               <input
-                ref={input => {
+                ref={(input) => {
                   this.nameInput = input;
                 }}
                 onChange={this.changeInputHandler}
-                type="text"
-                name="name"
-                id="name"
-                aria-describedby="nameError"
+                type='text'
+                name='name'
+                id='name'
+                aria-describedby='nameError'
                 className={classes.input}
-                maxLength="100"
+                maxLength='100'
                 value={this.state.name}
                 autoFocus={
                   this.props.history.location.hash === '#send-a-message'
                 }
               />
               <div
-                id="nameError"
+                id='nameError'
                 className={[
                   'ui pointing basic label',
                   classes.validationLabel,
-                  !this.state.errors.name && 'sr-only'
+                  !this.state.errors.name && 'sr-only',
                 ].join(' ')}
               >
-                {this.state.errors.name && <span class="sr-only">Error: </span>}
+                {this.state.errors.name && <span class='sr-only'>Error: </span>}
                 {this.state.errors.name && this.state.errors.name}
               </div>
             </div>
@@ -190,33 +190,33 @@ class ContactForm extends Component {
                 ' '
               )}
             >
-              <label className={classes.label} htmlFor="email">
+              <label className={classes.label} htmlFor='email'>
                 Email
               </label>
               <input
-                ref={input => {
+                ref={(input) => {
                   this.emailInput = input;
                 }}
-                htmlFor="email"
-                type="email"
-                id="email"
-                aria-describedby="emailError"
-                name="email"
+                htmlFor='email'
+                type='email'
+                id='email'
+                aria-describedby='emailError'
+                name='email'
                 onChange={this.changeInputHandler}
                 className={classes.input}
-                maxLength="100"
+                maxLength='100'
                 value={this.state.email}
               />
               <div
-                id="emailError"
+                id='emailError'
                 className={[
                   'ui pointing basic label',
                   classes.validationLabel,
-                  !this.state.errors.email && 'sr-only'
+                  !this.state.errors.email && 'sr-only',
                 ].join(' ')}
               >
                 {this.state.errors.email && (
-                  <span class="sr-only">Error: </span>
+                  <span class='sr-only'>Error: </span>
                 )}
                 {this.state.errors.email && this.state.errors.email}
               </div>
@@ -227,37 +227,37 @@ class ContactForm extends Component {
               ' '
             )}
           >
-            <label className={classes.label} htmlFor="message">
+            <label className={classes.label} htmlFor='message'>
               Message
             </label>
             <textarea
-              ref={textarea => {
+              ref={(textarea) => {
                 this.messageTextarea = textarea;
               }}
-              id="message"
-              aria-describedby="messageError"
-              name="message"
+              id='message'
+              aria-describedby='messageError'
+              name='message'
               onChange={this.changeInputHandler}
               className={classes.input}
-              maxLength="1000"
+              maxLength='1000'
               value={this.state.message}
             />
             <div
-              id="messageError"
+              id='messageError'
               className={[
                 'ui pointing basic label',
                 classes.validationLabel,
-                !this.state.errors.message && 'sr-only'
+                !this.state.errors.message && 'sr-only',
               ].join(' ')}
             >
               {this.state.errors.message && (
-                <span class="sr-only">Error: </span>
+                <span class='sr-only'>Error: </span>
               )}
               {this.state.errors.message && this.state.errors.message}
             </div>
             {charactersRemaining}
           </div>
-          <input type="submit" className="addToCartButton" value="Send" />
+          <input type='submit' className='addToCartButton' value='Send' />
         </form>
         {serverErrorMessage}
         {successMessage}
