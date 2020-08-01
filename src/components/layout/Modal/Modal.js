@@ -6,9 +6,16 @@ class Modal extends Component {
     hasBeenClosed: false,
   };
   componentDidMount = () => {
-    document.querySelector('#dialogHeading').focus();
+    if (localStorage.museeModalHasBeenClosed) {
+      this.setState({ hasBeenClosed: true }, () => {
+        if (!this.state.hasBeenClosed) {
+          document.querySelector('#dialogHeading').focus();
+        }
+      });
+    }
   };
-  closeModal = (e) => {
+  closeModal = () => {
+    localStorage.museeModalHasBeenClosed = true;
     this.setState({ hasBeenClosed: true });
   };
   shiftTabHandler = (e) => {};
