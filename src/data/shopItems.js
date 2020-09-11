@@ -7,8 +7,16 @@ import theZelinskyCollectionVolume1Cd from './items/theZelinskyCollectionVolume1
 import theZelinskyCollectionVolume2Cd from './items/theZelinskyCollectionVolume2Cd/theZelinskyCollectionVolume2Cd';
 import theZelinskyCollectionVolume3Cd from './items/theZelinskyCollectionVolume3Cd/theZelinskyCollectionVolume3Cd';
 import sutros1954Cd from './items/sutros1954Cd/sutros1954Cd';
+import cliffHousePatch from './items/cliffHousePatch/cliffHousePatch';
+import flyingLadyPatch from './items/flyingLadyPatch/flyingLadyPatch';
+import laughingSalPatch from './items/laughingSalPatch/laughingSalPatch';
+import pirateHeartPatch from './items/pirateHeartPatch/pirateHeartPatch';
+import piratePatch from './items/piratePatch/piratePatch';
+import tigerPatch from './items/tigerPatch/tigerPatch';
 
 export default [
+  laughingSalPatch,
+  flyingLadyPatch,
   lostAndFoundAtMuseeMecaniquePhotobook,
   lostAndFoundAtMuseeMecaniquePhotobook2,
   theZelinskyCollectionDvd,
@@ -17,4 +25,8 @@ export default [
   theZelinskyCollectionVolume2Cd,
   theZelinskyCollectionVolume3Cd,
   sutros1954Cd,
+  cliffHousePatch,
+  pirateHeartPatch,
+  piratePatch,
+  tigerPatch,
 ];
