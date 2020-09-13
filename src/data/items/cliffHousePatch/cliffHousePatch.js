@@ -21,6 +21,6 @@ export default {
     </form>
   `,
   price: '$35.00',
-  isSoldOut: false,
+  isSoldOut: true,
   images: [cliffHousePatch01],
 };
