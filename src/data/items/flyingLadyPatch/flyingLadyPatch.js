@@ -21,6 +21,6 @@ export default {
     </form>
   `,
   price: '$35.00',
-  isSoldOut: true,
+  isSoldOut: false,
   images: [flyingLadyPatch01],
 };
