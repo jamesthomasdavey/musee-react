@@ -18,7 +18,6 @@ import americanFlagPatch from './items/americanFlagPatch/americanFlagPatch';
 export default [
   laughingSalPatch,
   flyingLadyPatch,
-  americanFlagPatch,
   lostAndFoundAtMuseeMecaniquePhotobook,
   lostAndFoundAtMuseeMecaniquePhotobook2,
   theZelinskyCollectionDvd,
@@ -31,4 +30,5 @@ export default [
   pirateHeartPatch,
   piratePatch,
   tigerPatch,
+  americanFlagPatch,
 ];
