@@ -13,10 +13,12 @@ import laughingSalPatch from './items/laughingSalPatch/laughingSalPatch';
 import pirateHeartPatch from './items/pirateHeartPatch/pirateHeartPatch';
 import piratePatch from './items/piratePatch/piratePatch';
 import tigerPatch from './items/tigerPatch/tigerPatch';
+import americanFlagPatch from './items/americanFlagPatch/americanFlagPatch';
 
 export default [
   laughingSalPatch,
   flyingLadyPatch,
+  americanFlagPatch,
   lostAndFoundAtMuseeMecaniquePhotobook,
   lostAndFoundAtMuseeMecaniquePhotobook2,
   theZelinskyCollectionDvd,
