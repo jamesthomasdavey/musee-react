@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+.icons {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.icons a {
+  color: white !important;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0 6px;
+}
+
 .infoWrapper {
   /* background: #daa539; */
   /* background: #c97f04; */
