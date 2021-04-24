@@ -12,6 +12,9 @@ export default {
     <p>
     All our bullion emblems are handmade, each stitch embroidered with gold or silver bullion. These are not to be confused with standard embroidered emblems. These wire bullion emblems are made by craftsmen recognized worldwide as masters in this field. The quality is superior and you are sure to be pleased with your purchase.
     </p>
+    <p>
+      Dimensions: 4 ½ x 4 ⅛ inches.
+    </p>
   `,
   form: `
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">

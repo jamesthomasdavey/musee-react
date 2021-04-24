@@ -30,7 +30,7 @@ class ContactForm extends Component {
       this.messageTextarea.focus();
     }
   };
-  changeInputHandler = (e) => {
+  changeInputHandler = e => {
     const eventTargetName = e.target.name;
     this.setState({ [eventTargetName]: e.target.value }, () => {
       if (this.state.hasFailed) {
@@ -38,7 +38,7 @@ class ContactForm extends Component {
       }
     });
   };
-  formSubmitHandler = (e) => {
+  formSubmitHandler = e => {
     e.preventDefault();
     this.setState({ isSubmitting: true }, () => {
       this.checkForErrors(() => {
@@ -56,7 +56,7 @@ class ContactForm extends Component {
       });
     });
   };
-  checkForErrors = (callback) => {
+  checkForErrors = callback => {
     const errors = {};
     if (!this.state.name) {
       errors.name = 'Please enter your name.';
@@ -158,7 +158,7 @@ class ContactForm extends Component {
                 Name
               </label>
               <input
-                ref={(input) => {
+                ref={input => {
                   this.nameInput = input;
                 }}
                 onChange={this.changeInputHandler}
@@ -194,7 +194,7 @@ class ContactForm extends Component {
                 Email
               </label>
               <input
-                ref={(input) => {
+                ref={input => {
                   this.emailInput = input;
                 }}
                 htmlFor='email'
@@ -231,7 +231,7 @@ class ContactForm extends Component {
               Message
             </label>
             <textarea
-              ref={(textarea) => {
+              ref={textarea => {
                 this.messageTextarea = textarea;
               }}
               id='message'
