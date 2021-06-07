@@ -6,7 +6,7 @@ import { Link, withRouter } from 'react-router-dom';
 // css
 import classes from './MenuItem.module.css';
 
-const MenuItem = (props) => {
+const MenuItem = props => {
   const blur = () => {
     document.body.focus();
   };

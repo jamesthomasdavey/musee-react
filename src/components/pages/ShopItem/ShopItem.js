@@ -22,9 +22,9 @@ class ShopItem extends Component {
       this.getShopItem(this.props.match.params.shopItem);
     }
   };
-  getShopItem = (shopItemName) => {
+  getShopItem = shopItemName => {
     let shopItem;
-    shopItems.forEach((item) => {
+    shopItems.forEach(item => {
       if (item.name === shopItemName) {
         shopItem = item;
       }
@@ -82,7 +82,11 @@ class ShopItem extends Component {
               </div>
             </div>
             <div className={classes.backLinkWrapper}>
-              <Link className={classes.backLink} to='/shop' onClick={this.blur}>
+              <Link
+                className={classes.backLink}
+                to={`/shop`}
+                onClick={this.blur}
+              >
                 <i aria-hidden='true' className='angle double left icon' /> Back
               </Link>
             </div>

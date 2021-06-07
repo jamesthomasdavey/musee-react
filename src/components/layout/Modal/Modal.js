@@ -6,7 +6,7 @@ class Modal extends Component {
     hasBeenClosed: false,
   };
   componentDidMount = () => {
-    if (localStorage.museeModalHasBeenClosed) {
+    if (localStorage.modalHasBeenClosed) {
       this.setState({ hasBeenClosed: true }, () => {
         if (!this.state.hasBeenClosed) {
           document.querySelector('#dialogHeading').focus();
@@ -15,10 +15,10 @@ class Modal extends Component {
     }
   };
   closeModal = () => {
-    localStorage.museeModalHasBeenClosed = true;
+    localStorage.modalHasBeenClosed = true;
     this.setState({ hasBeenClosed: true });
   };
-  shiftTabHandler = (e) => {};
+  shiftTabHandler = e => {};
   tabHandler = (e, callback) => {
     if (e.key === 'Tab' && !e.shiftKey) {
       e.preventDefault();
@@ -28,7 +28,7 @@ class Modal extends Component {
       callback();
     }
   };
-  shiftTabHandler = (e) => {
+  shiftTabHandler = e => {
     if (e.key === 'Tab' && e.shiftKey) {
       e.preventDefault();
       document.querySelector('#modal-close').focus();
@@ -46,14 +46,16 @@ class Modal extends Component {
               aria-modal='true'
             >
               <h2 className={classes.heading} tabIndex='-1' id='dialogHeading'>
-                We are asking for your help!
+                We are reopening on June 15th! 🎉
               </h2>
               <p className={classes.text}>
-                Due to the current global pandemic, the Musée Mécanique, along
-                with so many other businesses, was forced to close. Please
-                consider supporting us by donating on GoFundMe or by spreading
-                the word!
+                We are pleased to announce that we will be reopening on June
+                15th! Thank you to everyone who has supported us during the past
+                450+ days. We would not have made it here without our amazing
+                fans donating to our GoFundMe and liking and sharing our
+                content.
               </p>
+              <p className={classes.text}>We hope to see you soon!</p>
               <div className={classes.links}>
                 <a
                   className={['addToCartButton', classes.supportLink].join(' ')}
@@ -73,7 +75,7 @@ class Modal extends Component {
                   onClick={this.closeModal}
                   role='button'
                   id='modal-close'
-                  onKeyDown={(e) => this.tabHandler(e, this.closeModal)}
+                  onKeyDown={e => this.tabHandler(e, this.closeModal)}
                 >
                   Close
                 </a>

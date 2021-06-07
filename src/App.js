@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // layout component
 import Navigation from './components/layout/Navigation/Navigation';
 import Footer from './components/layout/Footer/Footer';
-import ScrollToTop from './components/layout/ScrollToTop/ScrollToTop';
+// import ScrollToTop from './components/layout/ScrollToTop/ScrollToTop';
 import Modal from './components/layout/Modal/Modal';
 
 // page component
@@ -23,8 +23,11 @@ import classes from './App.module.css';
 class App extends Component {
   render() {
     return (
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
-        <ScrollToTop>
+      <Router
+      // onUpdate={() => window.scrollTo(0, 0)}
+      >
+        {/* <ScrollToTop> */}
+        <React.Fragment>
           <Modal />
           <div className={classes.wrapper}>
             <div className={classes.content}>
@@ -41,7 +44,8 @@ class App extends Component {
             </div>
             <Footer />
           </div>
-        </ScrollToTop>
+        </React.Fragment>
+        {/* </ScrollToTop> */}
       </Router>
     );
   }

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // css
 import classes from './ShopItem.module.css';
 
-const ShopItem = (props) => {
+const ShopItem = props => {
   let shopButton;
 
   if (props.shopItem.isSoldOut) {
@@ -21,7 +21,10 @@ const ShopItem = (props) => {
   }
 
   return (
-    <article className={['item', classes.wrapper].join(' ')}>
+    <article
+      id={props.shopItem.name}
+      className={['item', classes.wrapper].join(' ')}
+    >
       <div className='image' aria-hidden='true'>
         <img alt='' src={props.shopItem.images[0]} />
         <Link

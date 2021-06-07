@@ -27,8 +27,14 @@ class Visit extends Component {
                 src={openCorner}
                 className={classes.openRightCorner}
               />
-              <h3 className={classes.infoOpenDays}>Temporarily Closed</h3>
-              <p className={classes.infoCost}>During the COVID-19 Crisis</p>
+              <h3 className={classes.infoOpenDays}>
+                Reopening on June 15th! 🎊
+              </h3>
+              <p className={classes.infoCost}>
+                Once again, we will be open 365 days a year!
+                <br />
+                Admission is free!
+              </p>
               <div className={classes.icons}>
                 <HashLink to='/contact#send-a-message'>
                   <i aria-hidden='true' className='envelope outline icon' />
