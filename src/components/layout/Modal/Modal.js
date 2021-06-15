@@ -54,8 +54,8 @@ class Modal extends Component {
                 8:00pm!
               </p>
               <p className={classes.text}>
-                Thank you to everyone who has supported us during the past 450+
-                days. We would not have made it here without our amazing fans
+                Thank you to everyone who has supported us during the past 15
+                months. We would not have made it here without our amazing fans
                 donating to our GoFundMe and liking and sharing our content.
               </p>
               <p className={classes.text}>See you soon!</p>
