@@ -28,10 +28,10 @@ class Visit extends Component {
                 className={classes.openRightCorner}
               />
               <h3 className={classes.infoOpenDays}>
-                Reopening on June 15th! 🎊
+                We have reopened! 🎊
               </h3>
               <p className={classes.infoCost}>
-                Once again, we will be open 365 days a year!
+                Once again, we are open 365 days a year!
                 <br />
                 Admission is free!
               </p>

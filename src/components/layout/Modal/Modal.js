@@ -46,18 +46,21 @@ class Modal extends Component {
               aria-modal='true'
             >
               <h2 className={classes.heading} tabIndex='-1' id='dialogHeading'>
-                We are reopening on June 15th! 🎉
+                We have reopened! 🎉
               </h2>
               <p className={classes.text}>
-                We are pleased to announce that we will be reopening on June
-                15th! Thank you to everyone who has supported us during the past
-                450+ days. We would not have made it here without our amazing
-                fans donating to our GoFundMe and liking and sharing our
-                content.
+                We are pleased to announce that we have reopened our doors as of
+                June 15th! As before, we are open every day from 10:00am to
+                8:00pm!
               </p>
-              <p className={classes.text}>We hope to see you soon!</p>
+              <p className={classes.text}>
+                Thank you to everyone who has supported us during the past 450+
+                days. We would not have made it here without our amazing fans
+                donating to our GoFundMe and liking and sharing our content.
+              </p>
+              <p className={classes.text}>See you soon!</p>
               <div className={classes.links}>
-                <a
+                {/* <a
                   className={['addToCartButton', classes.supportLink].join(' ')}
                   href='https://www.gofundme.com/f/musee-mecanique?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet'
                   target='_blank'
@@ -67,10 +70,10 @@ class Modal extends Component {
                 >
                   Support Us
                 </a>
-                <br></br>
+                <br></br> */}
                 {/* eslint-disable-next-line */}
                 <a
-                  className={classes.closeLink}
+                  className={['addToCartButton', classes.supportLink].join(' ')}
                   href='#'
                   onClick={this.closeModal}
                   role='button'
