@@ -18,6 +18,8 @@
   background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;
+  -webkit-animation: fadein 1.5s ease;
+  animation: fadein 1.5s ease;
 }
 
 .pauseButton {

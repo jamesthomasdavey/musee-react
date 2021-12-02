@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant:700|Muli:400,600');
+@import url("https://fonts.googleapis.com/css?family=Cormorant:700|Muli:400,600");
 
 /*****************************
 ******************* variables
@@ -35,13 +35,14 @@
 *****************************/
 
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
 
 body {
   height: 100vh;
+  /* background-color: var(--dark-brown); */
 }
 
 html {
