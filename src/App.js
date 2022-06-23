@@ -13,7 +13,7 @@ import Landing from "./components/pages/Landing/Landing";
 import Visit from "./components/pages/Visit/Visit";
 import Story from "./components/pages/Story/Story";
 import Gallery from "./components/pages/Gallery/Gallery";
-import Shop from "./components/pages/Shop/Shop";
+// import Shop from "./components/pages/Shop/Shop";
 import Contact from "./components/pages/Contact/Contact";
 import ShopItem from "./components/pages/ShopItem/ShopItem";
 
