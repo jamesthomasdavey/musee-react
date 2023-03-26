@@ -1,3 +1,19 @@
+/* .filler {
+  position: absolute;
+  z-index: 9999;
+  height: 400px;
+  width: 100%;
+  background-color: blue;
+} */
+
+.headerWrapper {
+  background: var(--light-cream);
+}
+
+.headerWrapper.inverted {
+  background: var(--dark-brown);
+}
+
 .wrapper {
   width: 100%;
   -webkit-transition: 0.6s background ease;

@@ -1,35 +1,35 @@
 // package
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 // component
-import Logo from './components/Logo/Logo';
-import ToggleButton from './components/ToggleButton/ToggleButton';
-import Menu from './components/Menu/Menu';
-import CollapsibleMenu from './components/CollapsibleMenu/CollapsibleMenu';
+import Logo from "./components/Logo/Logo";
+import ToggleButton from "./components/ToggleButton/ToggleButton";
+import Menu from "./components/Menu/Menu";
+import CollapsibleMenu from "./components/CollapsibleMenu/CollapsibleMenu";
 
 // css
-import classes from './Navigation.module.css';
+import classes from "./Navigation.module.css";
 
 class Navigation extends Component {
   state = {
     collapsibleMenuIsExpanded: false,
     isInverted: false,
-    isScrolled: false
+    isScrolled: false,
   };
   componentDidMount = () => {
-    window.addEventListener('scroll', this.scrollHandler, true);
-    if (this.props.location.pathname === '/') {
+    window.addEventListener("scroll", this.scrollHandler, true);
+    if (this.props.location.pathname === "/") {
       this.setState({ isInverted: true });
     } else {
       this.setState({ isInverted: false });
     }
   };
   componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.scrollHandler, true);
+    window.removeEventListener("scroll", this.scrollHandler, true);
   };
-  componentWillReceiveProps = nextProps => {
-    if (nextProps.location.pathname === '/') {
+  componentWillReceiveProps = (nextProps) => {
+    if (nextProps.location.pathname === "/") {
       this.setState({ isInverted: true });
     } else {
       this.setState({ isInverted: false });
@@ -37,13 +37,13 @@ class Navigation extends Component {
   };
   toggleCollapsibleMenuHandler = () => {
     this.setState({
-      collapsibleMenuIsExpanded: !this.state.collapsibleMenuIsExpanded
+      collapsibleMenuIsExpanded: !this.state.collapsibleMenuIsExpanded,
     });
   };
   closeCollapsibleMenuHandler = () => {
     this.setState({ collapsibleMenuIsExpanded: false });
   };
-  scrollHandler = e => {
+  scrollHandler = (e) => {
     const scrollTop = Math.max(
       window.pageYOffset,
       document.documentElement.scrollTop,
@@ -57,42 +57,53 @@ class Navigation extends Component {
   };
   render() {
     return (
-      <header>
-        <div
+      <React.Fragment>
+        <header
           className={[
-            classes.wrapper,
-            this.state.isInverted ? classes.inverted : '',
-            this.state.isScrolled ? classes.scrolled : ''
-          ].join(' ')}
+            classes.headerWrapper,
+            this.state.isInverted ? classes.inverted : "",
+          ].join(" ")}
         >
-          <div className="ui container">
-            <div className={classes.container}>
-              <Logo
-                isInverted={this.state.isInverted}
-                isScrolled={this.state.isScrolled}
-                closeNav={this.closeCollapsibleMenuHandler}
-              />
-              <ToggleButton
-                collapsibleMenuIsExpanded={this.state.collapsibleMenuIsExpanded}
-                toggleCollapsibleMenuHandler={this.toggleCollapsibleMenuHandler}
-                isInverted={this.state.isInverted}
-              />
-              <Menu isInverted={this.state.isInverted} />
+          <div
+            className={[
+              classes.wrapper,
+              this.state.isInverted ? classes.inverted : "",
+              this.state.isScrolled ? classes.scrolled : "",
+            ].join(" ")}
+          >
+            <div className="ui container">
+              <div className={classes.container}>
+                <Logo
+                  isInverted={this.state.isInverted}
+                  isScrolled={this.state.isScrolled}
+                  closeNav={this.closeCollapsibleMenuHandler}
+                />
+                <ToggleButton
+                  collapsibleMenuIsExpanded={
+                    this.state.collapsibleMenuIsExpanded
+                  }
+                  toggleCollapsibleMenuHandler={
+                    this.toggleCollapsibleMenuHandler
+                  }
+                  isInverted={this.state.isInverted}
+                />
+                <Menu isInverted={this.state.isInverted} />
+              </div>
             </div>
+            <CollapsibleMenu
+              isInverted={this.state.isInverted}
+              isExpanded={this.state.collapsibleMenuIsExpanded}
+              closeNav={this.closeCollapsibleMenuHandler}
+            />
           </div>
-          <CollapsibleMenu
-            isInverted={this.state.isInverted}
-            isExpanded={this.state.collapsibleMenuIsExpanded}
-            closeNav={this.closeCollapsibleMenuHandler}
+          <div
+            className={[
+              this.state.isScrolled ? classes.pseudoWrapper : "",
+              this.state.collapsibleMenuIsExpanded ? classes.expanded : "",
+            ].join(" ")}
           />
-        </div>
-        <div
-          className={[
-            this.state.isScrolled ? classes.pseudoWrapper : '',
-            this.state.collapsibleMenuIsExpanded ? classes.expanded : ''
-          ].join(' ')}
-        />
-      </header>
+        </header>
+      </React.Fragment>
     );
   }
 }
