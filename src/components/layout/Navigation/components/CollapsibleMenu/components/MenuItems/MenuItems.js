@@ -26,12 +26,12 @@ const MenuItems = (props) => {
         name="Gallery"
         url="/gallery"
       />
-      {/* <MenuItem
+      <MenuItem
         isInverted={props.isInverted}
         closeNav={props.closeNav}
-        name='Shop'
-        url='/shop'
-      /> */}
+        name="Shop"
+        url="/shop"
+      />
       <MenuItem
         isInverted={props.isInverted}
         closeNav={props.closeNav}
