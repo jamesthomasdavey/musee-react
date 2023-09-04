@@ -1,13 +1,13 @@
 // package
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { withRouter } from "react-router-dom";
 
 // ext component
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // css
-import classes from './MenuItem.module.css';
+import classes from "./MenuItem.module.css";
 
 const MenuItem = (props) => {
   const navLinkHandler = () => {
@@ -19,27 +19,27 @@ const MenuItem = (props) => {
     isActive = true;
   }
   const tabHandler = (e) => {
-    if (props.name === 'Facebook') {
-      if (e.key === 'Tab' && !e.shiftKey) {
+    if (props.name === "Facebook") {
+      if (e.key === "Tab" && !e.shiftKey) {
         props.closeNav();
       }
     }
   };
-  if (props.name === 'Facebook') {
+  if (props.name === "Facebook") {
     return (
       <a
         className={[
           classes.wrapper,
-          props.isInverted ? classes.inverted : '',
-          isActive ? classes.active : '',
-        ].join(' ')}
-        href='https://www.facebook.com/museemecaniquesf/'
+          props.isInverted ? classes.inverted : "",
+          isActive ? classes.active : "",
+        ].join(" ")}
+        href="https://www.facebook.com/museemecaniquesf/"
         onKeyDown={tabHandler}
-        target='_blank'
-        rel='noopener noreferrer'
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span className={classes.text}>{props.name}</span>
-        {isActive && <span className='sr-only'>- current</span>}
+        {isActive && <span className="sr-only">- current</span>}
       </a>
     );
   }
@@ -47,15 +47,15 @@ const MenuItem = (props) => {
     <Link
       className={[
         classes.wrapper,
-        props.isInverted ? classes.inverted : '',
-        isActive ? classes.active : '',
-      ].join(' ')}
+        props.isInverted ? classes.inverted : "",
+        isActive ? classes.active : "",
+      ].join(" ")}
       to={props.url}
       onClick={navLinkHandler}
       onKeyDown={tabHandler}
     >
       <span className={classes.text}>{props.name}</span>
-      {isActive && <span className='sr-only'>- current</span>}
+      {isActive && <span className="sr-only">- current</span>}
     </Link>
   );
 };
