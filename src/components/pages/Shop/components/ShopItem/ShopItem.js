@@ -1,18 +1,18 @@
 // package
-import React from 'react';
-import PropTypes from 'prop-types';
-import renderHTML from 'react-render-html';
-import { Link } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import renderHTML from "react-render-html";
+import { Link } from "react-router-dom";
 
 // css
-import classes from './ShopItem.module.css';
+import classes from "./ShopItem.module.css";
 
-const ShopItem = props => {
+const ShopItem = (props) => {
   let shopButton;
 
   if (props.shopItem.isSoldOut) {
     shopButton = (
-      <button className='addToCartButton' disabled>
+      <button className="addToCartButton" disabled>
         Sold Out!
       </button>
     );
@@ -23,18 +23,21 @@ const ShopItem = props => {
   return (
     <article
       id={props.shopItem.name}
-      className={['item', classes.wrapper].join(' ')}
+      className={["item", classes.wrapper].join(" ")}
     >
-      <div className='image' aria-hidden='true'>
-        <img alt='' src={props.shopItem.images[0]} />
+      <div className="image" aria-hidden="true">
+        <img alt="" src={props.shopItem.images[0]} />
         <Link
           className={classes.imageLink}
           to={`/shop/${props.shopItem.name}`}
-          tabIndex='-1'
+          tabIndex="-1"
         />
       </div>
-      <div className='content'>
-        <h3 className={['header', classes.header].join(' ')}>
+      <div className="content">
+        <h3
+          id={props.shopItem.name}
+          className={["header", classes.header].join(" ")}
+        >
           <Link
             to={`/shop/${props.shopItem.name}`}
             className={classes.headerLink}
@@ -42,13 +45,13 @@ const ShopItem = props => {
             {props.shopItem.title}
           </Link>
         </h3>
-        <div className='meta'>
+        <div className="meta">
           <span className={classes.price}>{props.shopItem.price}</span>
         </div>
-        <div className={['description', classes.description].join(' ')}>
+        <div className={["description", classes.description].join(" ")}>
           {renderHTML(props.shopItem.shortDescription)}
         </div>
-        <div className='extra'>{shopButton}</div>
+        <div className="extra">{shopButton}</div>
       </div>
     </article>
   );

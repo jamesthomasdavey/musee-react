@@ -2,6 +2,7 @@
 import React, { Component, Fragment } from "react";
 import renderHTML from "react-render-html";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // data
 import shopItems from "./../../../data/shopItems";
@@ -59,6 +60,14 @@ class ShopItem extends Component {
       content = (
         <div className={classes.wrapper}>
           <div className="ui container">
+            <div className={classes.backLinkWrapper}>
+              <HashLink
+                className={classes.backLink}
+                to={`/shop#${this.state.shopItem.name}`}
+              >
+                <i aria-hidden="true" className="angle double left icon" /> Back
+              </HashLink>
+            </div>
             <div className={classes.innerWrapper}>
               <div className={classes.image}>
                 <div className={classes.slideshowWrapper}>
@@ -77,11 +86,6 @@ class ShopItem extends Component {
                   {renderHTML(this.state.shopItem.longDescription)}
                 </div>
               </div>
-            </div>
-            <div className={classes.backLinkWrapper}>
-              <Link className={classes.backLink} to={`/shop`}>
-                <i aria-hidden="true" className="angle double left icon" /> Back
-              </Link>
             </div>
           </div>
         </div>

@@ -23,9 +23,7 @@ import classes from "./App.module.css";
 class App extends Component {
   render() {
     return (
-      <Router
-      // onUpdate={() => window.scrollTo(0, 0)}
-      >
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
         <ScrollToTop>
           <React.Fragment>
             {/* <Modal /> */}

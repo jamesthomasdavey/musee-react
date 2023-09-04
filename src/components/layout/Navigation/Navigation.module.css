@@ -1,11 +1,3 @@
-/* .filler {
-  position: absolute;
-  z-index: 9999;
-  height: 400px;
-  width: 100%;
-  background-color: blue;
-} */
-
 .headerWrapper {
   background: var(--light-cream);
 }
