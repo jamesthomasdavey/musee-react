@@ -28,6 +28,7 @@ const ShopItem = (props) => {
       <div className="image" aria-hidden="true">
         <img alt="" src={props.shopItem.images[0]} />
         <Link
+          aria-hidden="true"
           className={classes.imageLink}
           to={`/shop/${props.shopItem.name}`}
           tabIndex="-1"

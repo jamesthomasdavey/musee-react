@@ -79,7 +79,7 @@
 }
 
 .backLinkWrapper {
-  margin: 32px auto 0;
+  margin: 0 auto 32px;
 }
 
 .backLink {
@@ -96,6 +96,5 @@
   }
   .backLinkWrapper {
     width: 90%;
-    margin: 0 auto 32px;
   }
 }

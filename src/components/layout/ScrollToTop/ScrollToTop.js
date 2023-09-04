@@ -8,6 +8,11 @@ class ScrollToTop extends Component {
         .querySelector(".Navigation_headerWrapper__1l5L_")
         .scrollIntoView();
     }
+    if (this.props.location.pathname.substr("/shop#")) {
+      setTimeout(() => {
+        window.scrollBy(0, 100);
+      }, 300);
+    }
   }
   render() {
     return <Fragment>{this.props.children}</Fragment>;
