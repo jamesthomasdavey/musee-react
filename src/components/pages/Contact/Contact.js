@@ -1,27 +1,27 @@
 // package
-import React from 'react';
+import React from "react";
 
 // component
-import ContactForm from './components/ContactForm/ContactForm';
-import Map from './../../layout/Map/Map';
+import ContactForm from "./components/ContactForm/ContactForm";
+import Map from "./../../layout/Map/Map";
 
 // css
-import classes from './Contact.module.css';
+import classes from "./Contact.module.css";
 
 export default function Contact() {
-  document.title = 'Contact Us | Musée Mécanique';
+  document.title = "Contact Us | Musée Mécanique";
   return (
-    <div className={classes.wrapper}>
+    <main className={classes.wrapper}>
       <div
         className={[
-          'ui container',
+          "ui container",
           classes.topContainer,
-          classes.oneHundred
-        ].join(' ')}
+          classes.oneHundred,
+        ].join(" ")}
       >
         <div className={classes.topWrapper}>
           <div className={classes.contactInfoWrapper}>
-            <h2 className={classes.topHeader}>Contact Us</h2>
+            <h1 className={classes.topHeader}>Contact Us</h1>
             <div className={classes.contactDetailWrapper}>
               <i aria-hidden="true" className="phone icon" />
               <h3 className="sr-only">Phone Number:</h3>
@@ -44,7 +44,7 @@ export default function Contact() {
               </div>
               <div
                 className={classes.contactInfoLine}
-                style={{ marginTop: '20px' }}
+                style={{ marginTop: "20px" }}
               >
                 <p>
                   We will stay open later if the crowds demand it! Fun doesn't
@@ -73,9 +73,9 @@ export default function Contact() {
         </div>
       </div>
       <div className="ui container">
-        <div className={['ui clearing divider', classes.divider].join(' ')} />
+        <div className={["ui clearing divider", classes.divider].join(" ")} />
         <ContactForm />
       </div>
-    </div>
+    </main>
   );
 }

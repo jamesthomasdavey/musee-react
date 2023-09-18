@@ -16,8 +16,8 @@ class Visit extends Component {
   render() {
     document.title = "Visit | Musée Mécanique";
     return (
-      <div className={classes.wrapper}>
-        <h2 className="sr-only">Visit</h2>
+      <main className={classes.wrapper}>
+        <h1 className="sr-only">Visit</h1>
         <div className={classes.infoWrapper}>
           <div className="ui container">
             <div className={classes.infoHeaderWrapper}>
@@ -113,7 +113,7 @@ class Visit extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }

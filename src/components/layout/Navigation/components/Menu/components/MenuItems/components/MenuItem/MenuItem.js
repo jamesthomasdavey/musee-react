@@ -1,12 +1,12 @@
 // package
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link, withRouter } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, withRouter } from "react-router-dom";
 
 // css
-import classes from './MenuItem.module.css';
+import classes from "./MenuItem.module.css";
 
-const MenuItem = props => {
+const MenuItem = (props) => {
   const blur = () => {
     document.body.focus();
   };
@@ -14,21 +14,21 @@ const MenuItem = props => {
   if (props.location.pathname.substring(0, props.url.length) === props.url) {
     isActive = true;
   }
-  if (props.name === 'Facebook') {
+  if (props.name === "Facebook") {
     return (
       <a
         className={classes.wrapper}
-        href={'https://www.facebook.com/museemecaniquesf/'}
-        target='_blank'
-        rel='noopener noreferrer'
+        href={"https://www.facebook.com/museemecaniquesf/"}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <div className={classes.textWrapper}>
           <span
             className={[
               classes.text,
-              props.isInverted ? classes.inverted : '',
-              isActive ? classes.active : '',
-            ].join(' ')}
+              props.isInverted ? classes.inverted : "",
+              isActive ? classes.active : "",
+            ].join(" ")}
           >
             Facebook
           </span>
@@ -42,12 +42,12 @@ const MenuItem = props => {
         <span
           className={[
             classes.text,
-            props.isInverted ? classes.inverted : '',
-            isActive ? classes.active : '',
-          ].join(' ')}
+            props.isInverted ? classes.inverted : "",
+            isActive ? classes.active : "",
+          ].join(" ")}
         >
           {props.name}
-          {isActive && <span className='sr-only'>- current</span>}
+          {isActive && <span className="sr-only">- current</span>}
         </span>
       </div>
     </Link>

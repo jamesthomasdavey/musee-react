@@ -6,10 +6,34 @@
   /* border-bottom: 4px solid white; */
 }
 
+.virtualTourBanner {
+  background: var(--brown);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.virtualTourLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: var(--white);
+}
+
+.virtualTourLink:hover {
+  color: var(--white);
+}
+
+.linkText {
+  text-decoration: underline;
+}
+
 .mainImage {
   height: calc(100vh - 112px);
   width: 100%;
-  background: url('./img/galleryBackground.jpg');
+  background: url("./img/galleryBackground.jpg");
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;

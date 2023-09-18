@@ -1,20 +1,20 @@
 // package
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // component
-import Slideshow from './components/Slideshow/Slideshow';
+import Slideshow from "./components/Slideshow/Slideshow";
 
 // css
-import classes from './Landing.module.css';
+import classes from "./Landing.module.css";
 
 class Landing extends Component {
   render() {
-    document.title = 'Welcome to the Musée Mécanique';
+    document.title = "Welcome to the Musée Mécanique";
     return (
-      <div className={classes.wrapper}>
-        <h2 className='sr-only'>Home</h2>
+      <main className={classes.wrapper}>
+        <h1 className="sr-only">Landing</h1>
         <Slideshow />
-      </div>
+      </main>
     );
   }
 }

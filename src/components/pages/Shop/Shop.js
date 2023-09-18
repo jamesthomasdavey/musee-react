@@ -17,7 +17,8 @@ class Shop extends Component {
       <ShopItem key={shopItem.name} shopItem={shopItem} />
     ));
     return (
-      <React.Fragment>
+      <main>
+        <h1 className="sr-only">Shop</h1>
         <div className={[classes.bandcampBanner].join(" ")}>
           <a
             className={classes.bandcampLink}
@@ -25,20 +26,19 @@ class Shop extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            👉{" "}
+            <span aria-hidden="true">🎹</span>{" "}
             <span className={classes.linkText}>
               Digital versions of our CDs are now available on Bandcamp!
             </span>{" "}
-            👉
+            <span aria-hidden="true">🎹</span>
           </a>
         </div>
         <div className={classes.wrapper}>
-          <h2 className="sr-only">Shop</h2>
           <div className="ui container">
             <div className="ui divided items">{shopItemsList}</div>
           </div>
         </div>
-      </React.Fragment>
+      </main>
     );
   }
 }

@@ -1,19 +1,19 @@
 // component
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // css
-import classes from './Story.module.css';
+import classes from "./Story.module.css";
 
 // img
-import steamCycle from './img/steam_cycle.jpg';
-import museeMecaniqueLogo from './img/musee_mecanique_logo.jpg';
+import steamCycle from "./img/steam_cycle.jpg";
+import museeMecaniqueLogo from "./img/musee_mecanique_logo.jpg";
 
 class Story extends Component {
   render() {
-    document.title = 'Our Story | Musée Mécanique';
+    document.title = "Our Story | Musée Mécanique";
     return (
-      <div className={classes.wrapper}>
-        <h2 className="sr-only">Our Story</h2>
+      <main className={classes.wrapper}>
+        <h1 className="sr-only">Our Story</h1>
         <div className="ui container">
           <h3 className={classes.header}>How It All Began</h3>
           <p className={classes.subHeader}>
@@ -127,7 +127,7 @@ class Story extends Component {
             Eaton, Blake Richardson, and Connor, Kyle, and Betsy Zelinsky.
           </p>
         </div>
-      </div>
+      </main>
     );
   }
 }

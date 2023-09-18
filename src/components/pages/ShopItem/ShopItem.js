@@ -58,7 +58,8 @@ class ShopItem extends Component {
       }
 
       content = (
-        <div className={classes.wrapper}>
+        <main className={classes.wrapper}>
+          <h1 className="sr-only">{this.state.shopItem.title}</h1>
           <div className="ui container">
             <div className={classes.backLinkWrapper}>
               <HashLink
@@ -75,7 +76,9 @@ class ShopItem extends Component {
                 </div>
               </div>
               <div className={classes.info}>
-                <h2 className={classes.title}>{this.state.shopItem.title}</h2>
+                <h2 role="none" className={classes.title}>
+                  {this.state.shopItem.title}
+                </h2>
                 <p className={classes.price}>{this.state.shopItem.price}</p>
                 <div className={classes.addToCartButton}>
                   {!soldOutButton && renderHTML(this.state.shopItem.form)}
@@ -88,7 +91,7 @@ class ShopItem extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </main>
       );
     }
     return <Fragment>{content}</Fragment>;
