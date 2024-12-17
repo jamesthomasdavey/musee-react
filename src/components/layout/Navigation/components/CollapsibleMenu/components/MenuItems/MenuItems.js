@@ -29,12 +29,6 @@ const MenuItems = (props) => {
       <MenuItem
         isInverted={props.isInverted}
         closeNav={props.closeNav}
-        name="Shop"
-        url="/shop"
-      />
-      <MenuItem
-        isInverted={props.isInverted}
-        closeNav={props.closeNav}
         name="Facebook"
         url="/facebook"
       />
